@@ -1,0 +1,76 @@
+{
+    "courses": [
+        {
+            "id": "nursingsph2017",
+            "title": "SPH-Nursing-2017",
+            "type": "exam",
+            "year": "2017",
+            "difficulty": "intermediate",
+            "description": "2017 nursing by mohammed",
+            "jsonFile": "nursingsph2017.json",
+            "page": "index.html?course=nursingsph2017",
+            "featured": true
+        },
+        {
+            "id": "meta2017",
+            "title": "METABOLISM FINAL EXAM 2017",
+            "type": "exam",
+            "year": "2017",
+            "difficulty": "advanced",
+            "description": "2017 Final Exam",
+            "jsonFile": "meta2017.json",
+            "page": "index.html?course=meta2017",
+            "featured": true
+        },
+        {
+            "id": "meta2016",
+            "title": "METABOLISM FINAL EXAM 2016",
+            "type": "exam",
+            "year": "2016",
+            "difficulty": "advanced",
+            "description": "2016 Final Exam",
+            "jsonFile": "meta2016.json",
+            "page": "index.html?course=meta2016"
+        },
+        {
+            "id": "meta2015",
+            "title": "METABOLISM FINAL EXAM 2015",
+            "type": "exam",
+            "year": "2015",
+            "difficulty": "advanced",
+            "description": "2015 Final Exam",
+            "jsonFile": "meta2015.json",
+            "page": "index.html?course=meta2015"
+        },
+        {
+            "id": "HAMMAD",
+            "title": "HAMMAD FINAL EXAM 2014",
+            "type": "exam",
+            "year": "2014",
+            "difficulty": "advanced",
+            "description": "2014 Final Exam",
+            "jsonFile": "meta2014.json",
+            "page": "index.html?course=meta2014"
+        },
+        {
+            "id": "meta2014",
+            "title": "NEW FINAL EXAM 2014",
+            "type": "exam",
+            "year": "2014",
+            "difficulty": "advanced",
+            "description": "2014 Final Exam",
+            "jsonFile": "meta2014.json",
+            "page": "index.html?course=meta2014"
+        },
+        {
+            "id": "meta20176",
+            "title": "other FINAL EXAM 2014",
+            "type": "exam",
+            "year": "2014",
+            "difficulty": "low",
+            "description": "2014 Final Exam",
+            "jsonFile": "meta2014.json",
+            "page": "index.html?course=meta20176"
+        }
+    ]
+}

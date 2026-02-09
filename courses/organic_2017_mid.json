@@ -1,0 +1,953 @@
+[
+  {
+    "id": 1,
+    "question": "Are mostly associated with chemical basicity of organic compounds \n- jfshbs sh",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 4,
+    "correctAnswer": "Amines",
+    "explanation": "Amines contain a nitrogen atom with     - a lone pair of electrons, allowing them to act as bases by accepting a proton. This makes them the most common organic compounds associated with basicity.\n- this tyoea\n1. nmsdjsdf",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: Unsaturated hydrocarbons, not basic.",
+      "b": "Alcohols: Weakly acidic, not basic.",
+      "c": "Aldehydes: Carbonyl compounds, not basic.",
+      "d": "Amides: Weakly basic but much less than amines.",
+      "e": "Aromatic compounds: Neutral or weakly acidic.",
+      "f": "Carboxylic acids: Acidic.",
+      "g": "Esters: Neutral.",
+      "h": "Ethers: Neutral.",
+      "i": "Ketones: Neutral.",
+      "j": "Organic halides: Neutral.",
+      "k": "Organo sulfur compounds: Usually neutral.",
+      "l": "Organo phosphorus compounds: Varies, not primarily basic.",
+      "m": "Phenols: Acidic."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Medium",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "question": "Their lower members possess anaesthetic effect",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 8,
+    "correctAnswer": "Ethers",
+    "explanation": "Simple ethers like diethyl ether were historically used as general anaesthetics due to their depressant effect on the central nervous system.",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: No anaesthetic effect.",
+      "b": "Alcohols: Sedative but not primary anaesthetics.",
+      "c": "Aldehydes: Irritants.",
+      "d": "Amides: Not anaesthetics.",
+      "e": "Amines: Not anaesthetics.",
+      "f": "Aromatic compounds: Not anaesthetics.",
+      "g": "Carboxylic acids: Corrosive.",
+      "h": "Esters: Solvents, not anaesthetics.",
+      "i": "Ketones: Not anaesthetics.",
+      "j": "Organic halides: Some were used (chloroform), but ethers were classic.",
+      "k": "Organo sulfur compounds: No.",
+      "l": "Organo phosphorus compounds: No."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3,
+    "question": "Are released during volcanic eruptions and forest fires",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 10,
+    "correctAnswer": "Organic halides",
+    "explanation": "Volcanic eruptions and biomass burning can release halogenated organic compounds, including methyl chloride and other volatile organic halides.",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: Possible but not primary.",
+      "b": "Alcohols: Not major.",
+      "c": "Aldehydes: Possible from combustion.",
+      "d": "Amides: Not.",
+      "e": "Amines: Not.",
+      "f": "Aromatic compounds: PAHs from combustion, but halides highlighted.",
+      "g": "Carboxylic acids: Not.",
+      "h": "Esters: Not.",
+      "i": "Ethers: Not.",
+      "j": "Ketones: Not.",
+      "k": "Organo sulfur compounds: SO2, but not halides.",
+      "l": "Organo phosphorus compounds: Not."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 4,
+    "question": "Are major flavor constituents in most natural spices",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 7,
+    "correctAnswer": "Esters",
+    "explanation": "Esters are often responsible for fruity and pleasant aromas and are found in many natural spices and fruits as flavor compounds.",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: Not flavors.",
+      "b": "Alcohols: Some, but not major.",
+      "c": "Aldehydes: Some aromas.",
+      "d": "Amides: Not.",
+      "e": "Amines: Fishy odors.",
+      "f": "Aromatic compounds: Some spices.",
+      "g": "Carboxylic acids: Sour.",
+      "h": "Ethers: Not.",
+      "i": "Ketones: Some.",
+      "j": "Organic halides: No.",
+      "k": "Organo sulfur compounds: Garlic/onion.",
+      "l": "Organo phosphorus compounds: No."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "question": "Are used as linkers in peptide and protein structures",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 3,
+    "correctAnswer": "Amides",
+    "explanation": "The peptide bond that links amino acids in proteins is an amide functional group (–CONH–).",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: No.",
+      "b": "Alcohols: No.",
+      "c": "Aldehydes: No.",
+      "d": "Amines: Side chains.",
+      "e": "Aromatic compounds: Some side chains.",
+      "f": "Carboxylic acids: Side chains.",
+      "g": "Esters: No.",
+      "h": "Ethers: No.",
+      "i": "Ketones: No.",
+      "j": "Organic halides: No.",
+      "k": "Organo sulfur compounds: Cysteine.",
+      "l": "Organo phosphorus compounds: No."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 6,
+    "question": "Can be associated with kidney stones",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 6,
+    "correctAnswer": "Carboxylic acids",
+    "explanation": "Certain carboxylic acids, like oxalic acid, can form calcium oxalate crystals, which are a common component of kidney stones.",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: No.",
+      "b": "Alcohols: No.",
+      "c": "Aldehydes: No.",
+      "d": "Amides: No.",
+      "e": "Amines: No.",
+      "f": "Aromatic compounds: No.",
+      "g": "Esters: No.",
+      "h": "Ethers: No.",
+      "i": "Ketones: No.",
+      "j": "Organic halides: No.",
+      "k": "Organo sulfur compounds: No.",
+      "l": "Organo phosphorus compounds: No."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 7,
+    "question": "Can be produced during combustion of charcoal, fossil fuels, or biomass and are associated with environmental air pollution and cancer",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 5,
+    "correctAnswer": "Aromatic compounds",
+    "explanation": "Polycyclic aromatic hydrocarbons (PAHs) are formed during incomplete combustion and are known to be environmental pollutants and carcinogens.",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: Some VOCs.",
+      "b": "Alcohols: Not major.",
+      "c": "Aldehydes: Formaldehyde.",
+      "d": "Amides: No.",
+      "e": "Amines: No.",
+      "f": "Carboxylic acids: No.",
+      "g": "Esters: No.",
+      "h": "Ethers: No.",
+      "i": "Ketones: No.",
+      "j": "Organic halides: Some.",
+      "k": "Organo sulfur compounds: SO2.",
+      "l": "Organo phosphorus compounds: No."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 8,
+    "question": "Are major constituents of some chemical warfare agents and pesticides",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 12,
+    "correctAnswer": "Organo phosphorus compounds",
+    "explanation": "Organophosphorus compounds include nerve agents (e.g., sarin) and many insecticides (e.g., malathion), which act by inhibiting acetylcholinesterase.",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: No.",
+      "b": "Alcohols: No.",
+      "c": "Aldehydes: No.",
+      "d": "Amides: No.",
+      "e": "Amines: No.",
+      "f": "Aromatic compounds: Some agents.",
+      "g": "Carboxylic acids: No.",
+      "h": "Esters: Some pesticides.",
+      "i": "Ethers: No.",
+      "j": "Ketones: No.",
+      "k": "Organic halides: Mustard gas.",
+      "l": "Organo sulfur compounds: Mustard gas."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 9,
+    "question": "Are common ingredients in antiseptics and disinfectants",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 1,
+    "correctAnswer": "Alcohols",
+    "explanation": "Alcohols such as ethanol and isopropyl alcohol are widely used for their antimicrobial properties in antiseptics and disinfectants.",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: No.",
+      "b": "Aldehydes: Some (formaldehyde).",
+      "c": "Amides: No.",
+      "d": "Amines: No.",
+      "e": "Aromatic compounds: Phenols are, but alcohols broader.",
+      "f": "Carboxylic acids: No.",
+      "g": "Esters: No.",
+      "h": "Ethers: No.",
+      "i": "Ketones: No.",
+      "j": "Organic halides: No.",
+      "k": "Organo sulfur compounds: No.",
+      "l": "Organo phosphorus compounds: No."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 10,
+    "question": "Are mostly associated with taste and aroma of garlic, onion, and cruciferous vegetables",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 11,
+    "correctAnswer": "Organo sulfur compounds",
+    "explanation": "Compounds like allicin in garlic and sulfoxides in onions are responsible for their characteristic smells and flavors.",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: No.",
+      "b": "Alcohols: No.",
+      "c": "Aldehydes: No.",
+      "d": "Amides: No.",
+      "e": "Amines: Fishy.",
+      "f": "Aromatic compounds: Some spices.",
+      "g": "Carboxylic acids: No.",
+      "h": "Esters: Fruity.",
+      "i": "Ethers: No.",
+      "j": "Ketones: No.",
+      "k": "Organic halides: No.",
+      "l": "Organo phosphorus compounds: No."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 11,
+    "question": "Have role in browning of sliced fruits and skin",
+    "options": [
+      "Alkenes",
+      "Alcohols",
+      "Aldehydes",
+      "Amides",
+      "Amines",
+      "Aromatic compounds",
+      "Carboxylic acids",
+      "Esters",
+      "Ethers",
+      "Ketones",
+      "Organic halides",
+      "Organo sulfur compounds",
+      "Organo phosphorus compounds",
+      "Phenols"
+    ],
+    "answer": 13,
+    "correctAnswer": "Phenols",
+    "explanation": "Enzymatic browning in fruits and vegetables involves the oxidation of phenolic compounds (e.g., in apples, potatoes) by polyphenol oxidases.",
+    "whyNotOtherOptions": {
+      "a": "Alkenes: No.",
+      "b": "Alcohols: No.",
+      "c": "Aldehydes: No.",
+      "d": "Amides: No.",
+      "e": "Amines: No.",
+      "f": "Aromatic compounds: Some phenolics.",
+      "g": "Carboxylic acids: No.",
+      "h": "Esters: No.",
+      "i": "Ethers: No.",
+      "j": "Ketones: No.",
+      "k": "Organic halides: No.",
+      "l": "Organo sulfur compounds: No."
+    },
+    "relatedQuestions": [],
+    "category": "I.Matching",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 1,
+    "question": "Which one of the following statement is correct about atomic orbitals, hybridization and bonding?",
+    "options": [
+      "Atomic orbitals are probability regions showing the chance to find an electron around the nucleus of atom",
+      "Unhybridized atomic orbitals can form stronger bonds than hybrid orbitals",
+      "Some hybrid orbitals can form pi bonds",
+      "All atomic orbitals have the same shape and energy",
+      "Sigma bonds are formed as a result of side-ways overlap of atomic orbitals"
+    ],
+    "answer": 0,
+    "correctAnswer": "Atomic orbitals are probability regions showing the chance to find an electron around the nucleus of atom",
+    "explanation": "Atomic orbitals are indeed probability regions where electrons are likely to be found. B is false (hybrid orbitals form stronger sigma bonds), C is false (only unhybridized p-orbitals form pi bonds), D is false (they have different shapes and energies), E is false (sigma bonds are from end-to-end overlap).",
+    "whyNotOtherOptions": {
+      "a": "Unhybridized atomic orbitals can form stronger bonds than hybrid orbitals: False; hybrid orbitals form stronger sigma bonds.",
+      "b": "Some hybrid orbitals can form pi bonds: False; only unhybridized p-orbitals form pi bonds.",
+      "c": "All atomic orbitals have the same shape and energy: False; different shapes and energies.",
+      "d": "Sigma bonds are formed as a result of side-ways overlap of atomic orbitals: False; end-to-end overlap."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 2,
+    "question": "Which one of the following statement is incorrect about covalent bonding?",
+    "options": [
+      "Covalent bond is formed by sharing of electrons and is directional bond",
+      "In polar covalent bonds the shared electron pair are shifted to the less electronegative atom",
+      "A triple bond is made from two pi bond and one sigma bonds",
+      "The bond distances and bond strengths are related to the s character of the orbitals used",
+      "Covalent bonding affects physical properties organic molecules."
+    ],
+    "answer": 1,
+    "correctAnswer": "In polar covalent bonds the shared electron pair are shifted to the less electronegative atom",
+    "explanation": "In polar covalent bonds, the electron pair is shifted toward the more electronegative atom, not the less electronegative one.",
+    "whyNotOtherOptions": {
+      "a": "Covalent bond is formed by sharing of electrons and is directional bond: Correct.",
+      "b": "A triple bond is made from two pi bond and one sigma bonds: Correct (one sigma, two pi).",
+      "c": "The bond distances and bond strengths are related to the s character of the orbitals used: Correct.",
+      "d": "Covalent bonding affects physical properties organic molecules.: Correct."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following pairs represent resonance structures?",
+    "options": [
+      "CH₃–N⁺–O⁻ and CH₃–N=O",
+      "Cyclohexene and another structure",
+      "CH₃–N⁺–O⁻ and CH₃–O–N=O",
+      "H–C(=O)–N–H₂ and H–C(=N–O–H)–N–H",
+      "None"
+    ],
+    "answer": 0,
+    "correctAnswer": "CH₃–N⁺–O⁻ and CH₃–N=O",
+    "explanation": "Resonance structures must have same atom connectivity (same sigma bonds). Only electrons move (π bonds/lone pairs/charges) — no atoms move and no H shifts.\nCheck each pair:\nA) Nitro group (CH₃–NO₂):\nThe double bond and negative charge alternate between the two oxygens.\nConnectivity is identical; only electron placement changes → Resonance ✔\nB) Keto–enol type shift in cyclohexanone:\nHydrogen moves and double bond position changes → tautomerism, not resonance ❌\nC) Connectivity changes (CH₃–N–O vs CH₃–O–N):\nAtoms rearranged → not resonance ❌\nD) Amide ↔ imidic acid form:\nHydrogen moves between O and N → tautomerism, not resonance ❌\n✅ Correct answer: A",
+    "whyNotOtherOptions": {
+      "a": "Cyclohexene pair: Tautomerism, not resonance (H moves).",
+      "b": "CH₃–N⁺–O⁻ and CH₃–O–N=O: Different connectivity.",
+      "c": "H–C(=O)–N–H₂ and H–C(=N–O–H)–N–H: Tautomerism (H moves)."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Hard",
+    "image": "q3.jpg"
+  },
+  {
+    "id": 4,
+    "question": "For the molecule shown, what are the hybridization of the oxygen atom and the approximate C–C–O bond angle, respectively? CH₃CH₂C(=O)CH₂C≡CH",
+    "options": [
+      "sp3, 109.5°",
+      "sp3, 120°",
+      "sp2, 120°",
+      "sp2, 180°",
+      "None of the above"
+    ],
+    "answer": 2,
+    "correctAnswer": "sp2, 120°",
+    "explanation": "The carbonyl oxygen is sp² hybridized (trigonal planar geometry) with bond angles approximately 120°.",
+    "whyNotOtherOptions": {
+      "a": "sp3, 109.5°: Wrong hybridization for carbonyl O.",
+      "b": "sp3, 120°: Wrong hybridization.",
+      "c": "sp2, 180°: Wrong angle for sp²."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "question": "Which one of the following statements is wrong about functional group of a compound?",
+    "options": [
+      "It refers to specific arrangement of atom(s) in a molecule",
+      "CH₃CH₂–O–CH₃ and CH₃–CH₂CH₂–OH have different properties",
+      "Alcohols and amines of any size are soluble in water because they form hydrogen bonds",
+      "2-butanol has higher boiling point than buthan-2-amine",
+      "Tertiary alcohols have lower tendency to form hydrogen bond than primary alcohols"
+    ],
+    "answer": 2,
+    "correctAnswer": "Alcohols and amines of any size are soluble in water because they form hydrogen bonds",
+    "explanation": "While small alcohols and amines are water-soluble, larger ones with big hydrophobic parts are not, despite H-bonding capability.",
+    "whyNotOtherOptions": {
+      "a": "It refers to specific arrangement...: Correct.",
+      "b": "CH₃CH₂–O–CH₃ and CH₃–CH₂CH₂–OH...: Correct (ether vs alcohol).",
+      "c": "2-butanol has higher boiling point...: Correct (H-bonding stronger in alcohols).",
+      "d": "Tertiary alcohols have lower tendency...: Correct (fewer H-bond donors)."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 6,
+    "question": "Hydrogen bonding can exist between one of the following pairs of molecules. Identify which?",
+    "options": [
+      "CH₃–C(=O)–O–H and CH₃–C(=O)–H",
+      "CH₃–CH₃ and CH₂=CH₂",
+      "CH₃–C(=O)–CH₃ and CH₃–C≡CH",
+      "CH₂=CH₂ and CH₃–CH₂–OH",
+      "None"
+    ],
+    "answer": 0,
+    "correctAnswer": "CH₃–C(=O)–O–H and CH₃–C(=O)–H",
+    "explanation": "Carboxylic acid (first molecule) has both H-bond donor (O–H) and acceptor (C=O); aldehyde (second) has H-bond acceptor (C=O). They can form intermolecular H-bonds.",
+    "whyNotOtherOptions": {
+      "a": "CH₃–CH₃ and CH₂=CH₂: No H-bond donors/acceptors.",
+      "b": "CH₃–C(=O)–CH₃ and CH₃–C≡CH: Weak or no H-bonding.",
+      "c": "CH₂=CH₂ and CH₃–CH₂–OH: Alkene no acceptor."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 7,
+    "question": "Which of the following molecule will have the highest melting point?",
+    "options": [
+      "Ethanol",
+      "Acetaldehyde",
+      "Acetic acid",
+      "Acetamide",
+      "Ethylamine"
+    ],
+    "answer": 3,
+    "correctAnswer": "Acetamide",
+    "explanation": "Amides have strong intermolecular hydrogen bonding (N–H∙∙∙O=C) and dipolar resonance, giving them higher melting points than acids, alcohols, amines, or aldehydes of similar size.",
+    "whyNotOtherOptions": {
+      "a": "Ethanol: Lower due to single H-bond.",
+      "b": "Acetaldehyde: No H-bond donor.",
+      "c": "Acetic acid: Strong H-bonding, but amide stronger.",
+      "d": "Ethylamine: Weaker H-bonding."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 8,
+    "question": "Ocimene (structure shown below) is compound found in the essential oils of many plants (e.g. Mint, Parsley, Mangos, Lavender, Hops, Orchids and cannabis) with combination of strong earthy, woody, floral, and citrus aromas and used as antiperspirant (in deodorants, shampoos & soaps), fabric softener, pest repellent, and hard-surface cleaners. What is its IUPAC name, including stereochemistry?",
+    "options": [
+      "(3Z)-3,7-dimethyl-1,3,6-octatriene",
+      "(5Z)-2,6-dimethyl-2,5,7-octatriene",
+      "(3E)-3,7-dimethyl-1,3,6-octatriene",
+      "(5E)-2,6-dimethyl-2,5,7-octatriene",
+      "None"
+    ],
+    "answer": 1,
+    "correctAnswer": "(5Z)-2,6-dimethyl-2,5,7-octatriene",
+    "explanation": "1️⃣ Identify the parent chain\n* Longest chain contains 8 carbons → octa\n* There are three double bonds → triene\n2️⃣ Number the chain (to give lowest numbers to double bonds)\nNumbering from the left gives double bonds at:\n* C2\n* C5\n* C7\n👉 octa-2,5,7-triene\n3️⃣ Identify substituents\n* Methyl group at C2\n* Methyl group at C6\n👉 2,6-dimethyl\n4️⃣ Determine stereochemistry\n* Only the C5=C6 double bond shows E/Z stereochemistry.\n* The higher-priority groups on each carbon are on the same side → Z\n✅ Correct IUPAC name:\nB. (5Z)-2,6-dimethyl-2,5,7-octatriene",
+    "whyNotOtherOptions": {
+      "a": "(3Z)-3,7-dimethyl-1,3,6-octatriene: Wrong numbering and stereochemistry.",
+      "b": "(3E)-3,7-dimethyl-1,3,6-octatriene: Wrong numbering.",
+      "c": "(5E)-2,6-dimethyl-2,5,7-octatriene: Wrong stereochemistry (E instead of Z).",
+      "d": "None: Incorrect."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Hard",
+    "image": "q8.jpg"
+  },
+  {
+    "id": 9,
+    "question": "The correct IUPAC name for the following compound is:",
+    "options": [
+      "(1R, 3R)-1-chloro-3-methylcyclohexane",
+      "(1R, 3S)-1-chloro-3-methylcyclohexane",
+      "(1S, 3S)-1-chloro-3-methylcyclohexane",
+      "(1S, 3R)-1-chloro-3-methylcyclohexane",
+      "None of the above"
+    ],
+    "answer": 3,
+    "correctAnswer": "(1S, 3R)-1-chloro-3-methylcyclohexane",
+    "explanation": "Number the ring so Cl gets C-1 and the methyl gets C-3 → base name: 1-chloro-3-methylcyclohexane.\nNow assign R/S.\nCarbon 1 (Cl-bearing carbon)\nSubstituents:\n1. Cl (highest Z)\n2. Ring carbon going toward substituted side (toward C3)\n3. Other ring carbon\n4. H (lowest)\nIn the drawing H is on a wedge (toward us) and Cl is dashed (away).\nTracing 1 → 2 → 3 gives clockwise, but since the lowest priority (H) is toward us, we invert → S.\nSo C1 = S.\nCarbon 3 (CH₃-bearing carbon)\nSubstituents:\n1. Ring carbon toward the Cl side\n2. Other ring carbon\n3. CH₃\n4. H (lowest)\nHere H is dashed (away), so we can read directly.\nTracing 1 → 2 → 3 gives clockwise → R.\nSo C3 = R.\n✅ Final name: (1S,3R)-1-chloro-3-methylcyclohexane\nAnswer: D",
+    "whyNotOtherOptions": {
+      "a": "(1R, 3R)-...: Wrong configuration.",
+      "b": "(1R, 3S)-...: Wrong.",
+      "c": "(1S, 3S)-...: Wrong."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Hard",
+    "image": "q9.jpg"
+  },
+  {
+    "id": 10,
+    "question": "Which one of the following systematic name is accepted by IUPAC?",
+    "options": [
+      "1,1,1,6-tetramethyl-2,4-heptanediol",
+      "2,6-dimethyl-4,6-heptanediol",
+      "1-Bromo-3,4-dimethylbenzene",
+      "1-methyl-1,3,5-trinitrobenzene",
+      "2-Hydroxy-3-Methyltoluene"
+    ],
+    "answer": 2,
+    "correctAnswer": "1-Bromo-3,4-dimethylbenzene",
+    "explanation": "This is correct substitutive naming for disubstituted benzene.",
+    "whyNotOtherOptions": {
+      "a": "1,1,1,6-tetramethyl-2,4-heptanediol: Improper numbering.",
+      "b": "2,6-dimethyl-4,6-heptanediol: Improper.",
+      "c": "1-methyl-1,3,5-trinitrobenzene: Improper priority.",
+      "d": "2-Hydroxy-3-Methyltoluene: Common name, not IUPAC."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 13,
+    "question": "What can be said with certainty if a compound has specific rotation [α] of -9.25° ?",
+    "options": [
+      "The compound has the (S) configuration.",
+      "The compound has the (R) configuration",
+      "The compound is optically active",
+      "The compound is not a meso or racemic mixture",
+      "The compound possesses only one stereogenic center."
+    ],
+    "answer": 2,
+    "correctAnswer": "The compound is optically active",
+    "explanation": "A nonzero specific rotation means it rotates plane-polarized light → optically active. Configuration (R/S) cannot be determined from sign alone without correlation.",
+    "whyNotOtherOptions": {
+      "a": "The compound has the (S) configuration.: Sign alone doesn't determine R/S.",
+      "b": "The compound has the (R) configuration: Same issue.",
+      "c": "The compound is not a meso or racemic mixture: Racemic would be zero rotation.",
+      "d": "The compound possesses only one stereogenic center.: Could have more."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following functional groups in IUPAC nomenclature is in correct increasing order priority?",
+    "options": [
+      "alkyl halide > alkyne > ether > alcohol > amine > nitrile > ester",
+      "alkyl halide > ether > amine > alkyne > alcohol > ester > nitrile",
+      "alkyl halide > alkyne > alcohol > ether > amine > ester > nitrile",
+      "alkyl halide > ether > alkyne > amine > alcohol > nitrile > ester",
+      "None"
+    ],
+    "answer": 4,
+    "correctAnswer": "None",
+    "explanation": "Correct priority (Cahn–Ingold–Prelog) for these: acid derivatives (ester, nitrile) > aldehyde/ketone (not listed) > alcohol > amine > alkyne > ether > alkyl halide. None of A–D match fully.",
+    "whyNotOtherOptions": {
+      "a": "Wrong order.",
+      "b": "Wrong order.",
+      "c": "Wrong order."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 16,
+    "question": "Which one of the following doesn't show a cis-trans isomerism?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "answer": 4,
+    "correctAnswer": "E",
+    "explanation": "To show cis–trans (geometrical) isomerism, each carbon of the C=C double bond must have two different substituents.\nLet’s check each option:\nA) CH₃–CH=CH–CH₃ (2-butene)\n* Each double-bond carbon has CH₃ and H → shows cis/trans ✔️\nB) CH₃–C(Cl)=C(Cl)–CH₃\n* Each double-bond carbon has Cl and CH₃ → shows cis/trans ✔️\nC) CH₃–CH₂–CH=CH–CH₂–CH₃ (3-hexene)\n* Each double-bond carbon has H and ethyl group → shows cis/trans ✔️\nD) Dibromocyclohexane\n* Rings can show cis/trans depending on substituent positions → ✔️\nE) CH₃–CH₂–CH=CBr₂\n* One double-bond carbon has two identical substituents (Br and Br)\n* Therefore, geometrical isomerism is not possible ❌\n✅ Correct answer: E",
+    "whyNotOtherOptions": {
+      "a": "A: Shows cis/trans.",
+      "b": "B: Shows cis/trans.",
+      "c": "C: Shows cis/trans.",
+      "d": "D: Shows cis/trans in ring."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Hard",
+    "image": "q16.jpg"
+  },
+  {
+    "id": 17,
+    "question": "Which one of the following structure represents symmetrical ether?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "answer": 3,
+    "correctAnswer": "D",
+    "explanation": "A symmetrical ether has the general form: R−O−R\n👉 Both groups attached to oxygen must be identical.\nCheck each option\nA) CH₃–CH₂–O–CH₂CH₂CH₃\n* Ethyl + Propyl\n  ❌ Different groups → Unsymmetrical\nB) Ring – O – CH₃\n* Cyclo group + Methyl\n  ❌ Different groups → Unsymmetrical\nC) CH₃–CH₂–O–CH=CH₂\n* Ethyl + Vinyl\n  ❌ Unsymmetrical\nD) CH₃–CH₂–O–CH₂–CH₃\n* Ethyl + Ethyl\n  ✅ Same groups → Symmetrical ether\nE) Two different substituted rings\n❌ Not identical → Unsymmetrical\n✅ Correct answer: D",
+    "whyNotOtherOptions": {
+      "a": "A: Different groups (ethyl + propyl).",
+      "b": "B: Different groups (ring + methyl).",
+      "c": "C: Different groups (ethyl + vinyl).",
+      "d": "E: Different rings."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium",
+    "image": "q17.jpg"
+  },
+  {
+    "id": 18,
+    "question": "Amine group is expected to be contained in one of the following trivial name. Identify which?",
+    "options": [
+      "Testosterone (steroid alcohol)",
+      "Cortisol (steroid alcohol)",
+      "Retinal (aldehyde)",
+      "Limonene (hydrocarbon)",
+      "Spermine"
+    ],
+    "answer": 4,
+    "correctAnswer": "Spermine",
+    "explanation": "Spermine is a polyamine.",
+    "whyNotOtherOptions": {
+      "a": "Testosterone: Steroid alcohol.",
+      "b": "Cortisol: Steroid alcohol.",
+      "c": "Retinal: Aldehyde.",
+      "d": "Limonene: Hydrocarbon."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following structure contains lactam?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "answer": 1,
+    "correctAnswer": "B",
+    "explanation": "A lactam is a cyclic amide → it must have:\n• a carbonyl (C=O)\n• directly attached to nitrogen (–NH or –N–)\n• inside a ring\nLooking at the options:\n* A → cyclic ester (lactone), no nitrogen\n* B → 5-membered ring containing –CONH– inside the ring ✅\n* C → diketone, no nitrogen\n* D → anhydride/ester\n* E → aldehyde/ketone derivative\nTherefore, the structure containing a lactam is:\nAnswer: B",
+    "whyNotOtherOptions": {
+      "a": "A: Cyclic ester (lactone), no nitrogen.",
+      "b": "C: Diketone, no nitrogen.",
+      "c": "D: Anhydride/ester.",
+      "d": "E: Aldehyde/ketone derivative."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium",
+    "image": "q19.jpg"
+  },
+  {
+    "id": 20,
+    "question": "Which of the following molecule is the most polar?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "answer": 4,
+    "correctAnswer": "E",
+    "explanation": "To find the most polar molecule, compare functional groups and their ability to create dipoles and hydrogen bonding:\nIdentify each:\n* A → Ether (R–O–R) → moderately polar, no H-bond donor\n* B → Alcohol (secondary, –OH) → polar, H-bonding\n* C → Amine (–NH₂) → polar, weaker H-bonding than alcohol\n* D → Ketone (C=O) → strong dipole but no H-bond donor\n* E → Alcohol (primary, –OH) → strong H-bonding + less bulky → strongest intermolecular polarity\nKey idea\nPolarity strength (general):\nAlcohols > amines > ketones > ethers\nAlcohols are most polar because:\n✔ strong O–H bond dipole\n✔ hydrogen bond donor + acceptor\nBetween B and E, primary alcohol (E) is slightly more polar than the more substituted secondary alcohol (B).\n✅ Final Answer:\nE",
+    "whyNotOtherOptions": {
+      "a": "A: Ether — moderately polar, no H-bond donor.",
+      "b": "B: Secondary alcohol — polar but more substituted.",
+      "c": "C: Amine — weaker H-bonding.",
+      "d": "D: Ketone — strong dipole but no H-bond donor."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium",
+    "image": "q20.jpg"
+  },
+  {
+    "id": 21,
+    "question": "Which one of the following statement is not true about Enantiomers?",
+    "options": [
+      "Enantiomers usually have the same activity when reacting with achiral compounds.",
+      "Enantiomers usually behave differently when they encounter chiral environment.",
+      "Enantiomers have opposite effects on polarized light",
+      "A racemic mixture is obtained when enantiomers are mixed in all ratios",
+      "In biological system enantiomers differently interact with cellular targets and may produce different effects"
+    ],
+    "answer": 3,
+    "correctAnswer": "A racemic mixture is obtained when enantiomers are mixed in all ratios",
+    "explanation": "A racemic mixture is a *1:1* mixture of enantiomers, not \"all ratios.\"",
+    "whyNotOtherOptions": {
+      "a": "Enantiomers usually have the same activity...: Correct for achiral reagents.",
+      "b": "Enantiomers usually behave differently...: Correct in chiral environments.",
+      "c": "Enantiomers have opposite effects...: Correct (opposite rotation).",
+      "d": "In biological system...: Correct (different effects)."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 22,
+    "question": "Given the following conformation of n-butane, which one of them is the most stable form?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "answer": 1,
+    "correctAnswer": "B",
+    "explanation": "For n-butane conformations, stability depends on the dihedral angle between the two CH₃ groups.\nKey rule\nStability order:\nAnti (180°) > Gauche (60°) > Eclipsed > Fully eclipsed (CH₃–CH₃ overlap)\nReason:\n* Anti → methyl groups far apart → minimum steric repulsion → most stable\n* Gauche → some steric strain\n* Eclipsed → torsional strain\n* CH₃–CH₃ eclipsed → highest energy\nLooking at the options\n* A → gauche\n* B → anti (CH₃ groups opposite, 180°) ✅\n* C → fully eclipsed (CH₃–CH₃ overlap)\n* D → eclipsed\n* E → incorrect\n✅ Final Answer:\nB (Anti conformation)",
+    "whyNotOtherOptions": {
+      "a": "A: Gauche — some steric strain.",
+      "b": "C: Fully eclipsed — high energy.",
+      "c": "D: Eclipsed — torsional strain.",
+      "d": "E: Incorrect."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium",
+    "image": "q22.jpg"
+  },
+  {
+    "id": 23,
+    "question": "One of the following molecules shown below is chiral. Identify which?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "answer": 1,
+    "correctAnswer": "B",
+    "explanation": "We’re looking for a molecule that has a stereogenic (asymmetric) carbon and no internal plane of symmetry.\nLet’s check each quickly:\nA) Cyclobutane with two OH groups on adjacent carbons (both wedges).\nThis has an internal mirror plane → meso → achiral.\nB) Central carbon bonded to H, OH, CO₂H, and CH₂OH.\nThat carbon has four different substituents and no symmetry → chiral center present.\nC) Bicyclic structure with two Cl atoms arranged symmetrically → internal symmetry → achiral.\nD) Newman projection shows symmetry in substituents → achiral.\nE) Alkene (like 2-butene type) → no stereogenic center → achiral.\n✅ Answer: B is the chiral molecule.",
+    "whyNotOtherOptions": {
+      "a": "A: Meso (internal plane of symmetry).",
+      "b": "C: Symmetrical bicyclic → achiral.",
+      "c": "D: Symmetry in projection → achiral.",
+      "d": "E: No stereocenter → achiral."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Hard",
+    "image": "q23.jpg"
+  },
+  {
+    "id": 24,
+    "question": "Which one of the following stereo-chemical descriptions is possible for any chiral centers?",
+    "options": [
+      "R/S",
+      "d/l",
+      "Cis/Trans",
+      "E/Z",
+      "D/L"
+    ],
+    "answer": 0,
+    "correctAnswer": "R/S",
+    "explanation": "R/S is the universal absolute configuration descriptor for chiral centers. d/l and D/L are older notations not for every chiral center; Cis/Trans and E/Z are for diastereoisomerism, not single chiral centers.",
+    "whyNotOtherOptions": {
+      "a": "d/l: Relative, not universal.",
+      "b": "Cis/Trans: For diastereomers.",
+      "c": "E/Z: For alkenes.",
+      "d": "D/L: Fischer projection, not universal."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 25,
+    "question": "Which of the following is the definition of a meso compound?",
+    "options": [
+      "A molecule with stereocenters and which is chiral",
+      "A molecule with stereocenters which is not chiral",
+      "A diastereomer with no stereocenter centers",
+      "A chiral compound with one stereocenter center",
+      "None"
+    ],
+    "answer": 1,
+    "correctAnswer": "A molecule with stereocenters which is not chiral",
+    "explanation": "Meso compounds have stereocenters but are achiral due to an internal plane of symmetry.",
+    "whyNotOtherOptions": {
+      "a": "A molecule with stereocenters and which is chiral: Opposite of meso.",
+      "b": "A diastereomer with no stereocenter centers: Wrong.",
+      "c": "A chiral compound with one stereocenter center: Not meso."
+    },
+    "relatedQuestions": [],
+    "category": "II.choose",
+    "difficulty": "Medium"
+  }
+]

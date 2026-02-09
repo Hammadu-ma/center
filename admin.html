@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Admin</title>
+    <style>
+        .course-item { margin: 10px; padding: 10px; border: 1px solid #ccc; }
+        .stats { font-size: 12px; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Course Management</h1>
+    <div id="coursesList"></div>
+    <script>
+        async function loadCourses() {
+            const response = await fetch('/courses/courses-registry.json');
+            const data = await response.json();
+            
+            const list = document.getElementById('coursesList');
+            data.courses.forEach(course => {
+                const div = document.createElement('div');
+                div.className = 'course-item';
+                div.innerHTML = `
+                    <h3>${course.title}</h3>
+                    <p>${course.description}</p>
+                    <div class="stats">
+                        Questions: ${course.questions} | 
+                        Type: ${course.type} | 
+                        Year: ${course.year}
+                    </div>
+                    <button onclick="editCourse('${course.id}')">Edit</button>
+                `;
+                list.appendChild(div);
+            });
+        }
+        loadCourses();
+    </script>
+</body>
+</html>
