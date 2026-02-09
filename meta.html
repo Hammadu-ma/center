@@ -728,117 +728,89 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
-// DOM Elements
+// ============ COURSE BROWSER ============
+// Include this in your HTML head:
+// <script src="link.js"></script>
+
 const setsGrid = document.getElementById('setsGrid');
 const searchInput = document.getElementById('search');
 const setTypeFilter = document.getElementById('setType');
 const yearFilter = document.getElementById('year');
 const difficultyFilter = document.getElementById('difficulty');
-const progressBar = document.getElementById('progressBar');
-const progressContainer = document.getElementById('progressContainer');
 
-// Progress Animation for initial load
-function startProgress() {
+// Keep your existing progress functions
+function startProgress() { 
     let width = 0;
     const interval = setInterval(() => {
         if (width >= 90) {
             clearInterval(interval);
         } else {
             width += 2;
-            progressBar.style.width = width + '%';
+            if (progressBar) progressBar.style.width = width + '%';
         }
     }, 20);
     return interval;
 }
 
 function completeProgress() {
-    progressBar.style.width = '100%';
-    setTimeout(() => {
-        progressContainer.classList.add('progress-fade-out');
-        setTimeout(() => {
-            progressContainer.style.display = 'none';
-        }, 400);
-    }, 300);
-}
-
-// Show progress for card click
-function showCardProgress(callback) {
-    progressContainer.style.display = 'block';
-    progressContainer.classList.remove('progress-fade-out');
-    progressBar.style.width = '0%';
-    setTimeout(() => {
+    if (progressBar) {
         progressBar.style.width = '100%';
-    }, 10);
-    setTimeout(() => {
-        completeProgress();
-        if (callback) callback();
-    }, 1000);
+        setTimeout(() => {
+            if (progressContainer) {
+                progressContainer.classList.add('progress-fade-out');
+                setTimeout(() => {
+                    progressContainer.style.display = 'none';
+                }, 400);
+            }
+        }, 300);
+    }
 }
 
 function createSkeletonCards(count) {
     setsGrid.innerHTML = '';
     for (let i = 0; i < count; i++) {
-        const skeletonCard = document.createElement('div');
-        skeletonCard.className = 'set-card';
-        skeletonCard.innerHTML = `
-            <div class="set-header">
-                <div>
-                    <div class="skeleton-title skeleton"></div>
-                    <div class="skeleton-type skeleton"></div>
+        setsGrid.innerHTML += `
+            <div class="set-card">
+                <div class="set-header">
+                    <div>
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-type"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="set-description">
-                <div class="skeleton-description-line skeleton"></div>
-                <div class="skeleton-description-line skeleton short"></div>
-            </div>
-            <div class="set-meta">
-                <div class="meta-item">
-                    <div class="skeleton-meta-value skeleton"></div>
-                    <div class="skeleton-meta-label skeleton"></div>
+                <div class="set-description">
+                    <div class="skeleton skeleton-description-line"></div>
+                    <div class="skeleton skeleton-description-line short"></div>
                 </div>
-                <div class="meta-item">
-                    <div class="skeleton-meta-value skeleton"></div>
-                    <div class="skeleton-meta-label skeleton"></div>
-                </div>
-                <div class="meta-item">
-                    <div class="skeleton-meta-value skeleton"></div>
-                    <div class="skeleton-meta-label skeleton"></div>
+                <div class="set-meta">
+                    <div class="meta-item">
+                        <div class="skeleton skeleton-meta-value"></div>
+                        <div class="skeleton skeleton-meta-label"></div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="skeleton skeleton-meta-value"></div>
+                        <div class="skeleton skeleton-meta-label"></div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="skeleton skeleton-meta-value"></div>
+                        <div class="skeleton skeleton-meta-label"></div>
+                    </div>
                 </div>
             </div>
         `;
-        setsGrid.appendChild(skeletonCard);
     }
 }
 
-function highlightText(text, queryWords) {
-    if (!queryWords || queryWords.length === 0) return text;
-    let result = text;
-    queryWords.forEach(word => {
-        if (word.length < 2) return;
-        const regex = new RegExp(`(${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-        result = result.replace(regex, '<span class="highlight">$1</span>');
-    });
-    return result;
-}
-
-function getTypeLabel(type) {
-    const labels = { 
-        exam: 'Exam', 
-        quiz: 'Quiz', 
-        practice: 'Practice',
-        worksheet: 'Sheet'
-    };
-    return labels[type] || type;
-}
-
-// Initialize page with link.js
+// Initialize page
 async function initPage() {
-    progressContainer.style.display = 'block';
+    if (progressContainer) {
+        progressContainer.style.display = 'block';
+    }
+    
     createSkeletonCards(6);
     const progressInterval = startProgress();
 
     try {
-        // Use linkManager from link.js to load courses
+        // Use the global linkManager
         const courses = await linkManager.getAllCourses();
         clearInterval(progressInterval);
         completeProgress();
@@ -847,44 +819,35 @@ async function initPage() {
         console.error('Failed to load courses:', error);
         clearInterval(progressInterval);
         completeProgress();
-        // Show empty state or fallback
-        setsGrid.innerHTML = `
-            <div class="no-results">
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Could not load courses. Please check your connection.</p>
-                <button onclick="initPage()" style="margin-top: 12px; padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 8px;">
-                    Try Again
-                </button>
-            </div>
-        `;
+        renderQuestionSets([], []);
     }
 
     // Setup event listeners
-    searchInput.addEventListener('input', filterQuestionSets);
-    setTypeFilter.addEventListener('change', filterQuestionSets);
-    yearFilter.addEventListener('change', filterQuestionSets);
-    difficultyFilter.addEventListener('change', filterQuestionSets);
+    if (searchInput) searchInput.addEventListener('input', filterQuestionSets);
+    if (setTypeFilter) setTypeFilter.addEventListener('change', filterQuestionSets);
+    if (yearFilter) yearFilter.addEventListener('change', filterQuestionSets);
+    if (difficultyFilter) difficultyFilter.addEventListener('change', filterQuestionSets);
 }
 
-// Filter courses using link.js
+// Filter courses
 async function filterQuestionSets() {
     const filters = {
-        search: searchInput.value,
-        type: setTypeFilter.value,
-        year: yearFilter.value,
-        difficulty: difficultyFilter.value
+        search: searchInput ? searchInput.value : '',
+        type: setTypeFilter ? setTypeFilter.value : 'all',
+        year: yearFilter ? yearFilter.value : 'all',
+        difficulty: difficultyFilter ? difficultyFilter.value : 'all'
     };
     
     const courses = await linkManager.filterCourses(filters);
-    const queryWords = filters.search ? filters.search.toLowerCase().trim().split(/\s+/).filter(w => w.length >= 2) : [];
+    const queryWords = filters.search ? filters.search.toLowerCase().split(' ') : [];
     renderQuestionSets(courses, queryWords);
 }
 
-// Render courses with enhanced UI
+// Render courses
 function renderQuestionSets(courses, queryWords) {
     setsGrid.innerHTML = '';
     
-    if (courses.length === 0) {
+    if (!courses || courses.length === 0) {
         setsGrid.innerHTML = `
             <div class="no-results">
                 <i class="fas fa-search"></i>
@@ -895,46 +858,55 @@ function renderQuestionSets(courses, queryWords) {
     }
     
     courses.forEach((course, index) => {
-        const setCard = document.createElement('a');
-        setCard.className = `set-card ${course.featured ? 'featured-set' : ''}`;
-        setCard.href = linkManager.getCourseUrl(course.id);
-        setCard.style.cssText = `
+        const card = document.createElement('a');
+        card.className = `set-card ${course.featured ? 'featured-set' : ''}`;
+        card.href = linkManager.getCourseUrl(course.id);
+        card.style.cssText = `
             border-left: 4px solid ${course.color || '#3b82f6'};
             opacity: 0;
             animation: fadeIn 0.3s ease-out forwards;
             animation-delay: ${index * 0.05}s;
+            text-decoration: none;
+            color: inherit;
         `;
         
-        setCard.innerHTML = `
+        // Highlight search terms
+        const highlightTitle = highlightText(course.title, queryWords);
+        const highlightDesc = highlightText(course.description, queryWords);
+        
+        card.innerHTML = `
             ${course.featured ? '<div class="featured-badge">Featured</div>' : ''}
             <div class="set-header">
                 <div>
                     <h3 class="set-title">
                         <i class="${course.icon || 'fas fa-book'}"></i>
-                        ${highlightText(course.title, queryWords)}
+                        ${highlightTitle}
                     </h3>
-                    <span class="set-type">${getTypeLabel(course.type)}</span>
+                    <span class="set-type" style="background: ${course.color}20; color: ${course.color}">
+                        ${course.type.toUpperCase()}
+                    </span>
                 </div>
             </div>
-            <p class="set-description">${highlightText(course.description, queryWords)}</p>
+            <p class="set-description">${highlightDesc}</p>
             <div class="set-meta">
                 <div class="meta-item">
-                    <span class="meta-value">${course.questions || 0}</span>
+                    <span class="meta-value" style="color: ${course.color}">${course.questions || 0}</span>
                     <span class="meta-label">Questions</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-value">${course.year || 'N/A'}</span>
+                    <span class="meta-value" style="color: ${course.color}">${course.year}</span>
                     <span class="meta-label">Year</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-value">${course.difficulty || 'Medium'}</span>
+                    <span class="meta-value" style="color: ${course.color}">${course.difficulty}</span>
                     <span class="meta-label">Level</span>
                 </div>
             </div>
-            ${course.tags && course.tags.length > 0 ? `
-                <div style="margin-top: 8px; display: flex; gap: 4px; flex-wrap: wrap;">
-                    ${course.tags.map(tag => `
-                        <span style="font-size: 10px; padding: 2px 6px; background: ${course.color}20; color: ${course.color}; border-radius: 10px;">
+            ${course.tags ? `
+                <div style="margin-top: 10px; display: flex; gap: 5px; flex-wrap: wrap;">
+                    ${course.tags.slice(0, 3).map(tag => `
+                        <span style="font-size: 10px; padding: 3px 8px; background: ${course.color}15; 
+                               color: ${course.color}; border-radius: 12px; border: 1px solid ${course.color}30;">
                             ${tag}
                         </span>
                     `).join('')}
@@ -942,72 +914,30 @@ function renderQuestionSets(courses, queryWords) {
             ` : ''}
         `;
         
-        // Add click handler with progress animation
-        setCard.addEventListener('click', function(e) {
-            e.preventDefault();
-            const url = this.href;
-            showCardProgress(() => {
-                window.location.href = url;
-            });
-        });
-        
-        setsGrid.appendChild(setCard);
+        setsGrid.appendChild(card);
     });
 }
 
-// Add refresh button to header
-function addRefreshButton() {
-    const navActions = document.querySelector('.nav-actions');
-    if (navActions) {
-        const refreshBtn = document.createElement('button');
-        refreshBtn.className = 'action-btn';
-        refreshBtn.id = 'refreshCourses';
-        refreshBtn.title = 'Refresh Courses';
-        refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i>';
-        
-        refreshBtn.addEventListener('click', async () => {
-            refreshBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
-            refreshBtn.disabled = true;
-            
-            try {
-                await linkManager.refresh();
-                await filterQuestionSets();
-                // Simple notification
-                const notification = document.createElement('div');
-                notification.style.cssText = `
-                    position: fixed;
-                    top: 70px;
-                    right: 20px;
-                    background: var(--primary);
-                    color: white;
-                    padding: 12px 16px;
-                    border-radius: 8px;
-                    z-index: 1000;
-                    animation: fadeIn 0.3s ease-out;
-                `;
-                notification.textContent = 'Courses refreshed!';
-                document.body.appendChild(notification);
-                setTimeout(() => notification.remove(), 2000);
-            } catch (error) {
-                console.error('Refresh failed:', error);
-            } finally {
-                refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i>';
-                refreshBtn.disabled = false;
-            }
-        });
-        
-        navActions.appendChild(refreshBtn);
-    }
+// Highlight search terms (keep your original)
+function highlightText(text, queryWords) {
+    if (!queryWords || queryWords.length === 0 || !text) return text;
+    
+    let result = text;
+    queryWords.forEach(word => {
+        if (word.length >= 2) {
+            const regex = new RegExp(`(${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+            result = result.replace(regex, '<span class="highlight">$1</span>');
+        }
+    });
+    return result;
 }
 
-// Initialize everything when DOM is ready
-document.addEventListener('DOMContentLoaded', function() {
+// Start when page loads
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPage);
+} else {
     initPage();
-    addRefreshButton();
-});
-
-// Service Worker registration (keep your existing service worker code below)
-// ... your service worker code remains the same ...
+}
 </script>
         <script>
     // Production-ready service worker registration with update handling
