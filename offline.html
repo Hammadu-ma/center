@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Offline - Medical Quiz App</title>
+    <link rel="manifest" href="/manifest.json">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+            overflow: hidden;
+            touch-action: manipulation;
+        }
+
+        .offline-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.1),
+                0 0 0 1px rgba(255, 255, 255, 0.2);
+            max-width: 500px;
+            width: 100%;
+            max-height: 95vh;
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .app-logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .icon-container {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 25px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .icon-container::before {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: ripple 2s infinite;
+        }
+
+        @keyframes ripple {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.3);
+                opacity: 0;
+            }
+        }
+
+        .wifi-icon {
+            width: 50px;
+            height: 50px;
+            border: 4px solid white;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .wifi-icon::before,
+        .wifi-icon::after {
+            content: '';
+            position: absolute;
+            border: 4px solid transparent;
+            border-top-color: white;
+            border-radius: 50%;
+        }
+
+        .wifi-icon::before {
+            width: 70px;
+            height: 70px;
+            top: -14px;
+            left: -14px;
+        }
+
+        .wifi-icon::after {
+            width: 30px;
+            height: 30px;
+            top: 4px;
+            left: 4px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .feature {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-3px);
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #2c3e50;
+            font-size: 0.9rem;
+        }
+
+        .feature-desc {
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            line-height: 1.3;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .btn {
+            padding: 14px 20px;
+            border: none;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 140px;
+            justify-content: center;
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .btn-primary:active {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(52, 152, 219, 0.1);
+            color: #3498db;
+            border: 2px solid #3498db;
+        }
+
+        .btn-secondary:active {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .connection-status {
+            margin-top: 20px;
+            padding: 12px;
+            background: rgba(231, 76, 60, 0.1);
+            border: 1px solid rgba(231, 76, 60, 0.2);
+            border-radius: 12px;
+            color: #c0392b;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .connection-status.connected {
+            background: rgba(46, 204, 113, 0.1);
+            border-color: rgba(46, 204, 113, 0.2);
+            color: #27ae60;
+        }
+
+        .loading-bar {
+            width: 100%;
+            height: 4px;
+            background: rgba(52, 152, 219, 0.2);
+            border-radius: 2px;
+            margin: 15px 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .loading-bar::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            border-radius: 2px;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(200%); }
+        }
+
+        /* Mobile-specific optimizations */
+        @media (max-width: 768px) {
+            .offline-container {
+                padding: 30px 20px;
+                max-height: 90vh;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .icon-container {
+                width: 90px;
+                height: 90px;
+            }
+            
+            .wifi-icon {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .wifi-icon::before {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .offline-container {
+                padding: 25px 15px;
+                border-radius: 20px;
+            }
+            
+            h1 {
+                font-size: 1.4rem;
+            }
+            
+            .subtitle {
+                font-size: 0.9rem;
+            }
+            
+            .feature {
+                padding: 12px;
+            }
+            
+            .btn {
+                padding: 12px 16px;
+                font-size: 0.9rem;
+            }
+            
+            .icon-container {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 20px;
+            }
+            
+            .wifi-icon {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .wifi-icon::before {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        /* Height adjustments for very small screens */
+        @media (max-height: 700px) {
+            .offline-container {
+                padding: 20px 15px;
+                max-height: 95vh;
+            }
+            
+            .icon-container {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 15px;
+            }
+            
+            .wifi-icon {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .wifi-icon::before {
+                width: 50px;
+                height: 50px;
+            }
+            
+            h1 {
+                font-size: 1.3rem;
+                margin-bottom: 8px;
+            }
+            
+            .subtitle {
+                font-size: 0.85rem;
+                margin-bottom: 8px;
+            }
+            
+            .features {
+                margin: 15px 0;
+                gap: 10px;
+            }
+            
+            .feature {
+                padding: 10px;
+            }
+            
+            .action-buttons {
+                margin-top: 15px;
+            }
+        }
+
+        /* Prevent text selection on buttons */
+        .btn {
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="app-logo">ALIFO APP</div>
+        
+        <div class="icon-container">
+            <div class="wifi-icon"></div>
+        </div>
+
+        <h1>You're Offline</h1>
+        
+        <p class="subtitle">Don't worry! Your Alifo quiz content is still available offline.</p>
+        
+        <div class="loading-bar"></div>
+
+
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="retryConnection()">
+                <span>🔄</span>
+                Retry Connection
+            </button>
+            <button class="btn btn-secondary" onclick="goToDashboard()">
+                <span>🏠</span>
+                Go to Dashboard
+            </button>
+        </div>
+
+        <div id="connectionStatus" class="connection-status">
+            🔴 No internet connection detected
+        </div>
+    </div>
+
+    <script>
+        // Connection status monitoring
+        function updateConnectionStatus() {
+            const statusEl = document.getElementById('connectionStatus');
+            if (navigator.onLine) {
+                statusEl.innerHTML = '🟢 Connection restored! Redirecting...';
+                statusEl.className = 'connection-status connected';
+                
+                // Redirect to dashboard after 2 seconds
+                setTimeout(() => {
+                    window.location.href = '/dashboard.html';
+                }, 2000);
+            } else {
+                statusEl.innerHTML = '🔴 No internet connection detected';
+                statusEl.className = 'connection-status';
+            }
+        }
+
+        // Button functions
+        function retryConnection() {
+            const statusEl = document.getElementById('connectionStatus');
+            statusEl.innerHTML = '🔄 Checking connection...';
+            statusEl.className = 'connection-status';
+            
+            setTimeout(() => {
+                if (navigator.onLine) {
+                    updateConnectionStatus();
+                } else {
+                    statusEl.innerHTML = '🔴 Still offline. Please check your connection.';
+                }
+            }, 1500);
+        }
+
+        function goToDashboard() {
+            // Try to navigate to dashboard (might work if cached)
+            window.location.href = '/dashboard.html';
+        }
+
+        // Event listeners for connection changes
+        window.addEventListener('online', updateConnectionStatus);
+        window.addEventListener('offline', updateConnectionStatus);
+
+        // Initial status check
+        updateConnectionStatus();
+
+        // Auto-retry every 10 seconds
+        setInterval(() => {
+            if (navigator.onLine && window.location.pathname === '/offline.html') {
+                updateConnectionStatus();
+            }
+        }, 10000);
+
+        // Add touch-friendly interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                button.addEventListener('touchstart', function() {
+                    this.style.transform = 'scale(0.98)';
+                });
+                button.addEventListener('touchend', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+            
+            // Prevent zoom on double-tap
+            let lastTouchEnd = 0;
+            document.addEventListener('touchend', function(event) {
+                const now = (new Date()).getTime();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+        });
+    </script>
+</body>
+</html>
+

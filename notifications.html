@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Notifications • ALIF</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@4.0.0/marked.min.js"></script>
+  <style>
+        :root {
+      --primary: #1877f2;
+      --bg: #f0f2f5;
+      --surface: #ffffff;
+      --text: #1c1e21;
+      --text-secondary: #606770;
+      --border: #dddfe2;
+      --shadow: 0 2px 10px rgba(0,0,0,0.08);
+      --radius: 16px;
+      --like-blue: #1877f2;
+    }
+    .dark-mode {
+      --bg: #18191a;
+      --surface: #242526;
+      --text: #e4e6eb;
+      --text-secondary: #b0b3b8;
+      --border: #3a3b3c;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); height: 100vh; overflow: hidden; }
+    .header { position: fixed; top: 0; left: 0; right: 0; height: 60px; background: var(--surface); border-bottom: 1px solid var(--border); z-index: 1000; display: flex; align-items: center; padding: 0 16px; box-shadow: var(--shadow); }
+    .logo { font-size: 28px; font-weight: 900; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .header-right { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+    .icon-btn { width: 40px; height: 40px; border-radius: 50%; background: var(--bg); display: flex; align-items: center; justify-content: center; cursor: pointer; position: relative; }
+    .icon-btn:hover { background: var(--border); }
+    .badge { position: absolute; top: 6px; right: 6px; background: #e41e3f; color: white; font-size: 11px; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+
+    .container { margin-top: 70px; height: calc(100vh - 70px); display: flex; }
+    .feed { flex: 1; max-width: 680px; margin: 0 auto; padding: 20px 10px; overflow-y: auto; }
+
+    .notif-card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .notif-card.unread { background: #eff7ff; border-left: 4px solid var(--primary); }
+    .dark-mode .notif-card.unread { background: #172a45; }
+
+    .notif-header { display: flex; gap: 12px; margin-bottom: 12px; }
+    .notif-icon { width: 44px; height: 44px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+    .notif-title { font-weight: 600; font-size: 15px; }
+    .notif-time { font-size: 13px; color: var(--text-secondary); }
+    .notif-content { margin: 12px 0; line-height: 1.6; font-size: 15px; }
+    .notif-content img { max-width: 100%; border-radius: 12px; margin: 12px 0; }
+
+    .reaction-bar {
+      display: flex; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--border); margin-top: 12px;
+    }
+    .react-btn {
+      flex: 1; padding: 10px; text-align: center; border-radius: 8px; cursor: pointer; font-weight: 600;
+      color: var(--text-secondary); display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    .react-btn:hover { background: var(--bg); }
+    .react-btn.liked { color: var(--like-blue); }
+
+    /* === INTERACTIVE COMMENTS === */
+    .comments-section { margin-top: 16px; }
+    .comment {
+      display: flex; gap: 10px; margin-bottom: 12px; align-items: flex-start;
+    }
+    .comment-avatar {
+      width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white; font-weight: bold; font-size: 14px; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .comment-body {
+      background: var(--bg); padding: 10px 14px; border-radius: 18px; flex: 1; position: relative;
+    }
+    .comment-name { font-weight: 600; font-size: 13px; }
+    .comment-text { font-size: 14px; margin-top: 3px; word-break: break-word; }
+    .comment-actions {
+      margin-top: 6px; font-size: 12px; color: var(--text-secondary); display: flex; gap: 12px; opacity: 0; transition: 0.2s;
+    }
+    .comment:hover .comment-actions { opacity: 1; }
+    .comment-action { cursor: pointer; font-weight: 600; }
+    .comment-action:hover { text-decoration: underline; }
+    .comment-likes { color: var(--like-blue); font-weight: 600; }
+    .comment-time { font-size: 11px; color: var(--text-secondary); margin-top: 4px; }
+
+    .reply { margin-left: 46px; margin-top: 8px; }
+    .reply-input { display: none; margin-top: 8px; margin-left: 46px; }
+    .reply-input.show { display: flex; }
+
+    .comment-input {
+      display: flex; align-items: center; gap: 10px; margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border);
+    }
+    .comment-input input {
+      flex: 1; padding: 10px 16px; border: none; background: var(--bg); border-radius: 20px; outline: none; font-size: 14px;
+    }
+    .send-btn {
+      background: var(--primary); color: white; border: none; width: 36px; height: 36px; border-radius: 50%;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+    }
+
+    .empty { text-align: center; padding: 100px 20px; color: var(--text-secondary); }
+    .empty i { font-size: 70px; margin-bottom: 20px; opacity: 0.4; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); height:100vh; overflow:hidden; }
+    .header { position:fixed; top:0; left:0; right:0; height:60px; background:var(--surface); border-bottom:1px solid var(--...
+    /* Full styles same as before... */
+    .container { margin-top:70px; height:calc(100vh-70px); display:flex; }
+    .feed { flex:1; max-width:700px; margin:0 auto; padding:20px 12px; overflow-y:auto; }
+
+    .notif-card {
+      background:var(--surface); border-radius:var(--radius); padding:16px;
+      margin-bottom:16px; box-shadow:var(--shadow); border:1px solid var(--border);
+    }
+    .notif-card.unread { background:#eff7ff; border-left:4px solid var(--primary); }
+    .dark-mode .notif-card.unread { background:#172a45; }
+
+    .notif-header { display:flex; gap:12px; margin-bottom:12px; }
+    .notif-icon { width:44px; height:44px; border-radius:50%; background:var(--primary); color:white;
+      display:flex; align-items:center; justify-content:center; font-size:18px; }
+    .notif-title { font-weight:600; font-size:15px; }
+    .notif-time { font-size:13px; color:var(--text-secondary); }
+    .notif-content { margin:12px 0; line-height:1.6; font-size:15px; }
+
+    .reaction-bar {
+      display:flex; justify-content:space-between; padding-top:12px; border-top:1px solid var(--border); margin-top:12px;
+    }
+    .react-btn {
+      flex:1; padding:10px; text-align:center; border-radius:8px; cursor:pointer; font-weight:600;
+      color:var(--text-secondary); display:flex; align-items:center; justify-content:center; gap:6px;
+    }
+    .react-btn:hover { background:var(--bg); }
+    .react-btn.liked { color:var(--primary); }
+
+    /* === DEEPLY NESTED REPLIES === */
+    .comment, .reply {
+      display:flex; gap:10px; margin-bottom:10px; align-items:flex-start;
+    }
+    .comment-avatar {
+      width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg,#667eea,#764ba2);
+      color:white; font-weight:bold; font-size:14px; display:flex; align-items:center; justify-content:center;
+      flex-shrink:0;
+    }
+    .comment-body {
+      background:var(--bg); padding:10px 14px; border-radius:18px; flex:1; min-width:0;
+    }
+    .comment-name { font-weight:600; font-size:13px; }
+    .comment-text { font-size:14px; margin-top:3px; word-break:break-word; }
+    .comment-actions {
+      margin-top:6px; font-size:12px; color:var(--text-secondary); display:flex; gap:12px;
+      opacity:0; transition:0.2s;
+    }
+    .comment:hover > .comment-body > .comment-actions { opacity:1; }
+    .comment-action { cursor:pointer; font-weight:600; }
+    .comment-action:hover { text-decoration:underline; }
+    .comment-likes { color:var(--primary); }
+
+    .replies-container {
+      margin-left:46px; margin-top:8px; border-left:2px solid var(--border); padding-left:12px;
+    }
+    .reply-level-1 { margin-left:46px; }
+    .reply-level-2 { margin-left:92px; }
+    .reply-level-3 { margin-left:138px; }
+    .reply-level-4 { margin-left:184px; }
+    .reply-level-5 { margin-left:230px; }
+
+    .reply-input {
+      display:none; margin-top:8px; padding-left:12px;
+    }
+    .reply-input.show { display:flex; }
+    .reply-input input {
+      flex:1; padding:10px 14px; border:none; background:var(--bg); border-radius:20px; outline:none; font-size:14px;
+    }
+    .send-btn {
+      background:var(--primary); color:white; border:none; width:36px; height:36px; border-radius:50%;
+      cursor:pointer; display:flex; align-items:center; justify-content:center; margin-left:8px;
+    }
+
+    .comment-input {
+      display:flex; align-items:center; gap:10px; margin-top:16px; padding-top:12px; border-top:1px solid var(--border);
+    }
+    .comment-input input {
+      flex:1; padding:10px 16px; border:none; background:var(--bg); border-radius:20px; outline:none;
+    }
+
+    .empty { text-align:center; padding:100px 20px; color:var(--text-secondary); }
+    .empty i { font-size:70px; margin-bottom:20px; opacity:0.4; }
+        #update-notification {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #4CAF50;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        z-index: 10000;
+        display: none;
+        max-width: 350px;
+        animation: slideIn 0.3s ease-out;
+    }
+    
+    #update-notification button {
+        background: white;
+        color: #4CAF50;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    #update-notification button:hover {
+        background: #f0f0f0;
+    }
+    
+    @keyframes slideIn {
+        from { transform: translateY(100px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    </style>
+</head>
+<body>
+<script>
+// Load theme preference immediately when page loads
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'light') {
+        document.body.classList.remove('dark-mode');
+        // Update theme toggle icon
+        const themeIcon = document.querySelector('#themeToggle i');
+        if (themeIcon) themeIcon.className = 'fas fa-moon';
+    } else if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.body.classList.add('dark-mode');
+        // Update theme toggle icon
+        const themeIcon = document.querySelector('#themeToggle i');
+        if (themeIcon) themeIcon.className = 'fas fa-sun';
+    }
+})();
+</script>
+
+  <header class="header">
+    <a href="dashboard.html" class="logo"><i class="fas fa-stethoscope"></i> ALIF</a>
+    <div class="header-right">
+      <div class="icon-btn" id="themeToggle"><i class="fas fa-moon"></i></div>
+      <div class="icon-btn" onclick="location.href='dashboard.html'"><i class="fas fa-home"></i></div>
+      <div class="icon-btn" style="position:relative;"><i class="fas fa-bell"></i><div class="badge" id="notifBadge">0</div></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="feed" id="notificationsFeed">
+      <div class="empty">
+        <i class="fas fa-bell-slash"></i>
+        <h3>No notifications yet</h3>
+        <p>You're all caught up!</p>
+      </div>
+    </div>
+  </div>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+  // Check if running inside Telegram
+  const tg = window.Telegram?.WebApp;
+
+  // --- 1️⃣ Handle Telegram Mini App Back Button ---
+  if (tg) {
+    tg.ready(); // Initialize Telegram SDK
+    tg.BackButton.show();
+
+    tg.BackButton.onClick(() => {
+      console.log("Telegram back button pressed");
+      handleBackAction();
+    });
+  }
+
+  // --- 2️⃣ Handle Browser/Phone Back Button ---
+  window.addEventListener('popstate', () => {
+    console.log("Browser back button pressed");
+    handleBackAction();
+  });
+
+  // --- 3️⃣ Function to handle back action globally ---
+  function handleBackAction() {
+    // Example actions (customize as you wish):
+    // Go back if possible, otherwise go to home page
+    if (document.referrer && window.history.length > 1) {
+      window.history.back();
+    } else {
+      window.location.href = '/'; // or your home page route
+    }
+  }
+
+  // --- 4️⃣ Optional: Prevent unwanted exits ---
+  // This ensures pressing back doesn’t immediately close the app
+  history.pushState(null, '', location.href);
+</script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyC4DSMVg4c98kQf5sSF8ueD631QgO4SXn0",
+    authDomain: "medical-quiz-40228.firebaseapp.com",
+    projectId: "medical-quiz-40228",
+    storageBucket: "medical-quiz-40228.firebasestorage.app",
+    messagingSenderId: "483043078873",
+    appId: "1:483043078873:web:4029dd83e53557f08b04c8"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  const currentUser = JSON.parse(localStorage.getItem('currentUser') || '{}');
+  if (!currentUser.id) location.href = 'register.html';
+
+  const feed = document.getElementById('notificationsFeed');
+  const notifBadge = document.getElementById('notifBadge');
+
+    // Theme with localStorage sync
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    if (document.body.classList.contains('dark-mode')) {
+      document.body.classList.remove('dark-mode');
+      document.querySelector('#themeToggle i').className = 'fas fa-moon';
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.body.classList.add('dark-mode');
+      document.querySelector('#themeToggle i').className = 'fas fa-sun';
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+
+  // Render Notification
+  function renderNotification(notif) {
+    const isUnread = !notif.readBy?.includes(currentUser.id);
+    const card = document.createElement('div');
+    card.className = `notif-card ${isUnread ? 'unread' : ''}`;
+    card.dataset.id = notif.id;
+
+    card.innerHTML = `
+      <div class="notif-header">
+        <div class="notif-icon"><i class="fas ${getIcon(notif.type)}"></i></div>
+        <div>
+          <div class="notif-title">${notif.type.toUpperCase()} • ${timeSince(notif.timestamp)}</div>
+          <div class="notif-content">${marked.parse(notif.message || '')}</div>
+        </div>
+      </div>
+
+      <div class="reaction-bar">
+        <div class="react-btn ${notif.likedBy?.includes(currentUser.id) ? 'liked' : ''}" data-action="like">
+          <i class="${notif.likedBy?.includes(currentUser.id) ? 'fas' : 'far'} fa-thumbs-up"></i> Like <span>${notif.likes || 0}</span>
+        </div>
+        <div class="react-btn" data-action="comment"><i class="far fa-comment"></i> Comment</div>
+      </div>
+
+      <div class="comments-section">
+        <div class="comments-list"></div>
+        <div class="comment-input">
+          <div class="comment-avatar">${currentUser.name?.[0] || 'U'}</div>
+          <input type="text" placeholder="Write a comment... (Enter to send)">
+          <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    `;
+
+    feed.insertBefore(card, feed.firstChild);
+
+    // Mark as read
+    if (isUnread) card.addEventListener('click', e => {
+      if (!e.target.closest('[data-action], .comment-action, .send-btn, input')) {
+        db.collection('broadcasts').doc(notif.id).update({
+          readBy: firebase.firestore.FieldValue.arrayUnion(currentUser.id)
+        });
+        card.classList.remove('unread');
+        updateBadge();
+      }
+    });
+
+    // Like
+    card.querySelector('[data-action="like"]').addEventListener('click', async () => {
+      const liked = notif.likedBy?.includes(currentUser.id);
+      const ref = db.collection('broadcasts').doc(notif.id);
+      if (liked) {
+        await ref.update({ likedBy: firebase.firestore.FieldValue.arrayRemove(currentUser.id), likes: firebase.firestore.FieldValue.increment(-1) });
+      } else {
+        await ref.update({ likedBy: firebase.firestore.FieldValue.arrayUnion(currentUser.id), likes: firebase.firestore.FieldValue.increment(1) });
+      }
+    });
+
+    // Open Comments
+    card.querySelector('[data-action="comment"]').addEventListener('click', () => {
+      const section = card.querySelector('.comments-section');
+      section.style.display = section.style.display === 'block' ? 'none' : 'block';
+      if (!section.dataset.loaded) loadComments(card, notif.id);
+    });
+
+    // Send Main Comment
+    const input = card.querySelector('.comment-input input');
+    const sendBtn = card.querySelector('.comment-input .send-btn');
+    const sendComment = async () => {
+      const text = input.value.trim();
+      if (!text) return;
+      await db.collection('broadcasts').doc(notif.id).collection('comments').add({
+        userId: currentUser.id,
+        userName: currentUser.name || 'User',
+        text, timestamp: Date.now(),
+        likes: 0, likedBy: [], replies: []
+      });
+      input.value = '';
+      loadComments(card, notif.id);
+    };
+    sendBtn.onclick = sendComment;
+    input.onkeypress = e => e.key === 'Enter' && sendComment();
+  }
+
+  // Load Comments & Deeply Nested Replies
+  async function loadComments(card, broadcastId, parentPath = [], level = 0) {
+    const collectionPath = parentPath.length === 0
+      ? db.collection('broadcasts').doc(broadcastId).collection('comments')
+      : parentPath.reduce((col, id) => col.doc(id).collection('replies'), db.collection('broadcasts').doc(broadcastId).collection('comments'));
+
+    const snap = await collectionPath.orderBy('timestamp').get();
+    const container = parentPath.length === 0
+      ? card.querySelector('.comments-list')
+      : document.querySelector(`[data-path="${parentPath.join('-')}"] .replies-container`) || card.querySelector('.comments-list');
+
+    if (parentPath.length === 0) container.innerHTML = '';
+
+    snap.forEach(doc => {
+      const c = doc.data(); c.id = doc.id;
+      const pathKey = [...parentPath, c.id].join('-');
+
+      const commentEl = document.createElement('div');
+      commentEl.className = `comment reply-level-${Math.min(level, 5)}`;
+      commentEl.dataset.path = pathKey;
+
+      commentEl.innerHTML = `
+        <div class="comment-avatar">${c.userName[0]}</div>
+        <div class="comment-body">
+          <div class="comment-name">${c.userName}</div>
+          <div class="comment-text">${c.text}</div>
+          <div class="comment-actions">
+            <span class="comment-action like-comment ${c.likedBy?.includes(currentUser.id) ? 'liked' : ''}">
+              Like · ${c.likes || 0}
+            </span>
+            <span class="comment-action reply-comment">Reply</span>
+            ${c.userId === currentUser.id ? '<span class="comment-action delete-comment">Delete</span>' : ''}
+          </div>
+          <div class="comment-time">${timeSince(c.timestamp)}</div>
+          <div class="replies-container"></div>
+        </div>
+      `;
+
+      // Like
+      commentEl.querySelector('.like-comment').onclick = async () => {
+        const ref = parentPath.length === 0
+          ? db.collection('broadcasts').doc(broadcastId).collection('comments').doc(c.id)
+          : parentPath.reduce((col, id) => col.doc(id).collection('replies'), db.collection('broadcasts').doc(broadcastId).collection('comments')).doc(c.id);
+        const liked = c.likedBy?.includes(currentUser.id);
+        if (liked) {
+          await ref.update({ likedBy: firebase.firestore.FieldValue.arrayRemove(currentUser.id), likes: firebase.firestore.FieldValue.increment(-1) });
+        } else {
+          await ref.update({ likedBy: firebase.firestore.FieldValue.arrayUnion(currentUser.id), likes: firebase.firestore.FieldValue.increment(1) });
+        }
+        loadComments(card, broadcastId);
+      };
+
+      // Reply
+      commentEl.querySelector('.reply-comment').onclick = () => {
+        let input = commentEl.querySelector('.reply-input');
+        if (!input) {
+          input = document.createElement('div');
+          input.className = 'reply-input show';
+          input.innerHTML = `
+            <div class="comment-avatar">${currentUser.name[0]}</div>
+            <input type="text" placeholder="Write a reply...">
+            <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+          `;
+          commentEl.querySelector('.comment-body').appendChild(input);
+          input.querySelector('input').focus();
+          input.querySelector('.send-btn').onclick = async () => {
+            const text = input.querySelector('input').value.trim();
+            if (!text) return;
+            const newPath = [...parentPath, c.id];
+            const col = newPath.reduce((col, id) => col.doc(id).collection('replies'), db.collection('broadcasts').doc(broadcastId).collection('comments'));
+            await col.add({
+              userId: currentUser.id,
+              userName: currentUser.name,
+              text,
+              timestamp: Date.now(),
+              likes: 0,
+              likedBy: []
+            });
+            input.querySelector('input').value = '';
+            loadComments(card, broadcastId);
+          };
+        } else {
+          input.classList.toggle('show');
+        }
+      };
+
+      // Delete
+      commentEl.querySelector('.delete-comment')?.addEventListener('click', async () => {
+        if (confirm('Delete this comment?')) {
+          const ref = parentPath.length === 0
+            ? db.collection('broadcasts').doc(broadcastId).collection('comments').doc(c.id)
+            : parentPath.reduce((col, id) => col.doc(id).collection('replies'), db.collection('broadcasts').doc(broadcastId).collection('comments')).doc(c.id);
+          await ref.delete();
+          loadComments(card, broadcastId);
+        }
+      });
+
+      container.appendChild(commentEl);
+      loadComments(card, broadcastId, [...parentPath, c.id], level + 1);
+    });
+
+    if (parentPath.length === 0) card.querySelector('.comments-section').dataset.loaded = 'true';
+  }
+
+  function getIcon(t) { const i={info:'fa-info-circle',success:'fa-check-circle',warning:'fa-exclamation-triangle',error:'fa-times-circle'}; return i[t]||'fa-bell'; }
+  function timeSince(ts) {
+    const s = Math.floor((Date.now() - ts)/1000);
+    if (s<60) return 'just now';
+    if (s<3600) return Math.floor(s/60)+'m';
+    if (s<86400) return Math.floor(s/3600)+'h';
+    return Math.floor(s/86400)+'d';
+  }
+  function updateBadge() {
+    const c = document.querySelectorAll('.notif-card.unread').length;
+    notifBadge.textContent = c;
+    notifBadge.style.display = c>0 ? 'flex' : 'none';
+  }
+
+  // Real-time
+  db.collection('broadcasts').orderBy('timestamp','desc').onSnapshot(snap => {
+    feed.innerHTML = '<div class="empty"><i class="fas fa-bell-slash"></i><h3>No notifications yet</h3><p>You’re all caught up!</p></div>';
+    let has = false;
+    snap.forEach(doc => {
+      const n = {id:doc.id, ...doc.data()};
+      if (n.target==='all' || (n.target==='specific_user' && n.targetUserId===currentUser.id) || (n.target==='specific_phone' && n.targetPhone===currentUser.phone)) {
+        renderNotification(n); has=true;
+      }
+    });
+    if (!has) feed.innerHTML = '<div class="empty"><i class="fas fa-bell-slash"></i><h3>No notifications yet</h3><p>You’re all caught up!</p></div>';
+    updateBadge();
+  });
+</script>
+    <script>
+    // Production-ready service worker registration with update handling
+    if ('serviceWorker' in navigator) {
+        const APP_VERSION = '1.8.6'; // Must match SW version
+        let isRefreshing = false;
+        
+        // Check if page is loaded offline
+        if (!navigator.onLine) {
+            console.log('📴 App loaded offline');
+            document.documentElement.classList.add('offline');
+        }
+        
+        // Listen for online/offline status
+        window.addEventListener('online', () => {
+            console.log('🌐 Back online');
+            document.documentElement.classList.remove('offline');
+            // Check for updates when coming back online
+            if (navigator.serviceWorker.controller) {
+                navigator.serviceWorker.controller.postMessage({
+                    type: 'CHECK_FOR_UPDATES'
+                });
+            }
+        });
+        
+        window.addEventListener('offline', () => {
+            console.log('📴 Gone offline');
+            document.documentElement.classList.add('offline');
+        });
+        
+        window.addEventListener('load', function() {
+            const swUrl = '/sw.js?v=' + APP_VERSION; // Cache busting
+            
+            navigator.serviceWorker.register(swUrl)
+                .then(function(registration) {
+                    console.log('✅ SW registered successfully on scope:', registration.scope);
+                    console.log('🏷️ App version:', APP_VERSION);
+                    
+                    // Check current controller
+                    if (navigator.serviceWorker.controller) {
+                        console.log('🎯 SW is controlling the page');
+                        
+                        // Check for updates periodically
+                        setInterval(() => {
+                            registration.update();
+                        }, 60 * 60 * 1000); // Check every hour
+                    } else {
+                        console.log('⏳ SW registered, will control after refresh');
+                    }
+                    
+                    // Check cache status
+                    setTimeout(() => {
+                        const cacheName = `medical-app-${APP_VERSION}`;
+                        caches.open(cacheName).then(cache => {
+                            cache.keys().then(requests => {
+                                console.log(`📦 Cache "${cacheName}" has ${requests.length} files`);
+                                
+                                // Verify critical files are cached
+                                const criticalFiles = ['/', '/index.html', '/offline.html'];
+                                let missingFiles = [];
+                                
+                                criticalFiles.forEach(url => {
+                                    cache.match(url).then(response => {
+                                        if (!response) {
+                                            console.warn(`⚠️ Critical file not cached: ${url}`);
+                                            missingFiles.push(url);
+                                        }
+                                    });
+                                });
+                                
+                                setTimeout(() => {
+                                    if (missingFiles.length > 0) {
+                                        console.warn(`Missing ${missingFiles.length} critical files`);
+                                    }
+                                }, 500);
+                            });
+                        }).catch(err => {
+                            console.log('Cache not yet ready:', err);
+                        });
+                    }, 2000);
+                    
+                    // Listen for SW updates
+                    registration.addEventListener('updatefound', () => {
+                        const newWorker = registration.installing;
+                        console.log('🔄 New SW found (installing...)');
+                        
+                        newWorker.addEventListener('statechange', () => {
+                            console.log(`🔄 SW state changed to: ${newWorker.state}`);
+                            
+                            if (newWorker.state === 'installed') {
+                                if (navigator.serviceWorker.controller) {
+                                    // New update available
+                                    showUpdateNotification();
+                                } else {
+                                    // First install
+                                    console.log('✨ SW installed for the first time');
+                                }
+                            }
+                        });
+                    });
+                    
+                    // Track SW lifecycle
+                    navigator.serviceWorker.addEventListener('controllerchange', () => {
+                        console.log('🔄 Controller changed');
+                        if (!isRefreshing) {
+                            isRefreshing = true;
+                            console.log('🔄 Reloading page for new version...');
+                            window.location.reload();
+                        }
+                    });
+                })
+                .catch(function(error) {
+                    console.error('❌ SW registration failed:', error);
+                    // Show error to user if needed
+                    if (error.name === 'SecurityError') {
+                        console.error('Make sure SW is served over HTTPS or localhost');
+                    }
+                });
+            
+            // Listen for messages from SW
+            navigator.serviceWorker.addEventListener('message', event => {
+                if (event.data && event.data.type === 'SW_UPDATED') {
+                    console.log(`🔄 SW Updated to v${event.data.version}: ${event.data.message}`);
+                    showUpdateNotification(event.data.version);
+                }
+            });
+        });
+        
+        // Update notification functions
+        function showUpdateNotification(version = null) {
+            const notification = document.getElementById('update-notification');
+            const message = document.getElementById('update-message');
+            const reloadBtn = document.getElementById('reload-button');
+            
+            message.textContent = version ? 
+                `Version ${version} available!` : 
+                'New update available!';
+            
+            notification.style.display = 'block';
+            
+            reloadBtn.onclick = () => {
+                if (navigator.serviceWorker.controller) {
+                    // Tell SW to skip waiting
+                    navigator.serviceWorker.controller.postMessage({
+                        type: 'SKIP_WAITING'
+                    });
+                } else {
+                    window.location.reload();
+                }
+            };
+        }
+        
+        function hideUpdateNotification() {
+            document.getElementById('update-notification').style.display = 'none';
+        }
+        
+        // Add CSS for offline state
+        const style = document.createElement('style');
+        style.textContent = `
+            .offline::before {
+                content: '📴 Offline';
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                background: #ff9800;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 4px;
+                font-size: 12px;
+                z-index: 9999;
+            }
+            
+            .offline body {
+                opacity: 0.95;
+            }
+        `;
+        document.head.appendChild(style);
+        
+    } else {
+        console.log('❌ Service Worker not supported');
+        // Show message for browsers without SW support
+        if (!navigator.onLine) {
+            alert('This app requires an internet connection. You are currently offline.');
+        }
+    }
+    </script>
+</body>
+</html>

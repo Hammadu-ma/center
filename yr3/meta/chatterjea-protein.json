@@ -1,0 +1,636 @@
+[
+  {
+    "id": 1,
+    "question": "Quantitatively the most important enzyme for NH₃ formation from amino acids:",
+    "options": [
+      "L-amino acid oxidase",
+      "Serine dehydratase",
+      "Glutamate dehydrogenase",
+      "Histidase",
+      "Desulfhydrase"
+    ],
+    "answer": 2,
+    "correctAnswer": "Glutamate dehydrogenase",
+    "explanation": "Glutamate dehydrogenase (GDH) is the primary source of free ammonia in human tissues. It operates in the mitochondria of liver, kidney, and other tissues, catalyzing the oxidative deamination of glutamate to α-ketoglutarate and NH₄⁺. While enzymes like L-amino acid oxidase exist, their contribution is minor. GDH is quantitatively significant because it acts at a major crossroads of nitrogen and carbon metabolism, where nitrogen from many amino acids is funneled via transamination to glutamate before being released as ammonia.",
+    "whyNotOtherOptions": {
+      "a": "L-amino acid oxidase produces ammonia from L-amino acids but is quantitatively minor in mammals; it is more significant in liver peroxisomes and not the primary pathway for overall NH₃ production from amino acid catabolism.",
+      "b": "Serine dehydratase deaminates serine to pyruvate + NH₃, but it is specific to serine/threonine and contributes much less ammonia than glutamate dehydrogenase, which handles nitrogen from virtually all amino acids via transamination.",
+      "d": "Histidase (histidine ammonia-lyase) deaminates histidine to urocanate + NH₃; pathway is minor compared to glutamate handling of most amino acids.",
+      "e": "Desulfhydrase (cysteine desulfhydrase) releases NH₃ and H₂S from cysteine; very limited quantitative contribution in human metabolism."
+    },
+    "relatedQuestions": ["2", "5"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 2,
+    "question": "The two nitrogen atoms in urea arise from:",
+    "options": [
+      "Ammonia and glutamine",
+      "Glutamine and aspartic acid",
+      "Glutamine and glutamic acid",
+      "Ammonia and aspartic acid",
+      "Glutamine and alanine"
+    ],
+    "answer": 3,
+    "correctAnswer": "Ammonia and aspartic acid",
+    "explanation": "One nitrogen atom enters the urea cycle as ammonia (converted to carbamoyl phosphate in the mitochondria). The second nitrogen atom is contributed by the amino group of aspartate, which condenses with citrulline to form argininosuccinate in the cytosol. These two sources are directly incorporated into the urea molecule, which is then hydrolyzed from arginine.",
+    "whyNotOtherOptions": {
+      "a": "Ammonia enters via CPS-I, but the second N is from aspartate (not glutamine directly).",
+      "b": "Glutamine contributes indirectly (via glutaminase → glutamate → α-KG + NH₃), but the direct urea N atoms are free NH₃ and aspartate.",
+      "c": "Glutamate donates NH₃ via GDH, but second N is aspartate.",
+      "e": "Alanine carries NH₃ via glucose-alanine cycle, but urea N atoms are NH₃ (from GDH) and aspartate."
+    },
+    "relatedQuestions": ["1", "9"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3,
+    "question": "Ochronosis is a feature of:",
+    "options": [
+      "Phenylketonuria",
+      "Hereditary tyrosinaemia",
+      "Albinism",
+      "Hypervitaminosis D",
+      "Alkaptonuria"
+    ],
+    "answer": 4,
+    "correctAnswer": "Alkaptonuria",
+    "explanation": "Ochronosis refers to the bluish-black pigmentation of connective tissues (e.g., cartilage, skin) due to the deposition of polymerized homogentisic acid. This is a classic feature of alkaptonuria, an autosomal recessive disorder caused by a deficiency of the enzyme homogentisate 1,2-dioxygenase. The accumulated homogentisic acid oxidizes and forms pigment polymers in tissues, leading to degenerative arthritis and discoloration.",
+    "whyNotOtherOptions": {
+      "a": "PKU causes phenylalanine accumulation → phenylketones in urine, mental retardation; no ochronosis.",
+      "b": "Tyrosinemia causes succinylacetone accumulation → liver/kidney damage; no ochronosis.",
+      "c": "Albinism is tyrosinase deficiency → lack of melanin; no dark pigmentation.",
+      "d": "Hypervitaminosis D causes hypercalcemia; no ochronotic pigmentation."
+    },
+    "relatedQuestions": ["12"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following substance is responsible for GI disturbances and respiratory distress seen in “carcinoid syndrome”?",
+    "options": [
+      "Tryptamine",
+      "5-OH tryptamine",
+      "Tyramine",
+      "Histamine",
+      "GABA"
+    ],
+    "answer": 1,
+    "correctAnswer": "5-OH tryptamine",
+    "explanation": "5-Hydroxytryptamine (5-HT, serotonin) is the primary mediator of carcinoid syndrome, which occurs due to metastatic carcinoid tumors (argentaffin cells) that secrete excessive amounts of serotonin. Serotonin causes hypermotility of the GI tract (leading to diarrhea, cramping) and bronchoconstriction (causing respiratory distress). Other substances like histamine or bradykinin may contribute to flushing, but serotonin is central to the classic symptoms.",
+    "whyNotOtherOptions": {
+      "a": "Tryptamine is a trace amine; minor role in carcinoid.",
+      "c": "Tyramine causes hypertensive crisis in MAO inhibition; not primary in carcinoid.",
+      "d": "Histamine is released in mastocytosis; carcinoid tumors release serotonin predominantly.",
+      "e": "GABA is CNS inhibitory; no role in carcinoid symptoms."
+    },
+    "relatedQuestions": ["15"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "question": "A product of the series of reactions that converts carbamoyl-(P) to urea is:",
+    "options": [
+      "Arginine",
+      "Citrulline",
+      "Fumarate",
+      "Aspartate",
+      "Adenosine triphosphate"
+    ],
+    "answer": 2,
+    "correctAnswer": "Fumarate",
+    "explanation": "In the cytosolic step of the urea cycle, argininosuccinate is cleaved by argininosuccinate lyase to produce arginine and fumarate. Fumarate is a direct product of this reaction sequence that starts with carbamoyl phosphate. It enters the TCA cycle, providing a link between urea synthesis and energy metabolism.",
+    "whyNotOtherOptions": {
+      "a": "Arginine is intermediate; cleaved to urea + ornithine.",
+      "b": "Citrulline is formed from carbamoyl phosphate + ornithine; upstream.",
+      "d": "Aspartate donates N but is not a product.",
+      "e": "ATP is consumed; not produced."
+    },
+    "relatedQuestions": ["2", "9"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 6,
+    "question": "Ornithine has all of the following properties except:",
+    "options": [
+      "It is an intermediate of urea cycle",
+      "It is not found in proteins",
+      "It is glucogenic",
+      "It can be formed from arginine",
+      "It is a mono-amino mono-carboxylic acid"
+    ],
+    "answer": 2,
+    "correctAnswer": "It is glucogenic",
+    "explanation": "Ornithine is not glucogenic; it does not provide carbon for glucose synthesis.",
+    "whyNotOtherOptions": {
+      "a": "Ornithine is a key intermediate in urea cycle; accepts carbamoyl phosphate → citrulline.",
+      "b": "Ornithine is not incorporated into proteins; non-coded amino acid.",
+      "d": "Arginase cleaves arginine → urea + ornithine.",
+      "e": "Ornithine has one amino and one carboxylic group (monoamino-monocarboxylic)."
+    },
+    "relatedQuestions": ["2"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 7,
+    "question": "Epinephrine is formed from norepinephrine by:",
+    "options": [
+      "Hydroxylation",
+      "Oxidative deamination",
+      "Decarboxylation",
+      "N-methylation",
+      "O-methylation"
+    ],
+    "answer": 3,
+    "correctAnswer": "N-methylation",
+    "explanation": "The final step in the synthesis of epinephrine (adrenaline) from norepinephrine (noradrenaline) is the transfer of a methyl group from S-adenosyl methionine (SAM) to the primary amine group of norepinephrine. This reaction is catalyzed by the enzyme phenylethanolamine N-methyltransferase (PNMT), located primarily in the adrenal medulla.",
+    "whyNotOtherOptions": {
+      "a": "Hydroxylation occurs earlier (tyrosine → DOPA).",
+      "b": "Oxidative deamination is catabolic (MAO).",
+      "c": "Decarboxylation occurs in DOPA → dopamine.",
+      "e": "O-methylation (COMT) is catabolic for catecholamines."
+    },
+    "relatedQuestions": ["8"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 8,
+    "question": "The rate limiting step in the biosynthetic pathway of catecholamines is:",
+    "options": [
+      "The hydroxylation of phenylalanine",
+      "The hydroxylation of tyrosine",
+      "The reduction of biopterine",
+      "The formation of dopamine",
+      "None of the above"
+    ],
+    "answer": 1,
+    "correctAnswer": "The hydroxylation of tyrosine",
+    "explanation": "The hydroxylation of tyrosine to L-DOPA, catalyzed by the enzyme tyrosine hydroxylase, is the committed and rate-limiting step in catecholamine biosynthesis. This enzyme is tightly regulated by feedback inhibition from end products like norepinephrine and epinephrine, as well as by phosphorylation mechanisms.",
+    "whyNotOtherOptions": {
+      "a": "Phenylalanine hydroxylase is for phenylalanine → tyrosine; not rate-limiting for catecholamines.",
+      "c": "Biopterin reduction regenerates cofactor; not rate-limiting.",
+      "d": "Dopamine formation (DOPA decarboxylase) is fast and not regulated.",
+      "e": "Tyrosine hydroxylase is clearly the rate-limiting enzyme."
+    },
+    "relatedQuestions": ["7"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following compounds serve as a primary link between the TCA cycle and the urea cycle?",
+    "options": [
+      "Malate",
+      "Citrate",
+      "Oxaloacetate",
+      "Fumarate",
+      "Succinate"
+    ],
+    "answer": 3,
+    "correctAnswer": "Fumarate",
+    "explanation": "Fumarate is produced in the cytosol during the cleavage of argininosuccinate in the urea cycle. It is converted to malate in the cytosol, which can then enter mitochondria and be reconverted to oxaloacetate (OAA), a TCA cycle intermediate. This fumarate bridge integrates the two cycles, both metabolically and in terms of balancing energy and nitrogen disposal.",
+    "whyNotOtherOptions": {
+      "a": "Malate is in TCA; links via malate-aspartate shuttle, but not direct urea-TCA link.",
+      "b": "Citrate is TCA starting point; no direct urea link.",
+      "c": "Oxaloacetate is TCA intermediate; transaminated to aspartate (urea input).",
+      "e": "Succinate is TCA; no direct link."
+    },
+    "relatedQuestions": ["2", "5"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 10,
+    "question": "Serine can be a precursor of each of the following, except:",
+    "options": [
+      "Cysteine",
+      "Methionine",
+      "Ethanolamine",
+      "Glycine",
+      "Choline"
+    ],
+    "answer": 1,
+    "correctAnswer": "Methionine",
+    "explanation": "Serine is a versatile amino acid. It serves as: (a) the carbon skeleton for cysteine synthesis (via homocysteine), (c) a precursor for ethanolamine (via decarboxylation), (d) a source of glycine (via serine hydroxymethyltransferase), and (e) ethanolamine can be methylated to form choline. Methionine, however, is an essential amino acid and cannot be synthesized de novo in humans; its carbon skeleton comes from aspartate and the sulfur from homocysteine recycling or diet.",
+    "whyNotOtherOptions": {
+      "a": "Serine + homocysteine → cystathionine → cysteine (transsulfuration).",
+      "c": "Serine → ethanolamine (decarboxylation) → phosphoethanolamine.",
+      "d": "Serine → glycine via serine hydroxymethyltransferase.",
+      "e": "Serine → choline via ethanolamine → phosphatidylcholine pathway."
+    },
+    "relatedQuestions": ["58"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 11,
+    "question": "Homocystinuria is an inherited disorder characterised by:",
+    "options": [
+      "Mental retardation",
+      "Frequent renal stones",
+      "Aortic aneurysm",
+      "Ectopia lentis",
+      "Paralysis of limbs"
+    ],
+    "answer": 3,
+    "correctAnswer": "Ectopia lentis",
+    "explanation": "The most characteristic and specific clinical feature of classical homocystinuria (due to cystathionine β-synthase deficiency) is ectopia lentis (dislocation of the ocular lens). This occurs in over 90% of untreated patients. While mental retardation (a), osteoporosis, thromboembolism leading to stroke (not typically paralysis), and aortic dilation (c) can occur, ectopia lentis is the pathognomonic finding.",
+    "whyNotOtherOptions": {
+      "a": "Mental retardation occurs in untreated homocystinuria but is not as specific as ectopia lentis.",
+      "b": "Renal stones are more typical of cystinuria (cystine stones).",
+      "c": "Aortic aneurysm/dissection occurs but is later; ectopia lentis is earlier and classic.",
+      "e": "Paralysis is not a primary feature."
+    },
+    "relatedQuestions": ["12"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 12,
+    "question": "All are true about phenylketonuria, except:",
+    "options": [
+      "Deficiency of phenylalanine hydroxylase",
+      "Mental retardation",
+      "Increased urinary excretion of p-OH phenyl pyruvic acid",
+      "Decrease serotonin formation",
+      "Increase serum phenyl alanine"
+    ],
+    "answer": 3,
+    "correctAnswer": "Increased urinary excretion of p-OH phenyl pyruvic acid",
+    "explanation": "In PKU, the block at phenylalanine hydroxylase prevents the conversion of phenylalanine to tyrosine. Consequently, minor alternative pathways produce phenylpyruvate, phenylacetate, and phenyllactate—collectively known as phenylketones. p-OH phenylpyruvic acid is an intermediate in tyrosine catabolism, not a product of the alternative phenylalanine pathways in PKU. Its excretion is elevated in disorders of tyrosine metabolism (e.g., tyrosinemia).",
+    "whyNotOtherOptions": {
+      "a": "Classic defect in PKU is phenylalanine hydroxylase deficiency.",
+      "b": "Untreated PKU causes severe mental retardation.",
+      "d": "Serotonin deficiency may occur indirectly due to competition for BH4 cofactor, but it is not a primary or hallmark feature.",
+      "e": "Hyperphenylalaninemia is diagnostic."
+    },
+    "relatedQuestions": ["3"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 13,
+    "question": "The rate of excretion of certain substances in 24-hr sample of urine can be used to estimate the rate of muscle protein loss. Which of the following substances falls into this category?",
+    "options": [
+      "Ammonia",
+      "Urea",
+      "Uric acid",
+      "3-Methyl histidine",
+      "Ergothioneine"
+    ],
+    "answer": 3,
+    "correctAnswer": "3-Methyl histidine",
+    "explanation": "3-Methylhistidine is formed by the post-translational methylation of histidine residues in the proteins actin and myosin. Upon degradation of these contractile proteins, 3-methylhistidine is released and excreted unchanged in urine, as it is not reutilized for protein synthesis or further metabolized. Therefore, its urinary excretion rate serves as a reliable, non-invasive marker for the rate of skeletal muscle protein breakdown.",
+    "whyNotOtherOptions": {
+      "a": "Ammonia reflects acid-base status or urea cycle defects; not specific for muscle catabolism.",
+      "b": "Urea reflects total protein turnover; not muscle-specific.",
+      "c": "Uric acid reflects purine turnover; not muscle protein.",
+      "e": "Ergothioneine is an antioxidant; no link to muscle loss."
+    },
+    "relatedQuestions": [],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 14,
+    "question": "Degradation and excretion of biogenic amines involve all of the following reactions, except:",
+    "options": [
+      "Conjugation to asparagine",
+      "Methylation",
+      "Conjugation to sulphates",
+      "Conjugation to glucuronic acid",
+      "All of the above"
+    ],
+    "answer": 0,
+    "correctAnswer": "Conjugation to asparagine",
+    "explanation": "Common pathways for biogenic amine inactivation and excretion include oxidative deamination (by MAO), O-methylation (by COMT), and conjugation with sulfate or glucuronic acid to increase water solubility. Conjugation to asparagine is not a known pathway for the metabolism or excretion of biogenic amines.",
+    "whyNotOtherOptions": {
+      "b": "Methylation by COMT inactivates catecholamines.",
+      "c": "Sulfation by sulfotransferases conjugates amines.",
+      "d": "Glucuronidation by UGTs conjugates amines for excretion.",
+      "e": "Since A is not a method, 'all' is incorrect."
+    },
+    "relatedQuestions": ["7", "8"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 15,
+    "question": "Tryptophan is best described by which of the following statement?",
+    "options": [
+      "It produces thyroid hormones",
+      "Is a precursor for melanin",
+      "It is a precursor of the pineal hormone melatonin",
+      "It produces catecholamines",
+      "It is glucogenic only"
+    ],
+    "answer": 2,
+    "correctAnswer": "It is a precursor of the pineal hormone melatonin",
+    "explanation": "Tryptophan is a precursor for several important molecules: Serotonin (5-HT) is synthesized from tryptophan, and in the pineal gland, serotonin is further converted to melatonin. It is also a precursor for niacin. It is not involved in thyroid hormone (a, from tyrosine) or catecholamine (d, from tyrosine) synthesis. Melanin (b) is derived from tyrosine. Tryptophan is both glucogenic and ketogenic (e is incorrect).",
+    "whyNotOtherOptions": {
+      "a": "Thyroid hormones from tyrosine.",
+      "b": "Melanin from tyrosine.",
+      "d": "Catecholamines from tyrosine.",
+      "e": "Tryptophan is both glucogenic and ketogenic; also precursor to serotonin/melatonin."
+    },
+    "relatedQuestions": ["4"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following amino acids are required for synthesis of creatine?",
+    "options": [
+      "Arginine, Asp, 'active' methionine",
+      "Arginine, glycine 'active' methionine",
+      "Arginine, lysine, methionine",
+      "Glycine, Asp, ornithine",
+      "Arginine, glutamic acid, 'active' methionine"
+    ],
+    "answer": 1,
+    "correctAnswer": "Arginine, glycine 'active' methionine",
+    "explanation": "Creatine synthesis involves two steps: 1. In the kidney: Glycine and the amidine group of arginine are transferred to form guanidinoacetate (ornithine is released). 2. In the liver: Guanidinoacetate is methylated by S-adenosylmethionine (active methionine) to form creatine. Thus, the three direct precursors are arginine, glycine, and active methionine.",
+    "whyNotOtherOptions": {
+      "a": "Asp is not required; ornithine cycle is separate.",
+      "c": "Lysine is for carnitine; not creatine.",
+      "d": "Ornithine is urea cycle; Asp not for creatine.",
+      "e": "Glutamate not required; glycine is the correct partner."
+    },
+    "relatedQuestions": ["26"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 17,
+    "question": "Deficiency of which of the following vitamins cause creatinuria?",
+    "options": [
+      "Vitamin A",
+      "Vitamin K",
+      "Vitamin E",
+      "Vitamin D",
+      "Vitamin B6"
+    ],
+    "answer": 4,
+    "correctAnswer": "Vitamin B6",
+    "explanation": "B6 (pyridoxal phosphate) is a cofactor in amino acid metabolism including creatine synthesis.",
+    "whyNotOtherOptions": {
+      "a": "Vitamin A deficiency → night blindness; no link to creatine.",
+      "b": "Vitamin K deficiency → coagulopathy.",
+      "c": "Vitamin E deficiency → neuropathy, hemolysis.",
+      "d": "Vitamin D deficiency → rickets/osteomalacia."
+    },
+    "relatedQuestions": ["16"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following enzyme catalyses reactions in the biosynthesis of both catecholamines and 5-OH tryptamine (serotonin)?",
+    "options": [
+      "Tryptophan hydroxylase",
+      "Dopamine-β-hydroxylase",
+      "Phenyl ethanolamine N-methyl transferase",
+      "Tyrosine hydroxylase",
+      "Aromatic amino acid decarboxylase"
+    ],
+    "answer": 4,
+    "correctAnswer": "Aromatic amino acid decarboxylase",
+    "explanation": "Aromatic L-amino acid decarboxylase (AADC or DOPA decarboxylase) is a promiscuous enzyme that acts on multiple substrates. It catalyzes: • The decarboxylation of 5-hydroxytryptophan (5-HTP) to form serotonin. • The decarboxylation of L-DOPA to form dopamine (a catecholamine precursor). Thus, it participates in the biosynthesis of both neurotransmitter pathways.",
+    "whyNotOtherOptions": {
+      "a": "Tryptophan hydroxylase is specific for serotonin pathway.",
+      "b": "Dopamine-β-hydroxylase is catecholamine-specific (dopamine → norepinephrine).",
+      "c": "PNMT is epinephrine-specific (norepinephrine → epinephrine).",
+      "d": "Tyrosine hydroxylase is catecholamine-specific."
+    },
+    "relatedQuestions": ["7", "8"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 19,
+    "question": "The following statements regarding creatinine are correct except:",
+    "options": [
+      "Marked diurnal variation"
+    ],
+    "answer": 0,
+    "correctAnswer": "Marked diurnal variation",
+    "explanation": "Urinary creatinine is very constant, little diurnal variation; it reflects muscle mass & kidney function.",
+    "whyNotOtherOptions": {},
+    "relatedQuestions": ["13"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 20,
+    "question": "Phenylketonuria is an inherited disorder due to deficiency of the enzyme:",
+    "options": [
+      "Transaminase",
+      "Homogentisate oxidase",
+      "Phenylalanine hydroxylase",
+      "Isomerase",
+      "None of the above"
+    ],
+    "answer": 2,
+    "correctAnswer": "Phenylalanine hydroxylase",
+    "explanation": "Classical Phenylketonuria (PKU) is an autosomal recessive disorder caused by a deficiency in the enzyme phenylalanine hydroxylase (PAH), which converts phenylalanine to tyrosine. This results in the accumulation of phenylalanine and its transamination product, phenylpyruvate, in the blood and urine.",
+    "whyNotOtherOptions": {
+      "a": "Transaminases are involved in amino acid catabolism but not the primary defect in PKU.",
+      "b": "Homogentisate oxidase deficiency causes alkaptonuria.",
+      "d": "Isomerases are not involved in phenylalanine metabolism.",
+      "e": "PAH deficiency is the correct cause."
+    },
+    "relatedQuestions": ["12"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 21,
+    "question": "Which of the following amino acids on degradation produces a glucogenic intermediate of TCA cycle and ketone body?",
+    "options": [
+      "Glycine",
+      "Phenylalanine",
+      "Alanine",
+      "Cysteine",
+      "Serine"
+    ],
+    "answer": 1,
+    "correctAnswer": "Phenylalanine",
+    "explanation": "Phenylalanine/Tyrosine are both glucogenic and ketogenic. Their catabolism yields fumarate (a glucogenic TCA cycle intermediate) and acetoacetate (a ketone body). This makes them mixed-function amino acids. The other listed amino acids (Gly, Ala, Cys, Ser) are purely glucogenic.",
+    "whyNotOtherOptions": {
+      "a": "Glycine is purely glucogenic (via serine → pyruvate).",
+      "c": "Alanine is purely glucogenic (→ pyruvate).",
+      "d": "Cysteine is purely glucogenic (→ pyruvate).",
+      "e": "Serine is purely glucogenic (→ pyruvate)."
+    },
+    "relatedQuestions": ["12"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 22,
+    "question": "Reactions of urea cycle take place in liver cells",
+    "options": [
+      "In cytosol",
+      "Only in lysosomes",
+      "In mitochondrial matrix",
+      "Both cytosol and mitochondrial matrix.",
+      "Both cytosol and lysosomes"
+    ],
+    "answer": 3,
+    "correctAnswer": "Both cytosol and mitochondrial matrix.",
+    "explanation": "The urea cycle is compartmentalized: • Mitochondrial Matrix: Steps 1 & 2 - Carbamoyl phosphate synthesis (from NH₃ + CO₂) and formation of citrulline. • Cytosol: Steps 3, 4 & 5 - Synthesis of argininosuccinate, its cleavage to arginine and fumarate, and finally hydrolysis of arginine to urea and ornithine.",
+    "whyNotOtherOptions": {
+      "a": "Only cytosol is incomplete; mitochondrial steps are essential.",
+      "b": "Lysosomes are for degradation; no urea cycle enzymes.",
+      "e": "Lysosomes not involved."
+    },
+    "relatedQuestions": ["2", "9"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 23,
+    "question": "Depletion of α-ketoglutarate during increased NH3 influx leads to the formation of :",
+    "options": [
+      "Arginine",
+      "Proline",
+      "Glutamine",
+      "Histamine",
+      "Serine"
+    ],
+    "answer": 2,
+    "correctAnswer": "Glutamine",
+    "explanation": "During hyperammonemia, ammonia is rapidly detoxified by combining with glutamate to form glutamine, catalyzed by glutamine synthetase. This reaction consumes ATP and glutamate. Glutamate itself is formed from α-ketoglutarate by transamination or via glutamate dehydrogenase (running in reverse). The increased demand can deplete α-ketoglutarate, impairing the TCA cycle. Glutamine synthesis is a primary ammonia scavenging mechanism.",
+    "whyNotOtherOptions": {
+      "a": "Arginine is urea cycle product; not formed from NH₃ influx.",
+      "b": "Proline is from glutamate but not primary response to NH₃.",
+      "d": "Histamine from histidine; unrelated.",
+      "e": "Serine not involved in NH₃ detoxification."
+    },
+    "relatedQuestions": ["1"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 24,
+    "question": "Which of the following amino acids produce a vasodilator on decarboxylation:",
+    "options": [
+      "Glutamic acid",
+      "Histidine",
+      "Ornithine",
+      "Cysteine",
+      "Arginine"
+    ],
+    "answer": 1,
+    "correctAnswer": "Histidine",
+    "explanation": "Histidine is decarboxylated by histidine decarboxylase to form histamine. Histamine is a potent vasodilator and is involved in inflammatory and anaphylactic reactions, as well as gastric acid secretion.",
+    "whyNotOtherOptions": {
+      "a": "Glutamate → GABA (inhibitory neurotransmitter).",
+      "c": "Ornithine → no major decarboxylation product.",
+      "d": "Cysteine → no vasodilator.",
+      "e": "Arginine → nitric oxide via NOS, but not by decarboxylation."
+    },
+    "relatedQuestions": ["4"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 25,
+    "question": "Breakdown of amino acid tryptophan begins with formation of:",
+    "options": [
+      "Urocanic acid",
+      "Nicotinic acid",
+      "Anthranilic acid",
+      "N-formyl kynurenine",
+      "None of the above"
+    ],
+    "answer": 3,
+    "correctAnswer": "N-formyl kynurenine",
+    "explanation": "The major catabolic pathway for tryptophan (the kynurenine pathway) begins with its oxidation. The rate-limiting step is the cleavage of the indole ring by tryptophan 2,3-dioxygenase (TDO) or indoleamine 2,3-dioxygenase (IDO), producing N-formylkynurenine. This is then deformylated to kynurenine, which leads to products like anthranilic acid, 3-hydroxykynurenine, and eventually niacin.",
+    "whyNotOtherOptions": {
+      "a": "Urocanic acid from histidine.",
+      "b": "Nicotinic acid (niacin) is downstream product.",
+      "c": "Anthranilic acid is later in kynurenine pathway.",
+      "e": "N-formylkynurenine is correct."
+    },
+    "relatedQuestions": ["15"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 26,
+    "question": "During degradation of amino acid leucine to acetyl-CoA, it produces which compound that help in cholesterol biosynthesis:",
+    "options": [
+      "β-methylglutaconyl-CoA",
+      "Isopentenyl pyrophosphate",
+      "β-OH-β-methyl glutaryl-CoA",
+      "Isovaleryl-CoA",
+      "All of the above."
+    ],
+    "answer": 2,
+    "correctAnswer": "β-OH-β-methyl glutaryl-CoA",
+    "explanation": "Leucine is a purely ketogenic amino acid. Its degradation pathway produces HMG-CoA (β-Hydroxy β-Methylglutaryl-CoA). This intermediate is crucial because it sits at a metabolic branch point: in the cytoplasm, HMG-CoA reductase converts it to mevalonate, the committed step in cholesterol biosynthesis. In mitochondria, HMG-CoA lyase cleaves it to acetoacetate and acetyl-CoA for energy.",
+    "whyNotOtherOptions": {
+      "a": "β-methylglutaconyl-CoA is intermediate in leucine catabolism but not directly for cholesterol.",
+      "b": "Isopentenyl pyrophosphate is downstream in mevalonate pathway after HMG-CoA.",
+      "d": "Isovaleryl-CoA is early intermediate in leucine degradation.",
+      "e": "Only HMG-CoA is the direct link to cholesterol synthesis."
+    },
+    "relatedQuestions": ["3"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 27,
+    "question": "Urinary oxalates in small quantities may arise from:",
+    "options": [
+      "Tyrosine",
+      "Glycine",
+      "Serine",
+      "Citrates",
+      "Oxaloacetate"
+    ],
+    "answer": 1,
+    "correctAnswer": "Glycine",
+    "explanation": "A minor pathway of glycine metabolism involves its conversion to glyoxylate by D-amino acid oxidase or via transamination. Glyoxylate can then be oxidized to oxalate by lactate dehydrogenase. Excessive oxalate can lead to kidney stones. While oxalate can come from diet or ascorbate, glycine is the primary endogenous amino acid precursor.",
+    "whyNotOtherOptions": {
+      "a": "Tyrosine → fumarate + acetoacetate; no oxalate.",
+      "c": "Serine → glycine or pyruvate; indirect at best.",
+      "d": "Citrates not related to oxalate.",
+      "e": "Oxaloacetate is TCA; no direct oxalate link."
+    },
+    "relatedQuestions": [],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 28,
+    "question": "In humans the sulphur of methionine and cysteine is excreted mainly as:",
+    "options": [
+      "Ethereal SO₄",
+      "Inorganic SO₄",
+      "Sulphites",
+      "Taurocholates",
+      "Cysteic acid"
+    ],
+    "answer": 1,
+    "correctAnswer": "Inorganic SO₄",
+    "explanation": "The sulfur atoms from the catabolism of methionine and cysteine are ultimately oxidized to inorganic sulfate (SO₄²⁻), which is excreted in the urine. A small portion may be excreted as ethereal sulfate (sulfate esters) or in compounds like taurine, but the quantitatively major end product is inorganic sulfate.",
+    "whyNotOtherOptions": {
+      "a": "Ethereal sulfates are minor; conjugated phenols/steroids.",
+      "c": "Sulphites are intermediates; not major excretion.",
+      "d": "Taurocholates contain taurine (from cysteine); minor sulfur route.",
+      "e": "Cysteic acid is oxidized cysteine; not major excretion form."
+    },
+    "relatedQuestions": ["10"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  }
+]

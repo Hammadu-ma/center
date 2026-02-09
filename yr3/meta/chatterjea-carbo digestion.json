@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following sugars is absorbed by facilitated transport?",
+    "options": [
+      "Galactose",
+      "Fructose",
+      "Xylose",
+      "Glucose",
+      "Arabinose"
+    ],
+    "answer": 1,
+    "correctAnswer": "Fructose",
+    "explanation": "Carbohydrate absorption in the small intestine occurs via specific transport mechanisms:\n* Galactose and glucose are absorbed by secondary active transport via the SGLT-1 (sodium-glucose linked transporter).\n* Fructose is absorbed by facilitated diffusion via the GLUT5 transporter, independent of sodium.\n* Xylose and arabinose (pentoses) are absorbed by simple diffusion.\nThus, fructose is the only sugar among the options absorbed primarily by facilitated transport.",
+    "whyNotOtherOptions": {
+      "a": "Galactose is absorbed by secondary active transport via SGLT-1 (sodium-dependent); it shares the same transporter as glucose and requires a sodium gradient maintained by Na⁺/K⁺-ATPase, not simple facilitated diffusion.",
+      "c": "Xylose (a pentose) is absorbed primarily by passive simple diffusion across the intestinal mucosa due to its small size and lack of a specific high-affinity transporter; it does not use facilitated mechanisms like GLUT5.",
+      "d": "Glucose is absorbed by secondary active transport via SGLT-1 (sodium-coupled), allowing uptake against a concentration gradient; this is not facilitated (passive) diffusion.",
+      "e": "Arabinose, like xylose, is a pentose absorbed mainly by passive simple diffusion; no specific facilitated transporter (e.g., GLUT family) is involved in humans."
+    },
+    "relatedQuestions": ["9", "12"],
+    "category": "carbohydrate digestion and absorbtion",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 2,
+    "question": "Amylase present in saliva is:",
+    "options": [
+      "α-amylase",
+      "β-amylase",
+      "γ-amylase",
+      "All of the above",
+      "None of the above"
+    ],
+    "answer": 0,
+    "correctAnswer": "α-amylase",
+    "explanation": "Salivary amylase (ptyalin) is specifically an α-amylase. It acts on internal α-1,4 glycosidic bonds in starch, producing maltose, maltotriose, and α-limit dextrins. β-amylase is of plant origin (e.g., in germinating grains), and γ-amylase (glucoamylase) is found in the intestinal brush border. Human saliva contains only α-amylase.",
+    "whyNotOtherOptions": {
+      "b": "β-amylase cleaves starch from the non-reducing end to produce maltose; it is found in plants and some bacteria, not in human saliva.",
+      "c": "γ-amylase (glucoamylase) hydrolyzes terminal α-1,4 and α-1,6 linkages to release glucose; it is present in intestinal brush border, not saliva.",
+      "d": "Only α-amylase is present in saliva; β- and γ-amylases are not.",
+      "e": "α-amylase is clearly present and functional in saliva."
+    },
+    "relatedQuestions": ["21"],
+    "category": "carbohydrate digestion and absorbtion",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 3,
+    "question": "The absorption of glucose is decreased by the deficiency of:",
+    "options": [
+      "Vitamin A",
+      "Vitamin D",
+      "Thiamine",
+      "Vitamin B12",
+      "Folic acid"
+    ],
+    "answer": 2,
+    "correctAnswer": "Thiamine",
+    "explanation": "Thiamine (vitamin B1) is a cofactor for pyruvate dehydrogenase and transketolase. Its deficiency (beriberi) impairs oxidative decarboxylation of pyruvate, reducing ATP production. The SGLT-1 transporter for glucose absorption is an active, sodium-dependent process that requires ATP (for Na⁺/K⁺ ATPase). ATP depletion from thiamine deficiency thus decreases the sodium gradient and impairs glucose absorption. Other listed vitamins do not directly affect glucose transport in this manner.",
+    "whyNotOtherOptions": {
+      "a": "Vitamin A deficiency affects vision and epithelial integrity; no direct role in intestinal glucose transport.",
+      "b": "Vitamin D deficiency impairs calcium/phosphate absorption; indirectly affects bone health, but not glucose uptake via SGLT-1.",
+      "d": "Vitamin B12 deficiency causes megaloblastic anemia and neuropathy; no effect on intestinal glucose absorption.",
+      "e": "Folic acid deficiency causes megaloblastic anemia; no direct link to glucose transporter function."
+    },
+    "relatedQuestions": ["1"],
+    "category": "carbohydrate digestion and absorbtion",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 4,
+    "question": "For activity of salivary amylase, which of the following is required as activator?",
+    "options": [
+      "HCO₃⁻ ion",
+      "Presence of Na⁺",
+      "Presence of K⁺",
+      "Chloride ion",
+      "None of the above"
+    ],
+    "answer": 3,
+    "correctAnswer": "Chloride ion",
+    "explanation": "Chloride ions (Cl⁻) act as a cofactor (activator) for salivary α-amylase, enhancing its enzymatic activity. Bicarbonate in saliva provides an optimal alkaline pH (6.5–7.5) for amylase but is not a direct activator. Sodium and potassium ions do not play specific activating roles for amylase.",
+    "whyNotOtherOptions": {
+      "a": "HCO₃⁻ maintains optimal pH in saliva (neutral to slightly alkaline), but it is not a direct allosteric activator or cofactor for amylase activity.",
+      "b": "Na⁺ is required for SGLT-1 glucose transport, but salivary amylase is independent of sodium and does not require Na⁺ for catalysis.",
+      "c": "K⁺ is involved in cellular homeostasis and Na⁺/K⁺-ATPase, but has no specific activating role for salivary amylase.",
+      "e": "Chloride is clearly required; 'none' is incorrect."
+    },
+    "relatedQuestions": ["2"],
+    "category": "carbohydrate digestion and absorbtion",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following hormone increases the absorption of glucose from GI tract?",
+    "options": [
+      "Insulin",
+      "Thyroid hormones",
+      "Glucagon",
+      "FSH",
+      "LH"
+    ],
+    "answer": 1,
+    "correctAnswer": "Thyroid hormones",
+    "explanation": "Thyroid hormones (T3/T4) increase the expression and activity of intestinal glucose transporters (SGLT-1 and GLUT2), thereby enhancing glucose absorption. They also increase intestinal blood flow and metabolic rate. Insulin regulates blood glucose post-absorption but does not directly increase intestinal absorption. Glucagon has no significant role in glucose absorption. FSH and LH are reproductive hormones with no direct effect on intestinal transport.",
+    "whyNotOtherOptions": {
+      "a": "Insulin promotes glucose uptake into peripheral tissues (via GLUT4 translocation in muscle/adipose) but has no direct stimulatory effect on intestinal glucose absorption.",
+      "c": "Glucagon raises blood glucose by hepatic glycogenolysis/gluconeogenesis; it does not enhance intestinal absorption.",
+      "d": "FSH stimulates ovarian follicle development; no role in GI glucose transport.",
+      "e": "LH triggers ovulation and steroidogenesis; no effect on intestinal glucose uptake."
+    },
+    "relatedQuestions": ["1"],
+    "category": "carbohydrate digestion and absorbtion",
+    "difficulty": "Medium"
+  }
+]

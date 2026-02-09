@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "question": "During starvation increased serum alanine represents:",
+    "options": [
+      "Decreased utilisation of non-essential aminoacids",
+      "Leakage of aminoacids from cells due to cell damage",
+      "Decreased utilisation of aminoacids for gluconeogenesis",
+      "Net breakdown of muscle proteins",
+      "Impaired renal function"
+    ],
+    "answer": 3,
+    "correctAnswer": "Net breakdown of muscle proteins",
+    "explanation": "In starvation, the body breaks down muscle protein to provide amino acids for gluconeogenesis. Alanine is a key carrier of amino nitrogen from muscle to the liver (the glucose-alanine cycle). Increased serum alanine directly reflects the net catabolism of muscle proteins, as alanine is released from muscle into the bloodstream to be taken up by the liver and converted into glucose. It is not due to leakage, decreased utilization, or renal impairment.",
+    "whyNotOtherOptions": {
+      "a": "Non-essential amino acids are synthesized endogenously; their utilization is not primarily decreased — rather, muscle protein (containing both essential and non-essential) is catabolized to supply carbon skeletons and nitrogen for gluconeogenesis.",
+      "b": "Leakage from cell damage would cause generalized aminoacidemia (not selective alanine increase) and is seen in rhabdomyolysis or liver injury, not physiological starvation.",
+      "c": "Utilization of amino acids for gluconeogenesis is markedly increased in starvation; decreased utilization would lower serum alanine, not raise it.",
+      "e": "Impaired renal function causes azotemia (elevated urea/creatinine) and generalized aminoacid retention; alanine elevation in starvation is specific to muscle catabolism via the glucose-alanine cycle, not renal failure."
+    },
+    "relatedQuestions": ["48", "50"],
+    "category": "7. Nitrogen & Protein Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 2,
+    "question": "In starvation, all the following enzyme activities are decreased, except:",
+    "options": [
+      "Lipoprotein lipase",
+      "Acetyl-CoA carboxylase",
+      "Fatty acid synthetase",
+      "Citrate cleavage enzyme",
+      "Carnitine palmitoyl-transferase I"
+    ],
+    "answer": 4,
+    "correctAnswer": "Carnitine palmitoyl-transferase I",
+    "explanation": "Starvation shifts metabolism from anabolic to catabolic states. Enzymes involved in lipogenesis (fatty acid synthesis)—such as acetyl-CoA carboxylase, fatty acid synthetase, citrate cleavage enzyme, and lipoprotein lipase (which clears triglycerides for storage)—are downregulated due to low insulin and high glucagon. In contrast, carnitine palmitoyl-transferase I (CPT-I) is upregulated. CPT-I is the rate-limiting enzyme for fatty acid transport into mitochondria for β-oxidation, which is crucial for energy production during starvation.",
+    "whyNotOtherOptions": {
+      "a": "Lipoprotein lipase activity decreases in starvation (low insulin); reduces clearance of circulating TG for storage, favoring mobilization.",
+      "b": "Acetyl-CoA carboxylase is inactivated by AMPK phosphorylation and low insulin; rate-limiting for malonyl-CoA formation in fatty acid synthesis.",
+      "c": "Fatty acid synthetase is transcriptionally repressed in starvation; no need for de novo lipogenesis.",
+      "d": "Citrate cleavage enzyme (ATP-citrate lyase) is downregulated; reduces cytosolic acetyl-CoA for fatty acid synthesis."
+    },
+    "relatedQuestions": ["41", "44"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3,
+    "question": "In starvation, in the beginning, the activities of the following enzymes are increased except:",
+    "options": [
+      "Glucose-6-phosphatase",
+      "Glucose-6-phosphate dehydrogenase",
+      "Pyruvate carboxylase",
+      "Fructose-1,6-diphosphatase",
+      "PEP-carboxykinase"
+    ],
+    "answer": 1,
+    "correctAnswer": "Glucose-6-phosphate dehydrogenase",
+    "explanation": "Early starvation increases gluconeogenesis to maintain blood glucose. Therefore, enzymes of gluconeogenesis are upregulated: Glucose-6-phosphatase (final step), Pyruvate carboxylase (first committed step in mitochondria), Fructose-1,6-diphosphatase (bypass of glycolysis), PEP-carboxykinase (key regulatory step). Glucose-6-phosphate dehydrogenase is the first and rate-limiting enzyme of the pentose phosphate pathway (PPP), which produces NADPH for biosynthesis (e.g., fatty acid synthesis). Its activity is decreased in starvation because biosynthetic pathways are suppressed.",
+    "whyNotOtherOptions": {
+      "a": "Glucose-6-phosphatase is strongly induced to release free glucose from G6P in liver/kidney.",
+      "c": "Pyruvate carboxylase is activated by acetyl-CoA (from β-oxidation) for oxaloacetate production.",
+      "d": "Fructose-1,6-bisphosphatase is upregulated to bypass PFK-1 and favor gluconeogenesis.",
+      "e": "PEPCK is transcriptionally induced by glucagon/cAMP to convert OAA → PEP."
+    },
+    "relatedQuestions": ["7", "26"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4,
+    "question": "During the stages of starvation, blood or tissue levels of all the following would be expected to be elevated except:",
+    "options": [
+      "Epinephrine",
+      "Norepinephrine",
+      "Glucagon",
+      "Ketone bodies",
+      "Glycogen"
+    ],
+    "answer": 4,
+    "correctAnswer": "Glycogen",
+    "explanation": "Starvation is a state of fuel depletion and counter-regulation. Hormones that mobilize fuels—epinephrine, norepinephrine, and glucagon—are elevated to promote glycogenolysis, gluconeogenesis, and lipolysis. Ketone bodies (acetoacetate, β-hydroxybutyrate) rise due to increased fatty acid oxidation. Glycogen stores, however, are depleted within the first 24–48 hours of fasting and remain low; they are not elevated.",
+    "whyNotOtherOptions": {
+      "a": "Epinephrine rises early via sympathetic activation to mobilize fuels.",
+      "b": "Norepinephrine increases to support lipolysis and thermogenesis.",
+      "c": "Glucagon rises to stimulate hepatic glycogenolysis and gluconeogenesis.",
+      "d": "Ketone bodies become major fuel after glycogen depletion."
+    },
+    "relatedQuestions": ["2", "23"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "question": "During starvation, the non-protein RQ value is close to:",
+    "options": [
+      "1.50",
+      "0.75",
+      "0.50",
+      "0.25",
+      "0.20"
+    ],
+    "answer": 1,
+    "correctAnswer": "0.75",
+    "explanation": "The respiratory quotient (RQ) is the ratio of CO₂ produced to O₂ consumed. The non-protein RQ excludes protein oxidation. In starvation, the body predominantly oxidizes fat for energy. The RQ for pure fat oxidation is about 0.70, and for mixed fat oxidation (with some glucose/ketone use) it approaches 0.75–0.80. Therefore, 0.75 is the closest value, reflecting a metabolic shift toward fat as the primary fuel.",
+    "whyNotOtherOptions": {
+      "a": "1.50 is impossible; RQ for carbohydrate is ~1.0, fat ~0.7, protein ~0.8.",
+      "c": "0.50 is too low; even mixed fat/protein oxidation does not drop this far.",
+      "d": "0.25 is unrealistically low; no physiological substrate gives such an RQ.",
+      "e": "0.20 is not physiologically possible."
+    },
+    "relatedQuestions": ["2"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 6,
+    "question": "The main type of lipids found in tissues in starving individuals are in end of first week of fasting:",
+    "options": [
+      "Triacyl glycerol",
+      "Phospholipids",
+      "Cholesterol",
+      "Cholesterol esters",
+      "Glycolipids"
+    ],
+    "answer": 1,
+    "correctAnswer": "Phospholipids",
+    "explanation": "During prolonged fasting (end of first week), triacylglycerol (TAG) stores in adipose tissue are mobilized and oxidized for energy, so tissue TAG content decreases. However, structural lipids such as phospholipids remain relatively constant, as they are essential components of cell membranes and are not used for energy. Cholesterol and its esters also remain stable. Therefore, phospholipids become the predominant lipid class in tissues by mass.",
+    "whyNotOtherOptions": {
+      "a": "Triacylglycerol (TAG) is massively depleted from adipose tissue as the primary energy source.",
+      "c": "Cholesterol levels are maintained but do not become the main tissue lipid.",
+      "d": "Cholesterol esters are storage forms in cells; not the major remaining lipid.",
+      "e": "Glycolipids are minor membrane components; phospholipids dominate."
+    },
+    "relatedQuestions": ["2"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 7,
+    "question": "The source of glucose for glucose oxidation (glycolysis) by renal medullary cells in the fasting state is believed to be:",
+    "options": [
+      "Blood glucose",
+      "Conversion of fructose to glucose",
+      "Glycogen in medullary cells",
+      "Gluconeogenesis by the renal cortex",
+      "Gluconeogenesis by medullary cells"
+    ],
+    "answer": 3,
+    "correctAnswer": "Gluconeogenesis by the renal cortex",
+    "explanation": "The renal medulla lacks significant gluconeogenic capacity. However, the renal cortex is a major site of gluconeogenesis during prolonged fasting. Glucose produced in the cortex can be released into the renal circulation and taken up by medullary cells for glycolysis, which is essential for maintaining the osmotic gradient for urine concentration. Thus, medullary cells rely on glucose synthesized in the cortex, not on blood glucose, glycogen, or their own gluconeogenesis.",
+    "whyNotOtherOptions": {
+      "a": "Blood glucose levels fall in fasting; medulla prefers locally produced glucose.",
+      "b": "Fructose conversion is minor; not significant in renal medulla.",
+      "c": "Renal medulla has very little glycogen; not a major source.",
+      "e": "Medulla lacks key gluconeogenic enzymes (e.g., G6Pase, PEPCK)."
+    },
+    "relatedQuestions": ["3"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 8,
+    "question": "During prolonged fasting, the major control of rate of gluconeogenesis is the:",
+    "options": [
+      "Insulin/glucagon ratio",
+      "Availability of FFA to liver",
+      "ATP level in liver",
+      "C-AMP level in liver",
+      "Availability of alanine in the liver"
+    ],
+    "answer": 4,
+    "correctAnswer": "Availability of alanine in the liver",
+    "explanation": "In prolonged fasting, hormonal adaptations (low insulin/glucagon ratio) have already maximally induced gluconeogenic enzymes. At this stage, the rate-limiting factor becomes the substrate supply to the liver. Alanine is the primary gluconeogenic amino acid released from muscle. Its availability directly determines the liver’s capacity to synthesize glucose. While FFA availability supports the process by providing ATP and acetyl-CoA for gluconeogenesis, alanine is the key carbon precursor that controls the flux.",
+    "whyNotOtherOptions": {
+      "a": "Insulin/glucagon ratio is critical early in fasting; in prolonged fasting, enzymes are already induced.",
+      "b": "FFA availability supports energy and acetyl-CoA; not the primary rate controller.",
+      "c": "ATP levels are maintained; not limiting.",
+      "d": "cAMP (from glucagon) induces enzymes early; not the major control in prolonged phase."
+    },
+    "relatedQuestions": ["1", "3"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Hard"
+  }
+]

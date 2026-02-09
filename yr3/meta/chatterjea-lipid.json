@@ -1,0 +1,646 @@
+[
+  {
+    "id": 1,
+    "question": "A pathway that requires NADPH as a cofactor is:",
+    "options": [
+      "Fatty acid oxidation",
+      "Extramitochondrial de novo fatty acid synthesis",
+      "Ketone bodies formation",
+      "Glycogenesis",
+      "Gluconeogenesis"
+    ],
+    "answer": 1,
+    "correctAnswer": "Extramitochondrial de novo fatty acid synthesis",
+    "explanation": "NADPH provides reducing power needed for biosynthetic reactions, such as fatty acid synthesis in the cytosol. Fatty acid oxidation uses FAD and NAD⁺ instead.",
+    "whyNotOtherOptions": {
+      "a": "Fatty acid β-oxidation is a catabolic pathway occurring in mitochondria; it generates reducing equivalents (FADH₂ and NADH) for the electron transport chain, not NADPH.",
+      "c": "Ketogenesis (ketone body formation) in liver mitochondria uses NADH and produces acetyl-CoA-derived ketones; it does not require NADPH.",
+      "d": "Glycogenesis uses UDP-glucose and ATP; no NADPH is required (though G6P allosterically activates glycogen synthase).",
+      "e": "Gluconeogenesis requires NADH and ATP/GTP; NADPH is not involved in the bypass reactions."
+    },
+    "relatedQuestions": ["5", "28"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 2,
+    "question": "LCAT activity is associated with which lipoprotein complex?",
+    "options": [
+      "VLDL",
+      "Chylomicrons",
+      "IDL",
+      "LDL",
+      "HDL"
+    ],
+    "answer": 4,
+    "correctAnswer": "HDL",
+    "explanation": "LCAT (Lecithin-cholesterol acyltransferase) esterifies cholesterol on HDL particles, helping in reverse cholesterol transport from tissues to the liver.",
+    "whyNotOtherOptions": {
+      "a": "VLDL is TG-rich and secreted by liver; it contains ApoC-II (LPL activator) but not LCAT.",
+      "b": "Chylomicrons transport dietary TG; they are TG-rich and cleared by LPL, not LCAT.",
+      "c": "IDL is a transient intermediate between VLDL and LDL; no significant LCAT activity.",
+      "d": "LDL is cholesterol-rich but receives esterified cholesterol from HDL; LCAT acts primarily on nascent HDL."
+    },
+    "relatedQuestions": ["6", "15"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3,
+    "question": "The ‘committed step’ in cholesterol biosynthesis from acetyl-CoA is:",
+    "options": [
+      "Formation of acetoacetyl-CoA",
+      "Formation of mevalonate from HMG-CoA",
+      "Formation of HMG-CoA",
+      "Formation of squalene",
+      "Formation of lanosterol"
+    ],
+    "answer": 1,
+    "correctAnswer": "Formation of mevalonate from HMG-CoA",
+    "explanation": "HMG-CoA → mevalonate catalyzed by HMG-CoA reductase is the irreversible, rate-limiting “committed” step in cholesterol synthesis.",
+    "whyNotOtherOptions": {
+      "a": "Acetoacetyl-CoA formation (thiolase) is reversible and shared with ketogenesis and HMG-CoA synthesis.",
+      "c": "HMG-CoA formation by HMG-CoA synthase is upstream but not the committed step.",
+      "d": "Squalene formation (squalene synthase) is downstream and reversible.",
+      "e": "Lanosterol is much later in the pathway (after cyclization of squalene)."
+    },
+    "relatedQuestions": ["27", "30"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4,
+    "question": "In β-oxidation of fatty acids, which of the following are utilized as coenzymes?",
+    "options": [
+      "NAD⁺ and NADP⁺",
+      "FADH₂ and NADH + H⁺",
+      "FAD and FMN",
+      "FAD and NAD⁺",
+      "FAD and NADP⁺"
+    ],
+    "answer": 3,
+    "correctAnswer": "FAD and NAD⁺",
+    "explanation": "Each cycle of β-oxidation generates 1 FADH₂ and 1 NADH, which then feed into the electron transport chain.",
+    "whyNotOtherOptions": {
+      "a": "NADP⁺ is used in biosynthesis (e.g., fatty acid synthesis); β-oxidation uses NAD⁺ and FAD.",
+      "b": "FADH₂ and NADH are products, not coenzymes used as substrates.",
+      "c": "FMN is used in complex I of ETC; not directly in β-oxidation.",
+      "e": "NADP⁺ is not used; β-oxidation is catabolic and generates NADH/FADH₂."
+    },
+    "relatedQuestions": ["18", "20"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "question": "The most important source of reducing equivalents for FA synthesis in the liver is:",
+    "options": [
+      "Glycolysis",
+      "HMP-shunt",
+      "TCA cycle",
+      "Uronic acid pathway",
+      "Gluconeogenesis"
+    ],
+    "answer": 1,
+    "correctAnswer": "HMP-shunt",
+    "explanation": "The Hexose Monophosphate (HMP) shunt generates NADPH, the key reducing equivalent needed for fatty acid synthesis.",
+    "whyNotOtherOptions": {
+      "a": "Glycolysis produces NADH, not NADPH; NADH is used in catabolism.",
+      "c": "TCA cycle generates NADH and FADH₂ for oxidative phosphorylation; cytosolic NADPH comes mainly from HMP.",
+      "d": "Uronic acid pathway produces UDP-glucuronate; minor NADPH from 6PGD but not primary.",
+      "e": "Gluconeogenesis consumes reducing equivalents; does not produce NADPH."
+    },
+    "relatedQuestions": ["1", "28"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 6,
+    "question": "Lipoproteins with the fastest electrophoretic mobility and lowest TG content:",
+    "options": [
+      "VLDL",
+      "IDL",
+      "LDL",
+      "HDL",
+      "Chylomicrons"
+    ],
+    "answer": 3,
+    "correctAnswer": "HDL",
+    "explanation": "HDL particles are small, protein-rich, and migrate fastest in electrophoresis due to high density and low triglyceride content.",
+    "whyNotOtherOptions": {
+      "a": "VLDL is TG-rich, large, and migrates slowly (pre-β).",
+      "b": "IDL is intermediate between VLDL and LDL; moderate mobility.",
+      "c": "LDL is cholesterol-rich, smaller than VLDL but slower than HDL (β mobility).",
+      "e": "Chylomicrons are largest and TG-rich; slowest mobility (remain at origin)."
+    },
+    "relatedQuestions": ["2", "15"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 7,
+    "question": "All of the following tissues can use ketone bodies, except:",
+    "options": [
+      "Brain",
+      "Renal cortex",
+      "Red blood cells",
+      "Cardiac muscle",
+      "Skeletal muscle"
+    ],
+    "answer": 2,
+    "correctAnswer": "Red blood cells",
+    "explanation": "RBCs lack mitochondria and therefore cannot oxidize ketone bodies for energy.",
+    "whyNotOtherOptions": {
+      "a": "Brain adapts to use ketone bodies (β-hydroxybutyrate) during prolonged fasting.",
+      "b": "Renal cortex has mitochondria and uses ketones efficiently.",
+      "d": "Cardiac muscle prefers ketones as fuel during fasting.",
+      "e": "Skeletal muscle uses ketones when glucose is low."
+    },
+    "relatedQuestions": ["9"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 8,
+    "question": "Major source of cholesterol in arterial smooth muscle cells:",
+    "options": [
+      "IDL",
+      "LDL",
+      "HDL",
+      "Chylomicrons",
+      "VLDL"
+    ],
+    "answer": 1,
+    "correctAnswer": "LDL",
+    "explanation": "LDL delivers cholesterol to peripheral tissues, including arterial smooth muscle, and excess LDL can contribute to atherosclerosis.",
+    "whyNotOtherOptions": {
+      "a": "IDL is transient; delivers less cholesterol than LDL.",
+      "c": "HDL removes cholesterol from tissues (reverse transport); not a major source.",
+      "d": "Chylomicrons deliver dietary TG; minimal cholesterol delivery.",
+      "e": "VLDL is TG-rich; cholesterol delivery is minor compared to LDL."
+    },
+    "relatedQuestions": ["2", "6"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 9,
+    "question": "Ketone bodies are synthesized from fatty acid oxidation products by which organ?",
+    "options": [
+      "Skeletal muscles",
+      "Kidney",
+      "Erythrocytes",
+      "Brain",
+      "Liver"
+    ],
+    "answer": 4,
+    "correctAnswer": "Liver",
+    "explanation": "Ketogenesis occurs in liver mitochondria during fasting, diabetes, or high-fat diets.",
+    "whyNotOtherOptions": {
+      "a": "Skeletal muscle oxidizes fatty acids but does not produce ketones (lacks HMG-CoA synthase).",
+      "b": "Kidney uses ketones but does not synthesize them.",
+      "c": "Erythrocytes lack mitochondria; cannot perform ketogenesis.",
+      "d": "Brain uses ketones but does not produce them."
+    },
+    "relatedQuestions": ["7", "16"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 10,
+    "question": "Chain elongation of fatty acids in mammalian liver occurs in:",
+    "options": [
+      "Nucleus",
+      "Ribosomes",
+      "Lysosomes",
+      "Microsomes",
+      "Golgi apparatus"
+    ],
+    "answer": 3,
+    "correctAnswer": "Microsomes",
+    "explanation": "Microsomes (ER fragments) are sites for elongation of fatty acids beyond palmitate (C16).",
+    "whyNotOtherOptions": {
+      "a": "Nucleus is for transcription; no fatty acid elongation.",
+      "b": "Ribosomes synthesize proteins; no lipid elongation.",
+      "c": "Lysosomes degrade lipids; opposite of synthesis.",
+      "e": "Golgi modifies proteins/lipids post-synthesis; not for chain elongation."
+    },
+    "relatedQuestions": ["1"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 11,
+    "question": "Cofactor required for conversion of acetyl-CoA to malonyl-CoA:",
+    "options": [
+      "FAD",
+      "FMN",
+      "ACP",
+      "NAD⁺",
+      "Biotin"
+    ],
+    "answer": 4,
+    "correctAnswer": "Biotin",
+    "explanation": "Acetyl-CoA carboxylase requires biotin as a cofactor for carboxylation to malonyl-CoA in fatty acid synthesis.",
+    "whyNotOtherOptions": {
+      "a": "FAD is used in β-oxidation (acyl-CoA dehydrogenase).",
+      "b": "FMN is in ETC complex I; no role in carboxylation.",
+      "c": "ACP (acyl carrier protein) is used in fatty acid synthase but not for malonyl-CoA formation.",
+      "d": "NAD⁺ is used in catabolic reactions; not in carboxylation."
+    },
+    "relatedQuestions": ["1", "5"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 13,
+    "question": "Which statement regarding β-oxidation is true?",
+    "options": [
+      "Requires β-ketoacyl-CoA as substrate",
+      "Forms CoA thioesters",
+      "Requires GTP",
+      "Yields acetyl-CoA as a product (indirectly)",
+      "None"
+    ],
+    "answer": 1,
+    "correctAnswer": "Forms CoA thioesters",
+    "explanation": "Fatty acids are activated to acyl-CoA thioesters before β-oxidation.",
+    "whyNotOtherOptions": {
+      "a": "β-ketoacyl-CoA is an intermediate in each cycle, not the initial substrate.",
+      "c": "GTP is produced in TCA (succinyl-CoA synthetase); β-oxidation uses FAD/NAD⁺.",
+      "d": "Acetyl-CoA is the direct product of each cycle.",
+      "e": "Option B is clearly true."
+    },
+    "relatedQuestions": ["4", "18", "20"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 14,
+    "question": "Statements about 3-Hydroxy-3-methylglutaryl-CoA (HMG-CoA), except:",
+    "options": [
+      "Formed in cytoplasm",
+      "Required in ketogenesis",
+      "Involved in FA synthesis",
+      "Intermediate in cholesterol biosynthesis",
+      "Enzyme: HMG-CoA synthase"
+    ],
+    "answer": 2,
+    "correctAnswer": "Involved in FA synthesis",
+    "explanation": "HMG-CoA is not used directly for FA synthesis; it is key in cholesterol synthesis (cytoplasm) and ketone synthesis (mitochondria).",
+    "whyNotOtherOptions": {
+      "a": "Cytoplasmic HMG-CoA synthase forms HMG-CoA for cholesterol pathway.",
+      "b": "Mitochondrial HMG-CoA synthase forms HMG-CoA for ketogenesis.",
+      "d": "HMG-CoA is intermediate in cholesterol biosynthesis.",
+      "e": "HMG-CoA synthase catalyzes acetyl-CoA + acetoacetyl-CoA → HMG-CoA."
+    },
+    "relatedQuestions": ["3", "27"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 15,
+    "question": "Lipoproteins contributing to plasma cholesterol after 12-hr fast:",
+    "options": [
+      "Chylomicrons",
+      "VLDL",
+      "Both VLDL and LDL",
+      "LDL",
+      "Chylomicrons + LDL"
+    ],
+    "answer": 3,
+    "correctAnswer": "LDL",
+    "explanation": "After fasting, chylomicrons are cleared; LDL (and some VLDL remnants) remain to contribute to cholesterol measurement.",
+    "whyNotOtherOptions": {
+      "a": "Chylomicrons are cleared within hours after a meal; absent after 12-hr fast.",
+      "b": "VLDL is present but contributes less cholesterol than LDL after fasting.",
+      "c": "VLDL remnants contribute some, but LDL is the major cholesterol carrier.",
+      "e": "Chylomicrons are not present in fasting state."
+    },
+    "relatedQuestions": ["6", "8"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 16,
+    "question": "Statements about ketone bodies, except:",
+    "options": [
+      "Result from starvation",
+      "Formed in kidneys",
+      "Include acetoacetate & acetone",
+      "May be excreted in urine",
+      "High in uncontrolled diabetes"
+    ],
+    "answer": 1,
+    "correctAnswer": "Formed in kidneys",
+    "explanation": "Ketone bodies are formed in liver, not kidneys.",
+    "whyNotOtherOptions": {
+      "a": "Starvation → increased lipolysis → hepatic ketogenesis.",
+      "c": "Acetoacetate and acetone (decarboxylation product) are ketone bodies.",
+      "d": "Ketones are excreted in urine during ketoacidosis.",
+      "e": "Uncontrolled diabetes → insulin deficiency → massive ketogenesis."
+    },
+    "relatedQuestions": ["7", "9"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 17,
+    "question": "First intermediate in TG synthesis from α-Glycerol-P and acyl-CoA:",
+    "options": [
+      "α, β-diacyl glycerol",
+      "Acyl carnitine",
+      "β-monoacyl glycerol",
+      "Phosphatidic acid",
+      "Lysophosphatide"
+    ],
+    "answer": 3,
+    "correctAnswer": "Phosphatidic acid",
+    "explanation": "Phosphatidic acid forms by sequential acylation of glycerol-3-phosphate and is precursor for TG and phospholipids.",
+    "whyNotOtherOptions": {
+      "a": "Diacylglycerol is downstream after dephosphorylation of phosphatidic acid.",
+      "b": "Acyl carnitine is for mitochondrial fatty acid transport; not TG synthesis.",
+      "c": "Monoacylglycerol pathway is intestinal; liver uses glycerol-3-P pathway.",
+      "e": "Lysophosphatide is intermediate in phospholipid remodeling; not first step."
+    },
+    "relatedQuestions": ["29"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 18,
+    "question": "Compounds generated during β-oxidation, except:",
+    "options": [
+      "NADH",
+      "H₂O",
+      "FADH₂",
+      "Acyl-CoA",
+      "Acetyl-CoA"
+    ],
+    "answer": 1,
+    "correctAnswer": "H₂O",
+    "explanation": "β-oxidation produces FADH₂, NADH, acetyl-CoA; water is not directly generated.",
+    "whyNotOtherOptions": {
+      "a": "NADH from 3-hydroxyacyl-CoA dehydrogenase.",
+      "c": "FADH₂ from acyl-CoA dehydrogenase.",
+      "d": "Acyl-CoA is the activated substrate.",
+      "e": "Acetyl-CoA is released each cycle."
+    },
+    "relatedQuestions": ["4", "20"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 19,
+    "question": "Energy yield from second cycle of β-oxidation of palmitoyl-CoA:",
+    "options": [
+      "5 ATP",
+      "12 ATP",
+      "17 ATP",
+      "34 ATP",
+      "42 ATP"
+    ],
+    "answer": 3,
+    "correctAnswer": "34 ATP",
+    "explanation": "Each cycle generates NADH, FADH₂, and acetyl-CoA; total ATP from palmitate oxidation is 106 ATP; the second cycle contributes proportionally (~34 ATP).",
+    "whyNotOtherOptions": {
+      "a": "5 ATP is too low (even one NADH + FADH₂ ≈ 5 ATP).",
+      "b": "12 ATP underestimates (one acetyl-CoA ≈ 10 ATP + reducing equivalents).",
+      "c": "17 ATP is approximate for one cycle including acetyl-CoA oxidation.",
+      "e": "42 ATP is close to total for one palmitate (106/7 cycles ≈ 15 per cycle)."
+    },
+    "relatedQuestions": ["4", "45"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 20,
+    "question": "β-oxidation of odd-carbon fatty acids produces:",
+    "options": [
+      "Succinyl-CoA",
+      "Propionyl-CoA",
+      "Acetyl-CoA",
+      "Malonyl-CoA",
+      "Acetoacetyl-CoA"
+    ],
+    "answer": 1,
+    "correctAnswer": "Propionyl-CoA",
+    "explanation": "Odd-chain FA oxidation ends with propionyl-CoA, which can enter the TCA cycle as succinyl-CoA.",
+    "whyNotOtherOptions": {
+      "a": "Succinyl-CoA is produced after propionyl-CoA carboxylation and mutase.",
+      "c": "Acetyl-CoA is produced in even-chain and early cycles of odd-chain.",
+      "d": "Malonyl-CoA inhibits CPT-1; not a product of β-oxidation.",
+      "e": "Acetoacetyl-CoA is in ketogenesis, not direct β-oxidation product."
+    },
+    "relatedQuestions": ["45"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 22,
+    "question": "Brown adipose tissue is characterized by:",
+    "options": [
+      "Present in large quantities in adults",
+      "Mitochondrial content higher than white adipose tissue",
+      "Oxidation & phosphorylation tightly coupled",
+      "Absent in hibernating animals",
+      "All of the above"
+    ],
+    "answer": 1,
+    "correctAnswer": "Mitochondrial content higher than white adipose tissue",
+    "explanation": "Brown adipose tissue is rich in mitochondria for heat production (uncoupled oxidative phosphorylation).",
+    "whyNotOtherOptions": {
+      "a": "Brown fat is abundant in infants and hibernating animals; minimal in adult humans.",
+      "c": "Brown fat has uncoupled respiration (UCP1) for thermogenesis; phosphorylation is loose.",
+      "d": "Brown fat is present and crucial in hibernating animals for non-shivering thermogenesis.",
+      "e": "Only B is correct; others are false."
+    },
+    "relatedQuestions": [],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 23,
+    "question": "Ketosis is partly due to:",
+    "options": [
+      "Overproduction of glucose",
+      "Underproduction of glucose",
+      "Increased carbohydrate utilization",
+      "Increased fat utilization",
+      "Increased pyruvate in liver"
+    ],
+    "answer": 3,
+    "correctAnswer": "Increased fat utilization",
+    "explanation": "During low carbohydrate intake, FA oxidation increases, producing ketone bodies.",
+    "whyNotOtherOptions": {
+      "a": "Overproduction of glucose would suppress ketogenesis (high insulin).",
+      "b": "Underproduction of glucose occurs in fasting but is not the direct cause.",
+      "c": "High carbohydrate utilization suppresses lipolysis and ketogenesis.",
+      "e": "Pyruvate is low in fasting; acetyl-CoA from fat oxidation drives ketogenesis."
+    },
+    "relatedQuestions": ["9", "16"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 24,
+    "question": "Free fatty acids in blood:",
+    "options": [
+      "Stored in fat depots",
+      "Mainly bound to β-lipoproteins",
+      "Mainly bound to serum albumin",
+      "Metabolically inactive",
+      "All of the above"
+    ],
+    "answer": 2,
+    "correctAnswer": "Mainly bound to serum albumin",
+    "explanation": "Free fatty acids are transported bound to albumin in plasma.",
+    "whyNotOtherOptions": {
+      "a": "FFAs are released from fat depots but not stored in blood.",
+      "b": "β-lipoproteins (LDL/VLDL) carry cholesterol/TG; FFAs bind albumin.",
+      "d": "FFAs are metabolically active; taken up by tissues for oxidation.",
+      "e": "Only C is correct."
+    },
+    "relatedQuestions": ["33"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 25,
+    "question": "Triacylglycerol in VLDL is hydrolyzed by:",
+    "options": [
+      "Intestinal lipase",
+      "Lipoprotein lipase",
+      "Hormone-sensitive lipase",
+      "Pancreatic lipase",
+      "Co-lipase"
+    ],
+    "answer": 1,
+    "correctAnswer": "Lipoprotein lipase",
+    "explanation": "LPL in capillaries hydrolyzes TG in VLDL and chylomicrons to release FA for tissues.",
+    "whyNotOtherOptions": {
+      "a": "Intestinal lipase is not a major enzyme; pancreatic lipase digests dietary TG.",
+      "c": "Hormone-sensitive lipase is intracellular in adipocytes for lipolysis.",
+      "d": "Pancreatic lipase digests dietary TG in lumen; not circulating VLDL.",
+      "e": "Co-lipase assists pancreatic lipase; no role in VLDL hydrolysis."
+    },
+    "relatedQuestions": ["46", "47"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 26,
+    "question": "Carnitine is synthesized from:",
+    "options": [
+      "Lysine",
+      "Serine",
+      "Choline",
+      "Arginine",
+      "Threonine"
+    ],
+    "answer": 0,
+    "correctAnswer": "Lysine",
+    "explanation": "Carnitine is synthesized in liver/kidney from lysine residues with vitamin C as a cofactor.",
+    "whyNotOtherOptions": {
+      "b": "Serine is precursor for glycine, sphingolipids; not carnitine.",
+      "c": "Choline is for phosphatidylcholine; not carnitine.",
+      "d": "Arginine is in urea cycle; contributes to creatine, not carnitine.",
+      "e": "Threonine is glucogenic/ketogenic; no role in carnitine."
+    },
+    "relatedQuestions": ["41"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 27,
+    "question": "Common metabolite in cholesterol biosynthesis and cholecalciferol formation:",
+    "options": [
+      "Zymosterol",
+      "Lumisterol",
+      "Ergosterol",
+      "7-Dehydrocholesterol",
+      "Pregnenolone"
+    ],
+    "answer": 3,
+    "correctAnswer": "7-Dehydrocholesterol",
+    "explanation": "7-Dehydrocholesterol is a cholesterol precursor converted to vitamin D3 in skin.",
+    "whyNotOtherOptions": {
+      "a": "Zymosterol is late in cholesterol pathway; not for vitamin D.",
+      "b": "Lumisterol is a photoproduct of previtamin D3; inactive.",
+      "c": "Ergosterol is plant/fungal sterol; precursor to vitamin D2.",
+      "e": "Pregnenolone is steroid hormone precursor; not cholesterol/vitamin D."
+    },
+    "relatedQuestions": ["3", "30"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 28,
+    "question": "Acetyl-CoA for extramitochondrial FA synthesis is produced by:",
+    "options": [
+      "Pyruvate dehydrogenase",
+      "Thiolase",
+      "Acetyl-CoA synthase",
+      "Carnitine-acyl transferase",
+      "Citrate Lyase"
+    ],
+    "answer": 4,
+    "correctAnswer": "Citrate Lyase",
+    "explanation": "Citrate exported from mitochondria is cleaved by ATP-citrate lyase to produce cytosolic acetyl-CoA.",
+    "whyNotOtherOptions": {
+      "a": "PDH produces acetyl-CoA in mitochondria; not cytosolic.",
+      "b": "Thiolase produces acetoacetyl-CoA in ketogenesis/β-oxidation.",
+      "c": "Acetyl-CoA synthase activates acetate; minor source.",
+      "d": "Carnitine acyltransferase transports acyl-CoA into mitochondria; opposite direction."
+    },
+    "relatedQuestions": ["1", "5"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 29,
+    "question": "Biosynthesis of TG and lecithin both require intermediate:",
+    "options": [
+      "Monoacyl glycerophosphate",
+      "Phosphatidic acid",
+      "Phosphatidylethanolamine",
+      "Phosphatidyl cytidylate",
+      "Phosphatidyl adenylate"
+    ],
+    "answer": 1,
+    "correctAnswer": "Phosphatidic acid",
+    "explanation": "Phosphatidic acid is the key intermediate in TG and phospholipid synthesis.",
+    "whyNotOtherOptions": {
+      "a": "Monoacylglycerophosphate (lysophosphatidic acid) is early; phosphatidic acid is next.",
+      "c": "Phosphatidylethanolamine is a phospholipid end product.",
+      "d": "Phosphatidyl cytidylate (CDP-DAG) is downstream for phosphatidylinositol.",
+      "e": "Phosphatidyl adenylate does not exist."
+    },
+    "relatedQuestions": ["17"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30,
+    "question": "Rate-limiting step in cholesterol biosynthesis:",
+    "options": [
+      "Squalene synthetase",
+      "Mevalonate kinase",
+      "HMG-CoA synthetase",
+      "HMG-CoA reductase",
+      "Thiolase"
+    ],
+    "answer": 3,
+    "correctAnswer": "HMG-CoA reductase",
+    "explanation": "HMG-CoA reductase catalyzes HMG-CoA → mevalonate, the rate-limiting step in cholesterol synthesis.",
+    "whyNotOtherOptions": {
+      "a": "Squalene synthetase is downstream; not rate-limiting.",
+      "b": "Mevalonate kinase is after mevalonate; regulated but not primary.",
+      "c": "HMG-CoA synthetase forms HMG-CoA; not the committed step.",
+      "e": "Thiolase forms acetoacetyl-CoA; shared with ketogenesis."
+    },
+    "relatedQuestions": ["3", "27"],
+    "category": "6. Lipid Metabolism",
+    "difficulty": "Medium"
+  }
+]

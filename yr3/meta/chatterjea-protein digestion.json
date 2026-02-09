@@ -1,0 +1,336 @@
+[
+  {
+    "id": 1,
+    "question": "Pancreatic juice contains all of the following, except:",
+    "options": [
+      "Trypsinogen",
+      "Lipase",
+      "Cholecystokinin",
+      "Chymotrypsinogen",
+      "Amylase"
+    ],
+    "answer": 2,
+    "correctAnswer": "Cholecystokinin",
+    "explanation": "Pancreatic juice is an exocrine secretion containing digestive enzymes (and their zymogens) such as trypsinogen, chymotrypsinogen, pancreatic lipase, and amylase. Cholecystokinin (CCK) is a hormone secreted by duodenal I‑cells in response to fat and protein; it stimulates pancreatic enzyme release but is not a constituent of pancreatic juice itself.",
+    "whyNotOtherOptions": {
+      "a": "Trypsinogen is the inactive zymogen secreted by pancreas; activated to trypsin in duodenum.",
+      "b": "Pancreatic lipase (triacylglycerol acyl hydrolase) is secreted in active form for fat digestion.",
+      "d": "Chymotrypsinogen is the zymogen of chymotrypsin; activated by trypsin.",
+      "e": "Pancreatic α-amylase is secreted in active form; continues starch digestion started in mouth."
+    },
+    "relatedQuestions": ["5", "11"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 2,
+    "question": "The milk protein in the stomach in an adult is digested by:",
+    "options": [
+      "Pepsin",
+      "Rennin",
+      "HCl",
+      "Trypsin",
+      "Chymotrypsinogen"
+    ],
+    "answer": 0,
+    "correctAnswer": "Pepsin",
+    "explanation": "In adults, the main gastric protease is pepsin, which hydrolyzes proteins including milk casein. Rennin (chymosin) is present in infants and specifically curdles milk but is negligible in adults. HCl denatures proteins but does not hydrolyze peptide bonds. Trypsin and chymotrypsin are pancreatic enzymes active in the small intestine.",
+    "whyNotOtherOptions": {
+      "b": "Rennin (chymosin) activity is high in infants for milk clotting; virtually absent in adults.",
+      "c": "HCl denatures proteins and activates pepsinogen → pepsin, but does not cleave peptide bonds.",
+      "d": "Trypsin is pancreatic; acts in alkaline duodenum, not acidic stomach.",
+      "e": "Chymotrypsinogen is inactive zymogen; activated in duodenum, not stomach."
+    },
+    "relatedQuestions": ["9"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 3,
+    "question": "Carboxypeptidase A enzyme of pancreatic juice contains:",
+    "options": [
+      "Copper",
+      "Zinc",
+      "Magnesium",
+      "Manganese",
+      "Cobalt"
+    ],
+    "answer": 1,
+    "correctAnswer": "Zinc",
+    "explanation": "Carboxypeptidase A is a zinc‑dependent metalloprotease. Zinc is essential for its catalytic activity, coordinating with water to hydrolyze the terminal peptide bond at the carboxyl end of proteins. The other metals listed are not part of its active site.",
+    "whyNotOtherOptions": {
+      "a": "Copper is in ceruloplasmin, superoxide dismutase; not carboxypeptidase A.",
+      "c": "Magnesium is cofactor for kinases, DNA polymerase; not for carboxypeptidase A.",
+      "d": "Manganese is in arginase, pyruvate carboxylase; not carboxypeptidase A.",
+      "e": "Cobalt is in vitamin B12-dependent enzymes; not carboxypeptidase A."
+    },
+    "relatedQuestions": ["6"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4,
+    "question": "The enzyme collagenase of pancreatic juice hydrolyzes collagen present in:",
+    "options": [
+      "Milk",
+      "Eggs",
+      "Cereals",
+      "Meat",
+      "Soyabeans"
+    ],
+    "answer": 3,
+    "correctAnswer": "Meat",
+    "explanation": "Collagen is the major structural protein in connective tissue of animals. Pancreatic collagenase specifically hydrolyzes collagen fibers found in meat, facilitating its digestion. Milk, eggs, cereals, and soybeans contain other proteins (casein, ovalbumin, gluten, glycinin) but little or no collagen.",
+    "whyNotOtherOptions": {
+      "a": "Milk proteins are mainly casein and whey; negligible collagen.",
+      "b": "Egg white (albumin) and yolk proteins contain no collagen.",
+      "c": "Cereals have plant proteins (gluten, zein); no collagen.",
+      "e": "Soyabean proteins (glycinin, conglycinin) are plant-derived; no collagen."
+    },
+    "relatedQuestions": [],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 5,
+    "question": "The zymogen form trypsinogen of pancreatic juice is converted to ‘active’ trypsin by:",
+    "options": [
+      "Pepsin",
+      "Enterocrinin",
+      "Enterokinase",
+      "Rennin",
+      "Gastrin"
+    ],
+    "answer": 2,
+    "correctAnswer": "Enterokinase",
+    "explanation": "Enterokinase (enteropeptidase) is a brush‑border enzyme of the duodenum that cleaves the N‑terminal hexapeptide from trypsinogen, converting it to active trypsin. Trypsin then activates other pancreatic zymogens (autocatalysis). Pepsin is a gastric enzyme; enterocrinin stimulates intestinal secretion; rennin is for milk clotting in infants; gastrin stimulates gastric acid secretion.",
+    "whyNotOtherOptions": {
+      "a": "Pepsin activates pepsinogen in stomach; no role in pancreatic zymogens.",
+      "b": "Enterocrinin is an old term for secretin-like hormone; not the activator.",
+      "d": "Rennin (chymosin) clots milk in infants; no trypsinogen activation.",
+      "e": "Gastrin stimulates HCl secretion; no direct effect on trypsinogen."
+    },
+    "relatedQuestions": ["1", "11"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 6,
+    "question": "Carboxypeptidase B acts as an exopeptidase and hydrolyses the terminal peptide bonds containing:",
+    "options": [
+      "Lysine and Arginine",
+      "Leucine and Arginine",
+      "Glycine and leucine",
+      "Glycine and Valine",
+      "Leucine and Isoleucine"
+    ],
+    "answer": 0,
+    "correctAnswer": "Lysine and Arginine",
+    "explanation": "Carboxypeptidase B specifically cleaves C‑terminal basic amino acids—lysine and arginine. In contrast, carboxypeptidase A cleaves C‑terminal aromatic or aliphatic residues. This specificity complements the action of trypsin, which cleaves internal peptide bonds after Lys/Arg.",
+    "whyNotOtherOptions": {
+      "b": "Carboxypeptidase B is specific for basic (Lys/Arg), not leucine.",
+      "c": "Glycine/leucine are neutral; carboxypeptidase A prefers bulky hydrophobic.",
+      "d": "Glycine/valine not basic; no specificity for B.",
+      "e": "Leucine/isoleucine are aliphatic; carboxypeptidase A substrate."
+    },
+    "relatedQuestions": ["3"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 7,
+    "question": "Inactive zymogens (proenzymes) are precursors of all the following gastrointestinal enzymes, except:",
+    "options": [
+      "Trypsin",
+      "Carboxypeptidase",
+      "Pepsin",
+      "Aminopeptidase",
+      "Chymotrypsin"
+    ],
+    "answer": 3,
+    "correctAnswer": "Aminopeptidase",
+    "explanation": "Aminopeptidase is a brush‑border enzyme of enterocytes; it is not secreted as a zymogen but is present in its active form on the luminal surface. In contrast, trypsinogen, procarboxypeptidase, pepsinogen, and chymotrypsinogen are all secreted as inactive precursors (zymogens) and activated in the lumen.",
+    "whyNotOtherOptions": {
+      "a": "Trypsinogen is classic pancreatic zymogen.",
+      "b": "Procarboxypeptidase is pancreatic zymogen.",
+      "c": "Pepsinogen is gastric zymogen.",
+      "e": "Chymotrypsinogen is pancreatic zymogen."
+    },
+    "relatedQuestions": ["5"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 8,
+    "question": "Which of the following regarding digestion of proteins are correct, except:",
+    "options": [
+      "Pepsinogen is activated by autoactivation (pH‑2) or autocatalysis",
+      "The major products or protein hydrolysis are large peptides and some free amino acids",
+      "Most of the digested proteins are absorbed in the intestine in the form of polypeptides",
+      "Trypsin and chymotrypsin are secreted by the pancreas as inactive zymogens",
+      "Enterokinase activates pancreatic trypsinogen"
+    ],
+    "answer": 2,
+    "correctAnswer": "Most of the digested proteins are absorbed in the intestine in the form of polypeptides",
+    "explanation": "Dietary proteins are digested to small peptides (di‑ and tripeptides) and free amino acids, which are absorbed via specific transporters. Large polypeptides are not absorbed intact; they are further hydrolyzed by brush‑border peptidases. The other statements are correct: (a) pepsinogen activation at low pH, (b) end‑products are peptides + some amino acids, (d) trypsinogen/chymotrypsinogen are zymogens, (e) enterokinase activates trypsinogen.",
+    "whyNotOtherOptions": {
+      "a": "Pepsinogen → pepsin at pH < 5 (autoactivation) or by active pepsin.",
+      "b": "End products of luminal digestion are oligopeptides + some free AA.",
+      "d": "Trypsinogen and chymotrypsinogen are zymogens.",
+      "e": "Enterokinase (brush border) activates trypsinogen."
+    },
+    "relatedQuestions": ["5", "7"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 9,
+    "question": "Rennin acts on casein of milk in infants in presence of:",
+    "options": [
+      "Mg⁺⁺",
+      "Zn⁺⁺",
+      "Co⁺⁺",
+      "Ca⁺⁺",
+      "Mn⁺⁺"
+    ],
+    "answer": 3,
+    "correctAnswer": "Ca⁺⁺",
+    "explanation": "Rennin (chymosin) clots milk by cleaving κ‑casein, causing casein micelles to aggregate in the presence of calcium ions (Ca²⁺). Ca²⁺ bridges the phosphoserine residues of casein, stabilizing the curd. The other ions are not required for rennin activity.",
+    "whyNotOtherOptions": {
+      "a": "Mg²⁺ is not required for rennin-mediated clotting.",
+      "b": "Zn²⁺ is cofactor for carboxypeptidases, not rennin.",
+      "c": "Co²⁺ not involved.",
+      "e": "Mn²⁺ not required for milk clotting."
+    },
+    "relatedQuestions": ["2"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 10,
+    "question": "Active chymotrypsin is:",
+    "options": [
+      "π‑chymotrypsin",
+      "α‑chymotrypsin",
+      "δ‑chymotrypsin",
+      "β‑chymotrypsin",
+      "All of the above"
+    ],
+    "answer": 1,
+    "correctAnswer": "α‑chymotrypsin",
+    "explanation": "Chymotrypsinogen is activated by trypsin to form π‑chymotrypsin, which then undergoes autolysis to yield the stable, fully active α‑chymotrypsin. The π and δ forms are transient intermediates; α‑chymotrypsin is the predominant active form in the intestine.",
+    "whyNotOtherOptions": {
+      "a": "π-chymotrypsin is initial active form; rapidly converted to α.",
+      "c": "δ-chymotrypsin is an early intermediate.",
+      "d": "β-chymotrypsin is not standard nomenclature.",
+      "e": "Only α-chymotrypsin is the final stable active enzyme."
+    },
+    "relatedQuestions": ["14"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 11,
+    "question": "During intestinal proteolysis:",
+    "options": [
+      "Enterokinase converts trypsinogen to trypsin",
+      "Involves conformational change, but no change in covalent structure",
+      "Trypsin activates procarboxypeptidase A and proelastase",
+      "a + b true",
+      "a + c true"
+    ],
+    "answer": 4,
+    "correctAnswer": "a + c true",
+    "explanation": "During intestinal proteolysis:\n* Enterokinase activates trypsinogen to trypsin (a) by cleaving a peptide bond (covalent change).\n* Trypsin activates other zymogens including procarboxypeptidase A and proelastase (c).\nStatement (b) is false because activation involves covalent cleavage (not just conformational change). Therefore, a + c are correct.",
+    "whyNotOtherOptions": {
+      "a": "Enterokinase cleaves trypsinogen covalently; essential first step.",
+      "b": "Zymogen activation requires limited proteolysis (covalent change).",
+      "c": "Trypsin is the master activator of pancreatic proenzymes.",
+      "d": "b is false."
+    },
+    "relatedQuestions": ["5", "7"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 12,
+    "question": "Pepsin contains large amounts of which of the following amino acids:",
+    "options": [
+      "Aromatic amino acids",
+      "Acidic amino acids",
+      "Basic amino acids",
+      "Sulphur containing amino acids",
+      "Neutral amino acids"
+    ],
+    "answer": 1,
+    "correctAnswer": "Acidic amino acids",
+    "explanation": "Pepsin is an aspartic protease that functions at acidic pH. Its active site contains two aspartate residues (acidic amino acids) essential for catalysis. Although it hydrolyzes peptide bonds adjacent to aromatic residues, its own amino acid composition is not especially rich in aromatics; the characteristic feature is the presence of critical acidic residues in the catalytic site.",
+    "whyNotOtherOptions": {
+      "a": "Pepsin cleaves after aromatic residues but is not particularly rich in them.",
+      "c": "Basic AA would be protonated at low pH; not dominant in pepsin.",
+      "d": "Sulfur-containing AA (Cys/Met) are few; no disulfide in active pepsin.",
+      "e": "Neutral AA are common but not the defining feature."
+    },
+    "relatedQuestions": ["2"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 13,
+    "question": "D‑amino acids are absorbed by:",
+    "options": [
+      "Active transport",
+      "In presence of a ‘carrier’ molecule",
+      "In presence of sodium ions",
+      "Passive diffusion",
+      "None of the above"
+    ],
+    "answer": 3,
+    "correctAnswer": "Passive diffusion",
+    "explanation": "Natural dietary proteins contain L‑amino acids, which are absorbed via specific active or facilitated transport systems (e.g., Na⁺‑dependent cotransporters). D‑amino acids (rare in nature, may come from bacterial cell walls or processed foods) are not recognized by these specific transporters and are absorbed slowly by passive diffusion down their concentration gradient.",
+    "whyNotOtherOptions": {
+      "a": "Active transport systems are stereospecific for L-amino acids.",
+      "b": "No specific carrier for D-amino acids.",
+      "c": "Na⁺-dependent systems are L-specific.",
+      "e": "Passive diffusion is the mechanism."
+    },
+    "relatedQuestions": [],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 14,
+    "question": "Chymotrypsin hydrolyses the peptide linkages containing:",
+    "options": [
+      "Phenyl alanine and tyrosine",
+      "Phenyl alanine and lysine",
+      "Tyrosine and lysine",
+      "Tyrosine and leucine",
+      "Phenylalanine and leucine"
+    ],
+    "answer": 0,
+    "correctAnswer": "Phenyl alanine and tyrosine",
+    "explanation": "Chymotrypsin is an endopeptidase with specificity for peptide bonds where the carbonyl group is contributed by large hydrophobic aromatic amino acids: primarily phenylalanine, tyrosine, and tryptophan. It may also cleave after leucine and methionine, but its classic specificity is for Phe and Tyr.",
+    "whyNotOtherOptions": {
+      "b": "Lysine is substrate for trypsin (basic specificity).",
+      "c": "Tyrosine + lysine not specific for chymotrypsin.",
+      "d": "Tyrosine + leucine; leucine weaker substrate.",
+      "e": "Phenylalanine + leucine; leucine is secondary."
+    },
+    "relatedQuestions": ["10"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 15,
+    "question": "Match the following:",
+    "options": [],
+    "answer": null,
+    "correctAnswer": "1‑d, 2‑b, 3‑a, 4‑e, 5‑c",
+    "explanation": "* 1. Pepsinogen, Trypsinogen, Proelastase → Endopeptidases (d) – all are zymogens of enzymes that cleave internal peptide bonds.\n* 2. Acts at pH 1.5–2.0 → Pepsin (b) – optimal in highly acidic gastric juice.\n* 3. Activates all pancreatic zymogens → Trypsin (a) – master activator of pancreatic pro‑enzymes.\n* 4. Aminopeptidase, Carboxypeptidase → Exopeptidases (e) – cleave terminal peptide bonds.\n* 5. Has specificity for aromatic amino acids → Chymotrypsin (c) – cleaves after Phe, Tyr, Trp.",
+    "whyNotOtherOptions": {},
+    "relatedQuestions": ["5", "7", "14"],
+    "category": "protein digestion and absorbtion",
+    "difficulty": "Medium"
+  }
+]

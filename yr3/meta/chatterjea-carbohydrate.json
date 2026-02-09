@@ -1,0 +1,784 @@
+[
+  {
+    "id": 1,
+    "question": "UDP–Glucose is converted to UDP–glucuronic acid by:",
+    "options": [
+      "ATP",
+      "GTP",
+      "NADP⁺",
+      "NAD⁺",
+      "FAD"
+    ],
+    "answer": 3,
+    "correctAnswer": "NAD⁺",
+    "explanation": "UDP-glucose is oxidized to UDP-glucuronic acid by UDP-glucose dehydrogenase, which uses NAD⁺ as a coenzyme.",
+    "whyNotOtherOptions": {
+      "a": "ATP is used in phosphorylation reactions (e.g., UDP-glucose formation from glucose-1-P), not in the oxidation step to glucuronate.",
+      "b": "GTP is involved in some activation steps (e.g., gluconeogenesis), but not as a coenzyme for UDP-glucose dehydrogenase.",
+      "c": "NADP⁺ is the coenzyme for oxidative reactions in the pentose phosphate pathway (G6PD, 6PGD), not for UDP-glucose to UDP-glucuronate.",
+      "e": "FAD is used in succinate dehydrogenase and acyl-CoA dehydrogenase; it has no role in this specific oxidation."
+    },
+    "relatedQuestions": ["12"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 2,
+    "question": "All of the following compounds are intermediates of the TCA cycle except:",
+    "options": [
+      "Malate",
+      "Pyruvate",
+      "Oxaloacetate",
+      "Fumarate",
+      "Succinate"
+    ],
+    "answer": 1,
+    "correctAnswer": "Pyruvate",
+    "explanation": "Pyruvate is not a TCA cycle intermediate. It is converted into acetyl-CoA before entering the TCA cycle.",
+    "whyNotOtherOptions": {
+      "a": "Malate is a direct intermediate; formed from fumarate and converted to oxaloacetate by malate dehydrogenase.",
+      "c": "Oxaloacetate is a key TCA intermediate; it condenses with acetyl-CoA to form citrate and is regenerated from malate.",
+      "d": "Fumarate is produced from succinate by succinate dehydrogenase and hydrated to malate.",
+      "e": "Succinate is formed from succinyl-CoA and oxidized to fumarate."
+    },
+    "relatedQuestions": ["7", "22", "25"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 3,
+    "question": "In conversion of lactic acid to glucose, three reactions of glycolysis are bypassed. Which enzyme does NOT participate?",
+    "options": [
+      "Pyruvate carboxylase",
+      "Phosphoenolpyruvate carboxykinase",
+      "Pyruvate kinase",
+      "Glucose-6-phosphatase",
+      "Fructose-1,6-bisphosphatase"
+    ],
+    "answer": 2,
+    "correctAnswer": "Pyruvate kinase",
+    "explanation": "Pyruvate kinase is a glycolytic enzyme and is bypassed during gluconeogenesis.",
+    "whyNotOtherOptions": {
+      "a": "Pyruvate carboxylase converts pyruvate → oxaloacetate (first bypass of pyruvate kinase step).",
+      "b": "PEPCK converts oxaloacetate → PEP (second bypass).",
+      "d": "Glucose-6-phosphatase hydrolyzes G6P → glucose (third bypass of hexokinase/glucokinase).",
+      "e": "Fructose-1,6-bisphosphatase converts F-1,6-BP → F6P (bypass of PFK-1)."
+    },
+    "relatedQuestions": ["26", "27"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4,
+    "question": "McArdle’s disease involves deficiency of which enzyme?",
+    "options": [
+      "Acid maltase",
+      "Glucose-6-phosphatase",
+      "Hepatic phosphorylase",
+      "Muscle phosphorylase",
+      "Branching enzyme"
+    ],
+    "answer": 3,
+    "correctAnswer": "Muscle phosphorylase",
+    "explanation": "McArdle’s disease (GSD type V) is due to deficiency of muscle glycogen phosphorylase, leading to exercise intolerance.",
+    "whyNotOtherOptions": {
+      "a": "Acid maltase (α-glucosidase) deficiency causes Pompe disease (GSD type II), with lysosomal glycogen accumulation.",
+      "b": "Glucose-6-phosphatase deficiency is von Gierke disease (GSD I), causing hypoglycemia and hepatomegaly.",
+      "c": "Hepatic phosphorylase deficiency is Hers disease (GSD VI), affecting liver glycogen breakdown.",
+      "e": "Branching enzyme deficiency is Andersen disease (GSD IV), with abnormal glycogen structure."
+    },
+    "relatedQuestions": ["13", "14"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "question": "In normal resting humans, most blood glucose is utilized by:",
+    "options": [
+      "Liver",
+      "Brain",
+      "Kidneys",
+      "Adipose tissue",
+      "Muscles"
+    ],
+    "answer": 1,
+    "correctAnswer": "Brain",
+    "explanation": "The brain depends almost entirely on glucose for energy in the resting state.",
+    "whyNotOtherOptions": {
+      "a": "Liver produces glucose (via glycogenolysis/gluconeogenesis) in fasting; it uses little glucose in resting state.",
+      "c": "Kidneys use glucose but much less than brain; they also produce glucose in prolonged fasting.",
+      "d": "Adipose tissue uses minimal glucose in resting state; prefers fatty acids.",
+      "e": "Skeletal muscle in resting state uses mainly fatty acids; glucose uptake is low without insulin stimulation."
+    },
+    "relatedQuestions": ["37"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 6,
+    "question": "A regulator of glycogen synthase is:",
+    "options": [
+      "Citric acid",
+      "2,3-BPG",
+      "Pyruvate",
+      "GTP",
+      "Glucose-6-phosphate"
+    ],
+    "answer": 4,
+    "correctAnswer": "Glucose-6-phosphate",
+    "explanation": "Glucose-6-phosphate allosterically activates glycogen synthase, promoting glycogen synthesis.",
+    "whyNotOtherOptions": {
+      "a": "Citrate inhibits PFK-1 (glycolysis); no direct role in glycogen synthase regulation.",
+      "b": "2,3-BPG regulates hemoglobin oxygen affinity; no effect on glycogen synthase.",
+      "c": "Pyruvate is a glycolytic intermediate; does not regulate glycogen synthase.",
+      "d": "GTP is used in protein synthesis and signaling; not a direct regulator of glycogen synthase."
+    },
+    "relatedQuestions": ["15"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 7,
+    "question": "Which compound is a positive allosteric activator of pyruvate carboxylase?",
+    "options": [
+      "Biotin",
+      "Acetyl-CoA",
+      "Oxaloacetate",
+      "ATP",
+      "Fructose-6-P"
+    ],
+    "answer": 1,
+    "correctAnswer": "Acetyl-CoA",
+    "explanation": "High acetyl-CoA levels signal the need for gluconeogenesis, activating pyruvate carboxylase.",
+    "whyNotOtherOptions": {
+      "a": "Biotin is a covalently bound prosthetic group of pyruvate carboxylase; it is essential but not an allosteric activator.",
+      "c": "Oxaloacetate is the product of the reaction; it does not allosterically activate the enzyme.",
+      "d": "ATP is a substrate for the reaction; high ATP may indirectly favor gluconeogenesis but is not the direct allosteric activator.",
+      "e": "Fructose-6-P regulates glycolysis/gluconeogenesis via PFK-2/FBPase-2 but does not activate pyruvate carboxylase."
+    },
+    "relatedQuestions": ["3", "25"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 8,
+    "question": "A specific inhibitor of succinate dehydrogenase is:",
+    "options": [
+      "Arsenite",
+      "Malonate",
+      "Citrate",
+      "Cyanide",
+      "Fluoride"
+    ],
+    "answer": 1,
+    "correctAnswer": "Malonate",
+    "explanation": "Malonate is a competitive inhibitor of succinate dehydrogenase because it resembles succinate.",
+    "whyNotOtherOptions": {
+      "a": "Arsenite inhibits pyruvate dehydrogenase and α-ketoglutarate dehydrogenase (lipoic acid-dependent enzymes).",
+      "c": "Citrate is an allosteric inhibitor of PFK-1; no direct effect on succinate dehydrogenase.",
+      "d": "Cyanide inhibits complex IV (cytochrome c oxidase) of the electron transport chain.",
+      "e": "Fluoride inhibits enolase in glycolysis; no effect on succinate dehydrogenase."
+    },
+    "relatedQuestions": ["22", "25"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 9,
+    "question": "Which pathway is amphibolic in nature?",
+    "options": [
+      "Glycogenesis",
+      "Glycolysis",
+      "Lipolysis",
+      "Citric acid cycle",
+      "Glycogenolysis"
+    ],
+    "answer": 3,
+    "correctAnswer": "Citric acid cycle",
+    "explanation": "The TCA cycle is amphibolic because it functions in both catabolism and anabolism.",
+    "whyNotOtherOptions": {
+      "a": "Glycogenesis is purely anabolic (glycogen synthesis from glucose).",
+      "b": "Glycolysis is primarily catabolic (glucose → pyruvate + ATP); some intermediates used anabolically but not classically amphibolic.",
+      "c": "Lipolysis is catabolic (triglyceride breakdown to glycerol + fatty acids).",
+      "e": "Glycogenolysis is catabolic (glycogen → glucose-1-P/glucose-6-P)."
+    },
+    "relatedQuestions": ["2", "22"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 10,
+    "question": "Transketolase activity is reduced in:",
+    "options": [
+      "Biotin deficiency",
+      "Pyridoxine deficiency",
+      "PABA deficiency",
+      "Thiamine deficiency",
+      "Manganese deficiency"
+    ],
+    "answer": 3,
+    "correctAnswer": "Thiamine deficiency",
+    "explanation": "Transketolase requires thiamine pyrophosphate (TPP) as a coenzyme.",
+    "whyNotOtherOptions": {
+      "a": "Biotin is required for carboxylases (e.g., pyruvate carboxylase); no role in transketolase.",
+      "b": "Pyridoxine (B6) is needed for transaminases and decarboxylases; not for transketolase.",
+      "c": "PABA is a precursor for folate synthesis; no direct link to transketolase.",
+      "e": "Manganese is a cofactor for some enzymes (e.g., arginase); not required for transketolase."
+    },
+    "relatedQuestions": ["14", "30.5"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 11,
+    "question": "The following abnormalities occur in diabetes mellitus, except:",
+    "options": [
+      "Increased plasma free fatty acids",
+      "Increased pyruvate carboxylase activity",
+      "Decreased lipogenesis",
+      "Decreased gluconeogenesis",
+      "Increased PEP-carboxykinase activity"
+    ],
+    "answer": 3,
+    "correctAnswer": "Decreased gluconeogenesis",
+    "explanation": "In diabetes, gluconeogenesis is increased, not decreased.",
+    "whyNotOtherOptions": {
+      "a": "Low insulin → increased lipolysis → elevated plasma free fatty acids.",
+      "b": "High acetyl-CoA from β-oxidation → activation of pyruvate carboxylase → increased gluconeogenesis.",
+      "c": "Low insulin → decreased lipogenesis (ACC inactivation).",
+      "e": "Increased PEPCK expression via glucagon/cAMP → enhanced gluconeogenesis."
+    },
+    "relatedQuestions": ["3", "7"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 12,
+    "question": "Which substance is NOT an intermediate in D-glucuronic acid formation from glucose?",
+    "options": [
+      "Glucose-1-P",
+      "6-phosphogluconate",
+      "Glucose-6-P",
+      "UDP-glucose",
+      "UDP-glucuronate"
+    ],
+    "answer": 1,
+    "correctAnswer": "6-phosphogluconate",
+    "explanation": "6-phosphogluconate belongs to the HMP shunt, not glucuronic acid synthesis.",
+    "whyNotOtherOptions": {
+      "a": "Glucose-1-P is formed from G6P via phosphoglucomutase; precursor to UDP-glucose.",
+      "c": "Glucose-6-P is the starting point; converted to G1P → UDP-glucose.",
+      "d": "UDP-glucose is oxidized by UDP-glucose dehydrogenase → UDP-glucuronate.",
+      "e": "UDP-glucuronate is the final product used in conjugation."
+    },
+    "relatedQuestions": ["1"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 13,
+    "question": "Von Gierke’s disease is due to deficiency of:",
+    "options": [
+      "Glucokinase",
+      "Glucose-6-phosphatase",
+      "α-1,6-glucosidase",
+      "Glycogen synthase",
+      "Debranching enzyme"
+    ],
+    "answer": 1,
+    "correctAnswer": "Glucose-6-phosphatase",
+    "explanation": "Von Gierke’s disease (GSD type I) causes severe fasting hypoglycemia.",
+    "whyNotOtherOptions": {
+      "a": "Glucokinase deficiency causes maturity-onset diabetes of the young (MODY 2).",
+      "c": "α-1,6-glucosidase (debranching) deficiency is Cori disease (GSD III).",
+      "d": "Glycogen synthase deficiency causes GSD 0 (hypoglycemia, no glycogen stores).",
+      "e": "Debranching enzyme deficiency is GSD III (Cori/Forbes disease)."
+    },
+    "relatedQuestions": ["4", "14", "26"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 14,
+    "question": "Glucose-6-phosphatase is absent in:",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Muscle",
+      "Small intestine",
+      "None"
+    ],
+    "answer": 2,
+    "correctAnswer": "Muscle",
+    "explanation": "Muscle lacks glucose-6-phosphatase, so it cannot release free glucose into blood.",
+    "whyNotOtherOptions": {
+      "a": "Liver expresses high levels of G6Pase; major site of glucose release.",
+      "b": "Kidney has significant G6Pase activity; contributes to gluconeogenesis.",
+      "d": "Small intestine expresses G6Pase; involved in glucose release from enterocytes.",
+      "e": "Muscle is the classic tissue lacking G6Pase."
+    },
+    "relatedQuestions": ["13", "26"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 15,
+    "question": "An essential nucleotide for glycogen synthesis in liver is:",
+    "options": [
+      "Lactic acid",
+      "GTP",
+      "CTP",
+      "UTP",
+      "Pyruvic acid"
+    ],
+    "answer": 3,
+    "correctAnswer": "UTP",
+    "explanation": "UTP activates glucose to form UDP-glucose, the direct donor in glycogenesis.",
+    "whyNotOtherOptions": {
+      "a": "Lactic acid is a gluconeogenic precursor; not involved in glycogen synthesis.",
+      "b": "GTP is used in protein synthesis and signaling; not for UDP-glucose formation.",
+      "c": "CTP is used in phospholipid synthesis; not for glycogenesis.",
+      "e": "Pyruvic acid is a glycolytic intermediate; not directly involved."
+    },
+    "relatedQuestions": ["6"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 16,
+    "question": "Substrate for aldolase in glycolysis is:",
+    "options": [
+      "Glyceraldehyde-3-P",
+      "Glucose-6-P",
+      "Fructose-6-P",
+      "1,3-BPG",
+      "Fructose-1,6-bisphosphate"
+    ],
+    "answer": 4,
+    "correctAnswer": "Fructose-1,6-bisphosphate",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "a": "Glyceraldehyde-3-P is a product of aldolase cleavage, not the substrate.",
+      "b": "Glucose-6-P is the first glycolytic intermediate; no aldolase action.",
+      "c": "Fructose-6-P is phosphorylated to F-1,6-BP by PFK-1; not cleaved by aldolase.",
+      "d": "1,3-BPG is downstream after GAPDH; not involved with aldolase."
+    },
+    "relatedQuestions": ["24"],
+    "category": "4. Glycolysis",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 17,
+    "question": "Ratio of ATP produced aerobically to anaerobically per glucose is:",
+    "options": [
+      "4:1",
+      "10:2",
+      "12:1",
+      "18:1",
+      "24:1"
+    ],
+    "answer": 3,
+    "correctAnswer": "18:1",
+    "explanation": "Aerobic metabolism yields ~36 ATP vs 2 ATP anaerobically.",
+    "whyNotOtherOptions": {
+      "a": "4:1 would be 8 vs 2; far too low.",
+      "b": "10:2 = 5:1 ratio; incorrect.",
+      "c": "12:1 = 24 vs 2; underestimates aerobic yield.",
+      "e": "24:1 = 48 vs 2; overestimates (modern value ~30–32 aerobic)."
+    },
+    "relatedQuestions": ["27"],
+    "category": "4. Glycolysis",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 18,
+    "question": "Primaquine-induced hemolytic anemia is due to deficiency of:",
+    "options": [
+      "Pyruvate kinase",
+      "Glucose-6-phosphatase",
+      "Glucose-6-phosphate dehydrogenase",
+      "Hexokinase",
+      "Phosphogluconate dehydrogenase"
+    ],
+    "answer": 2,
+    "correctAnswer": "G6PD",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "a": "Pyruvate kinase deficiency causes chronic hemolytic anemia, not drug-induced.",
+      "b": "G6Pase deficiency is von Gierke (GSD I); causes hypoglycemia, not hemolysis.",
+      "d": "Hexokinase deficiency is rare; causes hemolytic anemia but not triggered by primaquine.",
+      "e": "6PGD deficiency is very rare; not associated with primaquine sensitivity."
+    },
+    "relatedQuestions": ["20"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 19,
+    "question": "Which hormone is NOT involved in carbohydrate metabolism?",
+    "options": [
+      "Cortisol",
+      "ACTH",
+      "Glucagon",
+      "Vasopressin",
+      "Growth hormone"
+    ],
+    "answer": 3,
+    "correctAnswer": "Vasopressin",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "a": "Cortisol promotes gluconeogenesis and glycogenolysis (stress response).",
+      "b": "ACTH stimulates cortisol release → indirect effect on carbohydrate metabolism.",
+      "c": "Glucagon increases glycogenolysis and gluconeogenesis.",
+      "e": "Growth hormone causes insulin resistance and increases gluconeogenesis."
+    },
+    "relatedQuestions": ["31"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 20,
+    "question": "Dehydrogenases of HMP shunt are specific for:",
+    "options": [
+      "NADP⁺",
+      "NAD⁺",
+      "FAD",
+      "FMN",
+      "None"
+    ],
+    "answer": 0,
+    "correctAnswer": "NADP⁺",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "b": "NAD⁺ is used in glycolysis and TCA cycle; HMP shunt uses NADP⁺ to generate NADPH.",
+      "c": "FAD is used in succinate dehydrogenase and acyl-CoA dehydrogenase.",
+      "d": "FMN is used in complex I of ETC; no role in HMP shunt.",
+      "e": "Specificity for NADP⁺ is a key feature of G6PD and 6PGD."
+    },
+    "relatedQuestions": ["10", "18"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 21,
+    "question": "Glycolytic enzyme inhibited by fluoride is:",
+    "options": [
+      "GAPDH",
+      "Phosphoglycerate kinase",
+      "Pyruvate kinase",
+      "Enolase",
+      "Aldolase"
+    ],
+    "answer": 3,
+    "correctAnswer": "Enolase",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "a": "GAPDH is inhibited by iodoacetate; not fluoride.",
+      "b": "Phosphoglycerate kinase is not affected by fluoride.",
+      "c": "Pyruvate kinase is inhibited by ATP/alanine; not fluoride.",
+      "e": "Aldolase is not inhibited by fluoride."
+    },
+    "relatedQuestions": ["16"],
+    "category": "4. Glycolysis",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 22,
+    "question": "Substrate-level phosphorylation in TCA cycle occurs at:",
+    "options": [
+      "Citrate → Isocitrate",
+      "Isocitrate → Oxalosuccinate",
+      "Malate → Oxaloacetate",
+      "Succinate → Fumarate",
+      "Succinyl-CoA → Succinate"
+    ],
+    "answer": 4,
+    "correctAnswer": "Succinyl-CoA → Succinate",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "a": "Aconitase catalyzes isomerization; no phosphorylation.",
+      "b": "Isocitrate dehydrogenase is oxidative decarboxylation; produces NADH.",
+      "c": "Malate dehydrogenase produces NADH; no substrate-level phosphorylation.",
+      "d": "Succinate dehydrogenase produces FADH₂; no ATP."
+    },
+    "relatedQuestions": ["2", "25"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 23,
+    "question": "Fructokinase reaction produces:",
+    "options": [
+      "Fructose-6-P",
+      "Fructose-1-P",
+      "Fructose-1,6-BP",
+      "Glyceraldehyde-3-P",
+      "Pyruvate"
+    ],
+    "answer": 1,
+    "correctAnswer": "Fructose-1-P",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "a": "Fructose-6-P is produced by hexokinase/glucokinase on fructose (minor pathway).",
+      "c": "Fructose-1,6-BP is produced by PFK-1 from F6P in glycolysis.",
+      "d": "Glyceraldehyde-3-P is downstream after aldolase B cleavage of F-1-P.",
+      "e": "Pyruvate is far downstream in glycolysis."
+    },
+    "relatedQuestions": ["29"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 24,
+    "question": "True statement about TCA cycle is:",
+    "options": [
+      "Anaerobic",
+      "Cytosolic",
+      "No intermediates",
+      "Amphibolic",
+      "Produces 10 ATP per cycle"
+    ],
+    "answer": 3,
+    "correctAnswer": "Amphibolic",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "a": "TCA cycle is aerobic (requires O₂ for ETC to reoxidize NADH/FADH₂).",
+      "b": "TCA cycle occurs in mitochondrial matrix, not cytosol.",
+      "c": "TCA cycle has many intermediates (citrate, isocitrate, α-KG, etc.) used for biosynthesis.",
+      "e": "One turn produces 3 NADH, 1 FADH₂, 1 GTP → ~10 ATP equivalents, but not exactly 10 ATP (modern estimates ~7.5–10 depending on shuttle)."
+    },
+    "relatedQuestions": ["2", "9"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 25,
+    "question": "Rate-limiting enzyme of TCA cycle is:",
+    "options": [
+      "Malate dehydrogenase",
+      "Isocitrate dehydrogenase",
+      "Fumarase",
+      "Aconitase",
+      "Succinate thiokinase"
+    ],
+    "answer": 1,
+    "correctAnswer": "Isocitrate dehydrogenase",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "a": "Malate dehydrogenase is reversible; not rate-limiting.",
+      "c": "Fumarase is near-equilibrium; not regulatory.",
+      "d": "Aconitase is not the primary control point.",
+      "e": "Succinate thiokinase (succinyl-CoA synthetase) produces GTP; not rate-limiting."
+    },
+    "relatedQuestions": ["2", "7", "22"],
+    "category": "8. Integrative Metabolism & Special Topics",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 26,
+    "question": "Infant with hepatomegaly, hypoglycemia, lactic acidosis & normal glycogen → diagnosis:",
+    "options": [
+      "Branching enzyme deficiency",
+      "Acid maltase deficiency",
+      "Liver phosphorylase deficiency",
+      "Debranching enzyme deficiency",
+      "Glucose-6-phosphatase deficiency"
+    ],
+    "answer": 4,
+    "correctAnswer": "Glucose-6-phosphatase deficiency",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "a": "Branching enzyme deficiency (GSD IV) → abnormal glycogen structure, cirrhosis.",
+      "b": "Acid maltase deficiency (Pompe, GSD II) → lysosomal glycogen accumulation, muscle/cardiac involvement.",
+      "c": "Liver phosphorylase deficiency (Hers, GSD VI) → mild hypoglycemia, hepatomegaly, but no lactic acidosis.",
+      "d": "Debranching enzyme deficiency (Cori, GSD III) → abnormal glycogen (short outer chains), hypoglycemia, but glycogen is abnormal."
+    },
+    "relatedQuestions": ["13", "14"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 27,
+    "question": "ATP required to convert 2 lactate → glucose is:",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "answer": 2,
+    "correctAnswer": "6",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "a": "2 ATP is net from glycolysis; gluconeogenesis consumes more.",
+      "b": "4 ATP is gross from glycolysis; not relevant.",
+      "d": "8 ATP would be excessive.",
+      "e": "10 ATP overestimates."
+    },
+    "relatedQuestions": ["3"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 28,
+    "question": "2,3-BPG is formed from:",
+    "options": [
+      "1,3-bisphosphoglycerate",
+      "2-phosphoglycerate",
+      "3-phosphoglycerate",
+      "GAP",
+      "DHAP"
+    ],
+    "answer": 0,
+    "correctAnswer": "1,3-bisphosphoglycerate",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "b": "2-PG is downstream after phosphoglycerate mutase.",
+      "c": "3-PG is formed from 1,3-BPG; precursor to 2-PG.",
+      "d": "GAP is upstream; converted to 1,3-BPG by GAPDH.",
+      "e": "DHAP is in equilibrium with GAP; not direct precursor."
+    },
+    "relatedQuestions": ["54"],
+    "category": "4. Glycolysis",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 29,
+    "question": "Enzyme NOT involved in HMP shunt:",
+    "options": [
+      "Glyceraldehyde-3-P dehydrogenase",
+      "Glucose-6-P dehydrogenase",
+      "Transketolase",
+      "Phosphogluconate dehydrogenase",
+      "Transaldolase"
+    ],
+    "answer": 0,
+    "correctAnswer": "Glyceraldehyde-3-P dehydrogenase",
+    "explanation": "",
+    "whyNotOtherOptions": {
+      "b": "G6PD is rate-limiting enzyme of oxidative phase.",
+      "c": "Transketolase transfers 2-carbon units in non-oxidative phase.",
+      "d": "6-Phosphogluconate dehydrogenase produces NADPH in oxidative phase.",
+      "e": "Transaldolase transfers 3-carbon units in non-oxidative phase."
+    },
+    "relatedQuestions": ["10", "20"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30.1,
+    "question": "Which enzyme transfers C-1, C-2, and C-3 of a ketopentose to C-1 of an aldopentose?",
+    "options": [
+      "Transketolase",
+      "Phosphopentose epimerase",
+      "Phosphopentose isomerase",
+      "Transaldolase",
+      "Glucose-6-phosphate dehydrogenase"
+    ],
+    "answer": 3,
+    "correctAnswer": "Transaldolase",
+    "explanation": "Transaldolase transfers a three-carbon unit (C₃) between sugars in the non-oxidative phase of the HMP shunt.",
+    "whyNotOtherOptions": {
+      "a": "Transketolase transfers two-carbon units (glycolaldehyde group).",
+      "b": "Epimerase interconverts ribulose-5-P and xylulose-5-P (configuration change).",
+      "c": "Isomerase converts ribulose-5-P (ketose) to ribose-5-P (aldose).",
+      "e": "G6PD is oxidative; produces NADPH and 6-phosphogluconolactone."
+    },
+    "relatedQuestions": ["30.5", "10"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30.2,
+    "question": "Conversion of xylulose-5-phosphate to ribulose-5-phosphate is catalyzed by:",
+    "options": [
+      "Transketolase",
+      "Phosphopentose epimerase",
+      "Phosphopentose isomerase",
+      "Transaldolase",
+      "Glucose-6-phosphate dehydrogenase"
+    ],
+    "answer": 1,
+    "correctAnswer": "Phosphopentose epimerase",
+    "explanation": "Epimerase changes the configuration around one carbon atom, converting xylulose-5-P to ribulose-5-P.",
+    "whyNotOtherOptions": {
+      "a": "Transketolase transfers 2-carbon units; not epimerization.",
+      "c": "Isomerase converts ketose to aldose (ribulose-5-P → ribose-5-P).",
+      "d": "Transaldolase transfers 3-carbon units.",
+      "e": "G6PD is first enzyme of oxidative phase."
+    },
+    "relatedQuestions": ["30.3"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30.3,
+    "question": "Ribulose-5-phosphate is converted to ribose-5-phosphate by:",
+    "options": [
+      "Transketolase",
+      "Phosphopentose epimerase",
+      "Phosphopentose isomerase",
+      "Transaldolase",
+      "Glyceraldehyde-3-P dehydrogenase"
+    ],
+    "answer": 2,
+    "correctAnswer": "Phosphopentose isomerase",
+    "explanation": "Isomerase converts ketose (ribulose-5-P) to aldose (ribose-5-P).",
+    "whyNotOtherOptions": {
+      "a": "Transketolase transfers 2-C units.",
+      "b": "Epimerase converts xylulose-5-P ↔ ribulose-5-P.",
+      "d": "Transaldolase transfers 3-C units.",
+      "e": "GAPDH is glycolytic; no role in HMP shunt."
+    },
+    "relatedQuestions": ["30.2"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30.4,
+    "question": "NADPH generation in HMP shunt is catalyzed by:",
+    "options": [
+      "Glucose-6-phosphate dehydrogenase",
+      "Transketolase",
+      "Transaldolase",
+      "Phosphopentose epimerase",
+      "Aldolase"
+    ],
+    "answer": 0,
+    "correctAnswer": "Glucose-6-phosphate dehydrogenase",
+    "explanation": "G6PD is the rate-limiting enzyme of the HMP shunt and produces NADPH.",
+    "whyNotOtherOptions": {
+      "b": "Transketolase is non-oxidative; no redox.",
+      "c": "Transaldolase is non-oxidative; no NADPH.",
+      "d": "Epimerase is isomerization; no redox.",
+      "e": "Aldolase is glycolytic; no role in HMP."
+    },
+    "relatedQuestions": ["20", "18"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 30.5,
+    "question": "Formation of sedoheptulose-7-phosphate from pentose phosphates is catalyzed by:",
+    "options": [
+      "Transaldolase",
+      "Phosphopentose epimerase",
+      "Transketolase",
+      "Phosphopentose isomerase",
+      "Hexokinase"
+    ],
+    "answer": 2,
+    "correctAnswer": "Transketolase",
+    "explanation": "Transketolase transfers a two-carbon unit (C₂) and is responsible for forming sedoheptulose-7-P. It requires thiamine pyrophosphate (TPP).",
+    "whyNotOtherOptions": {
+      "a": "Transaldolase transfers 3-carbon units (e.g., DHAP-like group).",
+      "b": "Epimerase changes configuration; no transfer.",
+      "d": "Isomerase converts ketose ↔ aldose.",
+      "e": "Hexokinase phosphorylates glucose; not in HMP shunt."
+    },
+    "relatedQuestions": ["30.1", "10"],
+    "category": "5. Carbohydrate Metabolism",
+    "difficulty": "Medium"
+  }
+]
